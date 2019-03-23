@@ -1,0 +1,21 @@
+p {
+  font-family: Lato;
+}
+
+.header {
+  background: url(https://i.imgur.com/tMje4Dd.png);
+  background-size: 950px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+  padding-top: 0;
+  width: 950px;
+  padding-left: 0px;
+}
+
+.dataRow {
+  padding-left: 40px;
+}
