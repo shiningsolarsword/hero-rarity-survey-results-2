@@ -9,21 +9,23 @@ export class AppComponent  {
   name = 'Angular';
 
   onSeasonalButtonClicked() {
+    console.log('clicked');
     let nodes = document.querySelectorAll(".seasonal");
     for (let node of nodes) {
       let hero = (node as HTMLElement);
       if (hero.style.display != 'none') {
         hero.style.display = 'none';
       } else {
-        hero.style.display = 'initial';
+        hero
       }
+      
     };
   }
 }
 
 @Component({
   selector: 'Alfonse',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="askr" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Alfonse:_Prince_of_Askr" title="Alfonse: Prince of Askr"><img alt="Alfonse Prince of Askr Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fGrlutyk_Vx78otik_ul_Gyqx78_Lgik_LI.vtmx2f775vd-Grlutyk_Vx78otik_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3d1l1hjh5l42hi61j7h9513j000663jhi2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4gx2fGrlutyk_Vx78otik_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3d1l1hjh5l42hi61j7h9513j000663jhi2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fGrlutyk_Vx78otik_ul_Gyqx78_Lgik_LI.vtmx2f35vd-Grlutyk_Vx78otik_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3d1l1hjh5l42hi61j7h9513j000663jhi2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -45,7 +47,7 @@ export class Alfonse
 
 @Component({
   selector: 'AlfonseSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Alfonse:_Spring_Prince" title="Alfonse: Spring Prince"><img alt="Alfonse Spring Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f08x2fGrlutyk_Yvx78otm_Vx78otik_Lgik_LI.vtmx2f775vd-Grlutyk_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d7540hi25j90h3h4i0k5gl72k8i3iiik5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f08x2fGrlutyk_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d7540hi25j90h3h4i0k5gl72k8i3iiik5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f08x2fGrlutyk_Yvx78otm_Vx78otik_Lgik_LI.vtmx2f35vd-Grlutyk_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d7540hi25j90h3h4i0k5gl72k8i3iiik5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -67,7 +69,7 @@ export class AlfonseSpring
 
 @Component({
   selector: 'Sharena',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="askr" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sharena:_Princess_of_Askr" title="Sharena: Princess of Askr"><img alt="Sharena Princess of Askr Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fYngx78ktg_Vx78otikyy_ul_Gyqx78_Lgik_LI.vtmx2f775vd-Yngx78ktg_Vx78otikyy_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3di6h28i1h60li2000ijgj22k515jh1kj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2jx2fYngx78ktg_Vx78otikyy_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3di6h28i1h60li2000ijgj22k515jh1kj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fYngx78ktg_Vx78otikyy_ul_Gyqx78_Lgik_LI.vtmx2f35vd-Yngx78ktg_Vx78otikyy_ul_Gyqx78_Lgik_LI.vtmx3fbkx78youtx3di6h28i1h60li2000ijgj22k515jh1kj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -89,7 +91,7 @@ export class Sharena
 
 @Component({
   selector: 'SharenaSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sharena:_Spring_Princess" title="Sharena: Spring Princess"><img alt="Sharena Spring Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjkx2fYngx78ktg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx2f775vd-Yngx78ktg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d766ih337ik96jh2613jjg1g222j86lgjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjkx2fYngx78ktg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d766ih337ik96jh2613jjg1g222j86lgjx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjkx2fYngx78ktg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx2f35vd-Yngx78ktg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d766ih337ik96jh2613jjg1g222j86lgjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -111,7 +113,7 @@ export class SharenaSpring
 
 @Component({
   selector: 'Anna',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="askr" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Anna:_Commander" title="Anna: Commander"><img alt="Anna Commander Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f68x2fGttg_Iussgtjkx78_Lgik_LI.vtmx2f775vd-Gttg_Iussgtjkx78_Lgik_LI.vtmx3fbkx78youtx3d084017hh0198985ggg392jg26139hh72x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f68x2fGttg_Iussgtjkx78_Lgik_LI.vtmx3fbkx78youtx3d084017hh0198985ggg392jg26139hh72x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f68x2fGttg_Iussgtjkx78_Lgik_LI.vtmx2f35vd-Gttg_Iussgtjkx78_Lgik_LI.vtmx3fbkx78youtx3d084017hh0198985ggg392jg26139hh72x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -133,7 +135,7 @@ export class Anna
 
 @Component({
   selector: 'VeronicaBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Veronica:_Brave_Princess" title="Veronica: Brave Princess"><img alt="Veronica Brave Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f22x2fBkx78utoig_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx2f775vd-Bkx78utoig_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d29k9603ig81lki41ij6038lj95h8jjj0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f22x2fBkx78utoig_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d29k9603ig81lki41ij6038lj95h8jjj0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f22x2fBkx78utoig_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx2f35vd-Bkx78utoig_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d29k9603ig81lki41ij6038lj95h8jjj0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -155,7 +157,7 @@ export class VeronicaBrave
 
 @Component({
   selector: 'Fjorm',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Fjorm:_Princess_of_Ice" title="Fjorm: Princess of Ice"><img alt="Fjorm Princess of Ice Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5jx2fLpux78s_Vx78otikyy_ul_Oik_Lgik_LI.vtmx2f775vd-Lpux78s_Vx78otikyy_ul_Oik_Lgik_LI.vtmx3fbkx78youtx3dl15h60ggj21i6l9l4k271861hg8g74jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f5jx2fLpux78s_Vx78otikyy_ul_Oik_Lgik_LI.vtmx3fbkx78youtx3dl15h60ggj21i6l9l4k271861hg8g74jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5jx2fLpux78s_Vx78otikyy_ul_Oik_Lgik_LI.vtmx2f35vd-Lpux78s_Vx78otikyy_ul_Oik_Lgik_LI.vtmx3fbkx78youtx3dl15h60ggj21i6l9l4k271861hg8g74jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -177,7 +179,7 @@ export class Fjorm
 
 @Component({
   selector: 'FjormNewYear',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Fjorm:_New_Traditions" title="Fjorm: New Traditions"><img alt="Fjorm New Traditions Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjlx2fLpux78s_Tkc_Zx78gjozouty_Lgik_LI.vtmx2f775vd-Lpux78s_Tkc_Zx78gjozouty_Lgik_LI.vtmx3fbkx78youtx3d4l6k17lh70079k1k2i218hg19k604lk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjlx2fLpux78s_Tkc_Zx78gjozouty_Lgik_LI.vtmx3fbkx78youtx3d4l6k17lh70079k1k2i218hg19k604lk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjlx2fLpux78s_Tkc_Zx78gjozouty_Lgik_LI.vtmx2f35vd-Lpux78s_Tkc_Zx78gjozouty_Lgik_LI.vtmx3fbkx78youtx3d4l6k17lh70079k1k2i218hg19k604lk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -199,7 +201,7 @@ export class FjormNewYear
 
 @Component({
   selector: 'Gunnthra',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gunnthr%C3%A1:_Voice_of_Dreams" title="Gunnthrá: Voice of Dreams"><img alt="Gunnthrá Voice of Dreams Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f37x2fMattznx78x25I9x25G7_Buoik_ul_Jx78kgsy_Lgik_LI.vtmx2f775vd-Mattznx78x25I9x25G7_Buoik_ul_Jx78kgsy_Lgik_LI.vtmx3fbkx78youtx3d407155462j321531i620jikg6530k643x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f37x2fMattznx78x25I9x25G7_Buoik_ul_Jx78kgsy_Lgik_LI.vtmx3fbkx78youtx3d407155462j321531i620jikg6530k643x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f37x2fMattznx78x25I9x25G7_Buoik_ul_Jx78kgsy_Lgik_LI.vtmx2f35vd-Mattznx78x25I9x25G7_Buoik_ul_Jx78kgsy_Lgik_LI.vtmx3fbkx78youtx3d407155462j321531i620jikg6530k643x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -221,7 +223,7 @@ export class Gunnthra
 
 @Component({
   selector: 'GunnthraNewYear',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gunnthr%C3%A1:_Year%27s_First_Dream" title="Gunnthrá: Year's First Dream"><img alt="Gunnthrá Years First Dream Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fMattznx78x25I9x25G7_Ekgx78y_Lox78yz_Jx78kgs_Lgik_LI.vtmx2f775vd-Mattznx78x25I9x25G7_Ekgx78y_Lox78yz_Jx78kgs_Lgik_LI.vtmx3fbkx78youtx3d4jkggg77ikj035ki77g01lj96k2g4gj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl0x2fMattznx78x25I9x25G7_Ekgx78y_Lox78yz_Jx78kgs_Lgik_LI.vtmx3fbkx78youtx3d4jkggg77ikj035ki77g01lj96k2g4gj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fMattznx78x25I9x25G7_Ekgx78y_Lox78yz_Jx78kgs_Lgik_LI.vtmx2f35vd-Mattznx78x25I9x25G7_Ekgx78y_Lox78yz_Jx78kgs_Lgik_LI.vtmx3fbkx78youtx3d4jkggg77ikj035ki77g01lj96k2g4gj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -243,7 +245,7 @@ export class GunnthraNewYear
 
 @Component({
   selector: 'Hrid',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hr%C3%ADd:_Icy_Blade" title="Hríd: Icy Blade"><img alt="Hríd Icy Blade Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fNx78x25I9x25GJj_Oie_Hrgjk_Lgik_LI.vtmx2f775vd-Nx78x25I9x25GJj_Oie_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl20521h39jg71j7i8jh26275h466lihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f56x2fNx78x25I9x25GJj_Oie_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl20521h39jg71j7i8jh26275h466lihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fNx78x25I9x25GJj_Oie_Hrgjk_Lgik_LI.vtmx2f35vd-Nx78x25I9x25GJj_Oie_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl20521h39jg71j7i8jh26275h466lihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -265,7 +267,7 @@ export class Hrid
 
 @Component({
   selector: 'HridNewYear',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hr%C3%ADd:_Resolute_Prince" title="Hríd: Resolute Prince"><img alt="Hríd Resolute Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6lx2fNx78x25I9x25GJj_Xkyurazk_Vx78otik_Lgik_LI.vtmx2f775vd-Nx78x25I9x25GJj_Xkyurazk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl35lk47g02l243k4335h74gj6jhi2h2gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6lx2fNx78x25I9x25GJj_Xkyurazk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl35lk47g02l243k4335h74gj6jhi2h2gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6lx2fNx78x25I9x25GJj_Xkyurazk_Vx78otik_Lgik_LI.vtmx2f35vd-Nx78x25I9x25GJj_Xkyurazk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl35lk47g02l243k4335h74gj6jhi2h2gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -287,7 +289,7 @@ export class HridNewYear
 
 @Component({
   selector: 'Ylgr',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ylgr:_Fresh_Snowfall" title="Ylgr: Fresh Snowfall"><img alt="Ylgr Fresh Snowfall Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f95x2fErmx78_Lx78kyn_Ytuclgrr_Lgik_LI.vtmx2f775vd-Ermx78_Lx78kyn_Ytuclgrr_Lgik_LI.vtmx3fbkx78youtx3dg343g6iih6ji468gh1h4k2l709h9205ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f95x2fErmx78_Lx78kyn_Ytuclgrr_Lgik_LI.vtmx3fbkx78youtx3dg343g6iih6ji468gh1h4k2l709h9205ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f95x2fErmx78_Lx78kyn_Ytuclgrr_Lgik_LI.vtmx2f35vd-Ermx78_Lx78kyn_Ytuclgrr_Lgik_LI.vtmx3fbkx78youtx3dg343g6iih6ji468gh1h4k2l709h9205ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -309,7 +311,7 @@ export class Ylgr
 
 @Component({
   selector: 'Surtr',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Surtr:_Ruler_of_Flame" title="Surtr: Ruler of Flame"><img alt="Surtr Ruler of Flame Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fYax78zx78_Xarkx78_ul_Lrgsk_Lgik_LI.vtmx2f775vd-Yax78zx78_Xarkx78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d657573k12j7ll7800jh4ik0kg7h58ggjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f38x2fYax78zx78_Xarkx78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d657573k12j7ll7800jh4ik0kg7h58ggjx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fYax78zx78_Xarkx78_ul_Lrgsk_Lgik_LI.vtmx2f35vd-Yax78zx78_Xarkx78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d657573k12j7ll7800jh4ik0kg7h58ggjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -331,7 +333,7 @@ export class Surtr
 
 @Component({
   selector: 'Laegjarn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Laegjarn:_Sheathed_Steel" title="Laegjarn: Sheathed Steel"><img alt="Laegjarn Sheathed Steel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl8x2fRgkmpgx78t_Ynkgznkj_Yzkkr_Lgik_LI.vtmx2f775vd-Rgkmpgx78t_Ynkgznkj_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d4h131297hh9hkh2jk94k4g1hg69i50l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl8x2fRgkmpgx78t_Ynkgznkj_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d4h131297hh9hkh2jk94k4g1hg69i50l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl8x2fRgkmpgx78t_Ynkgznkj_Yzkkr_Lgik_LI.vtmx2f35vd-Rgkmpgx78t_Ynkgznkj_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d4h131297hh9hkh2jk94k4g1hg69i50l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -353,7 +355,7 @@ export class Laegjarn
 
 @Component({
   selector: 'LaegjarnNewYear',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Laegjarn:_New_Experiences" title="Laegjarn: New Experiences"><img alt="Laegjarn New Experiences Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fRgkmpgx78t_Tkc_Kdvkx78oktiky_Lgik_LI.vtmx2f775vd-Rgkmpgx78t_Tkc_Kdvkx78oktiky_Lgik_LI.vtmx3fbkx78youtx3d2h453ig6gj1hkh84542j58ili8022h40x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl0x2fRgkmpgx78t_Tkc_Kdvkx78oktiky_Lgik_LI.vtmx3fbkx78youtx3d2h453ig6gj1hkh84542j58ili8022h40x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fRgkmpgx78t_Tkc_Kdvkx78oktiky_Lgik_LI.vtmx2f35vd-Rgkmpgx78t_Tkc_Kdvkx78oktiky_Lgik_LI.vtmx3fbkx78youtx3d2h453ig6gj1hkh84542j58ili8022h40x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -375,7 +377,7 @@ export class LaegjarnNewYear
 
 @Component({
   selector: 'Laevatein',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Laevatein:_Searing_Steel" title="Laevatein: Searing Steel"><img alt="Laevatein Searing Steel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6ix2fRgkbgzkot_Ykgx78otm_Yzkkr_Lgik_LI.vtmx2f775vd-Rgkbgzkot_Ykgx78otm_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d1h8l405i7919k27000900hjlh0g1jgl9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6ix2fRgkbgzkot_Ykgx78otm_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d1h8l405i7919k27000900hjlh0g1jgl9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6ix2fRgkbgzkot_Ykgx78otm_Yzkkr_Lgik_LI.vtmx2f35vd-Rgkbgzkot_Ykgx78otm_Yzkkr_Lgik_LI.vtmx3fbkx78youtx3d1h8l405i7919k27000900hjlh0g1jgl9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -397,7 +399,7 @@ export class Laevatein
 
 @Component({
   selector: 'LaevateinNewYear',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Laevatein:_Kumade_Warrior" title="Laevatein: Kumade Warrior"><img alt="Laevatein Kumade Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2hx2fRgkbgzkot_Qasgjk_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Rgkbgzkot_Qasgjk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl2ii4jg200l40614l52gg07jk4g9i75gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2hx2fRgkbgzkot_Qasgjk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl2ii4jg200l40614l52gg07jk4g9i75gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2hx2fRgkbgzkot_Qasgjk_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Rgkbgzkot_Qasgjk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl2ii4jg200l40614l52gg07jk4g9i75gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -419,7 +421,7 @@ export class LaevateinNewYear
 
 @Component({
   selector: 'Helbindi',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Helbindi:_Savage_Scourge" title="Helbindi: Savage Scourge"><img alt="Helbindi Savage Scourge Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fNkrhotjo_Ygbgmk_Yiuax78mk_Lgik_LI.vtmx2f775vd-Nkrhotjo_Ygbgmk_Yiuax78mk_Lgik_LI.vtmx3fbkx78youtx3dh8i4111j9kgj5kh566j18g7958087k96x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f56x2fNkrhotjo_Ygbgmk_Yiuax78mk_Lgik_LI.vtmx3fbkx78youtx3dh8i4111j9kgj5kh566j18g7958087k96x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fNkrhotjo_Ygbgmk_Yiuax78mk_Lgik_LI.vtmx2f35vd-Nkrhotjo_Ygbgmk_Yiuax78mk_Lgik_LI.vtmx3fbkx78youtx3dh8i4111j9kgj5kh566j18g7958087k96x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -441,7 +443,7 @@ export class Helbindi
 
 @Component({
   selector: 'Eir',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eir:_Merciful_Death" title="Eir: Merciful Death"><img alt="Eir Merciful Death Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh5x2fKox78_Skx78iolar_Jkgzn_Lgik_LI.vtmx2f775vd-Kox78_Skx78iolar_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3d25h419i22200k0548g0h5h0785l89lg7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh5x2fKox78_Skx78iolar_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3d25h419i22200k0548g0h5h0785l89lg7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh5x2fKox78_Skx78iolar_Jkgzn_Lgik_LI.vtmx2f35vd-Kox78_Skx78iolar_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3d25h419i22200k0548g0h5h0785l89lg7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -463,7 +465,7 @@ export class Eir
 
 @Component({
   selector: 'Loki',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Loki:_The_Trickster" title="Loki: The Trickster"><img alt="Loki The Trickster Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8kx2fRuqo_Znk_Zx78oiqyzkx78_Lgik_LI.vtmx2f775vd-Ruqo_Znk_Zx78oiqyzkx78_Lgik_LI.vtmx3fbkx78youtx3d782jh6542hjgi50ki407i408981l9lh3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8kx2fRuqo_Znk_Zx78oiqyzkx78_Lgik_LI.vtmx3fbkx78youtx3d782jh6542hjgi50ki407i408981l9lh3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8kx2fRuqo_Znk_Zx78oiqyzkx78_Lgik_LI.vtmx2f35vd-Ruqo_Znk_Zx78oiqyzkx78_Lgik_LI.vtmx3fbkx78youtx3d782jh6542hjgi50ki407i408981l9lh3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -485,7 +487,7 @@ export class Loki
 
 @Component({
   selector: 'Marth',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Marth:_Altean_Prince" title="Marth: Altean Prince"><img alt="Marth Altean Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fSgx78zn_Grzkgt_Vx78otik_Lgik_LI.vtmx2f775vd-Sgx78zn_Grzkgt_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d44355j908490ih286g7053133i66jjh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f43x2fSgx78zn_Grzkgt_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d44355j908490ih286g7053133i66jjh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fSgx78zn_Grzkgt_Vx78otik_Lgik_LI.vtmx2f35vd-Sgx78zn_Grzkgt_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d44355j908490ih286g7053133i66jjh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -507,7 +509,7 @@ export class Marth
 
 @Component({
   selector: 'MarthBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Marth:_Altean_Groom" title="Marth: Altean Groom"><img alt="Marth Altean Groom Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fSgx78zn_Grzkgt_Mx78uus_Lgik_LI.vtmx2f775vd-Sgx78zn_Grzkgt_Mx78uus_Lgik_LI.vtmx3fbkx78youtx3d298h3894igi7j37ig643g65654931h87x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fSgx78zn_Grzkgt_Mx78uus_Lgik_LI.vtmx3fbkx78youtx3d298h3894igi7j37ig643g65654931h87x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fSgx78zn_Grzkgt_Mx78uus_Lgik_LI.vtmx2f35vd-Sgx78zn_Grzkgt_Mx78uus_Lgik_LI.vtmx3fbkx78youtx3d298h3894igi7j37ig643g65654931h87x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -529,7 +531,7 @@ export class MarthBridal
 
 @Component({
   selector: 'MarthLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Marth:_Hero-King" title="Marth: Hero-King"><img alt="Marth Hero-King Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2filx2fSgx78zn_Nkx78u-Qotm_Lgik_LI.vtmx2f775vd-Sgx78zn_Nkx78u-Qotm_Lgik_LI.vtmx3fbkx78youtx3dl9g4l9165g8ghgjgki4g40ihli466g4kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2filx2fSgx78zn_Nkx78u-Qotm_Lgik_LI.vtmx3fbkx78youtx3dl9g4l9165g8ghgjgki4g40ihli466g4kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2filx2fSgx78zn_Nkx78u-Qotm_Lgik_LI.vtmx2f35vd-Sgx78zn_Nkx78u-Qotm_Lgik_LI.vtmx3fbkx78youtx3dl9g4l9165g8ghgjgki4g40ihli466g4kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -551,7 +553,7 @@ export class MarthLegendary
 
 @Component({
   selector: 'Jagen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jagen:_Veteran_Knight" title="Jagen: Veteran Knight"><img alt="Jagen Veteran Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj2x2fPgmkt_Bkzkx78gt_Qtomnz_Lgik_LI.vtmx2f775vd-Pgmkt_Bkzkx78gt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d620kll2i06g8791gj5393j7j57g6ijklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj2x2fPgmkt_Bkzkx78gt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d620kll2i06g8791gj5393j7j57g6ijklx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj2x2fPgmkt_Bkzkx78gt_Qtomnz_Lgik_LI.vtmx2f35vd-Pgmkt_Bkzkx78gt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d620kll2i06g8791gj5393j7j57g6ijklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -573,7 +575,7 @@ export class Jagen
 
 @Component({
   selector: 'Cain',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cain:_The_Bull" title="Cain: The Bull"><img alt="Cain The Bull Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f40x2fIgot_Znk_Harr_Lgik_LI.vtmx2f775vd-Igot_Znk_Harr_Lgik_LI.vtmx3fbkx78youtx3d2j634016l31h3j14j09kl60360ig0ji7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f40x2fIgot_Znk_Harr_Lgik_LI.vtmx3fbkx78youtx3d2j634016l31h3j14j09kl60360ig0ji7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f40x2fIgot_Znk_Harr_Lgik_LI.vtmx2f35vd-Igot_Znk_Harr_Lgik_LI.vtmx3fbkx78youtx3d2j634016l31h3j14j09kl60360ig0ji7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -595,7 +597,7 @@ export class Cain
 
 @Component({
   selector: 'Abel',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Abel:_The_Panther" title="Abel: The Panther"><img alt="Abel The Panther Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fGhkr_Znk_Vgtznkx78_Lgik_LI.vtmx2f775vd-Ghkr_Znk_Vgtznkx78_Lgik_LI.vtmx3fbkx78youtx3d3j6j698h2jh1969106j4kj3j0lgi8ilgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f23x2fGhkr_Znk_Vgtznkx78_Lgik_LI.vtmx3fbkx78youtx3d3j6j698h2jh1969106j4kj3j0lgi8ilgx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fGhkr_Znk_Vgtznkx78_Lgik_LI.vtmx2f35vd-Ghkr_Znk_Vgtznkx78_Lgik_LI.vtmx3fbkx78youtx3d3j6j698h2jh1969106j4kj3j0lgi8ilgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -617,7 +619,7 @@ export class Abel
 
 @Component({
   selector: 'Draug',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Draug:_Gentle_Giant" title="Draug: Gentle Giant"><img alt="Draug Gentle Giant Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9lx2fJx78gam_Mktzrk_Mogtz_Lgik_LI.vtmx2f775vd-Jx78gam_Mktzrk_Mogtz_Lgik_LI.vtmx3fbkx78youtx3di819hgl3jhg4k95i23g585g6j5jl96hjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9lx2fJx78gam_Mktzrk_Mogtz_Lgik_LI.vtmx3fbkx78youtx3di819hgl3jhg4k95i23g585g6j5jl96hjx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9lx2fJx78gam_Mktzrk_Mogtz_Lgik_LI.vtmx2f35vd-Jx78gam_Mktzrk_Mogtz_Lgik_LI.vtmx3fbkx78youtx3di819hgl3jhg4k95i23g585g6j5jl96hjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -639,7 +641,7 @@ export class Draug
 
 @Component({
   selector: 'Gordin',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gordin:_Altean_Archer" title="Gordin: Altean Archer"><img alt="Gordin Altean Archer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f36x2fMux78jot_Grzkgt_Gx78inkx78_Lgik_LI.vtmx2f775vd-Mux78jot_Grzkgt_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d9493k45k9g681471077j1475kklklh91x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f36x2fMux78jot_Grzkgt_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d9493k45k9g681471077j1475kklklh91x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f36x2fMux78jot_Grzkgt_Gx78inkx78_Lgik_LI.vtmx2f35vd-Mux78jot_Grzkgt_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d9493k45k9g681471077j1475kklklh91x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -661,7 +663,7 @@ export class Gordin
 
 @Component({
   selector: 'Luke',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Luke:_Rowdy_Squire" title="Luke: Rowdy Squire"><img alt="Luke Rowdy Squire Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fRaqk_Xucje_Ywaox78k_Lgik_LI.vtmx2f775vd-Raqk_Xucje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3d936520g328g6989h6kh016919lh217l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4ix2fRaqk_Xucje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3d936520g328g6989h6kh016919lh217l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fRaqk_Xucje_Ywaox78k_Lgik_LI.vtmx2f35vd-Raqk_Xucje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3d936520g328g6989h6kh016919lh217l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -683,7 +685,7 @@ export class Luke
 
 @Component({
   selector: 'Roderick',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Roderick:_Steady_Squire" title="Roderick: Steady Squire"><img alt="Roderick Steady Squire Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fXujkx78oiq_Yzkgje_Ywaox78k_Lgik_LI.vtmx2f775vd-Xujkx78oiq_Yzkgje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3dg9l20k22lli4676508hkj33j0l502435x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f84x2fXujkx78oiq_Yzkgje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3dg9l20k22lli4676508hkj33j0l502435x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fXujkx78oiq_Yzkgje_Ywaox78k_Lgik_LI.vtmx2f35vd-Xujkx78oiq_Yzkgje_Ywaox78k_Lgik_LI.vtmx3fbkx78youtx3dg9l20k22lli4676508hkj33j0l502435x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -705,7 +707,7 @@ export class Roderick
 
 @Component({
   selector: 'Caeda',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Caeda:_Talys%27s_Heart" title="Caeda: Talys's Heart"><img alt="Caeda Talyss Heart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f86x2fIgkjg_Zgreyy_Nkgx78z_Lgik_LI.vtmx2f775vd-Igkjg_Zgreyy_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d0iih676071kggh7434g1jh79jlj5911gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f86x2fIgkjg_Zgreyy_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d0iih676071kggh7434g1jh79jlj5911gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f86x2fIgkjg_Zgreyy_Nkgx78z_Lgik_LI.vtmx2f35vd-Igkjg_Zgreyy_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d0iih676071kggh7434g1jh79jlj5911gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -727,7 +729,7 @@ export class Caeda
 
 @Component({
   selector: 'CaedaBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Caeda:_Talys%27s_Bride" title="Caeda: Talys's Bride"><img alt="Caeda Talyss Bride Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9kx2fIgkjg_Zgreyy_Hx78ojk_Lgik_LI.vtmx2f775vd-Igkjg_Zgreyy_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d7k29glihhl79jijlk61i81gl58213085x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9kx2fIgkjg_Zgreyy_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d7k29glihhl79jijlk61i81gl58213085x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9kx2fIgkjg_Zgreyy_Hx78ojk_Lgik_LI.vtmx2f35vd-Igkjg_Zgreyy_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d7k29glihhl79jijlk61i81gl58213085x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -749,7 +751,7 @@ export class CaedaBridal
 
 @Component({
   selector: 'Ogma',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ogma:_Loyal_Blade" title="Ogma: Loyal Blade"><img alt="Ogma Loyal Blade Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flkx2fUmsg_Ruegr_Hrgjk_Lgik_LI.vtmx2f775vd-Umsg_Ruegr_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl10gg68014422g03374k996hjhj93ij1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2flkx2fUmsg_Ruegr_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl10gg68014422g03374k996hjhj93ij1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flkx2fUmsg_Ruegr_Hrgjk_Lgik_LI.vtmx2f35vd-Umsg_Ruegr_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3dl10gg68014422g03374k996hjhj93ij1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -771,7 +773,7 @@ export class Ogma
 
 @Component({
   selector: 'Barst',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Barst:_The_Hatchet" title="Barst: The Hatchet"><img alt="Barst The Hatchet Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fHgx78yz_Znk_Ngzinkz_Lgik_LI.vtmx2f775vd-Hgx78yz_Znk_Ngzinkz_Lgik_LI.vtmx3fbkx78youtx3d7824kgg8h7h0305733k1989gg3iig3l2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fggx2fHgx78yz_Znk_Ngzinkz_Lgik_LI.vtmx3fbkx78youtx3d7824kgg8h7h0305733k1989gg3iig3l2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fHgx78yz_Znk_Ngzinkz_Lgik_LI.vtmx2f35vd-Hgx78yz_Znk_Ngzinkz_Lgik_LI.vtmx3fbkx78youtx3d7824kgg8h7h0305733k1989gg3iig3l2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -793,7 +795,7 @@ export class Barst
 
 @Component({
   selector: 'Linde',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Linde:_Light_Mage" title="Linde: Light Mage"><img alt="Linde Light Mage Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f05x2fRotjk_Romnz_Sgmk_Lgik_LI.vtmx2f775vd-Rotjk_Romnz_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d6gl12g8444jl979i95hh75h3igj61007x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f05x2fRotjk_Romnz_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d6gl12g8444jl979i95hh75h3igj61007x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f05x2fRotjk_Romnz_Sgmk_Lgik_LI.vtmx2f35vd-Rotjk_Romnz_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d6gl12g8444jl979i95hh75h3igj61007x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -815,7 +817,7 @@ export class Linde
 
 @Component({
   selector: 'LindeSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Linde:_Summer_Rays" title="Linde: Summer Rays"><img alt="Linde Summer Rays Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f34x2fRotjk_Yasskx78_Xgey_Lgik_LI.vtmx2f775vd-Rotjk_Yasskx78_Xgey_Lgik_LI.vtmx3fbkx78youtx3d9i3lllg363g094l7ji53g5h1lj90ihi9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f34x2fRotjk_Yasskx78_Xgey_Lgik_LI.vtmx3fbkx78youtx3d9i3lllg363g094l7ji53g5h1lj90ihi9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f34x2fRotjk_Yasskx78_Xgey_Lgik_LI.vtmx2f35vd-Rotjk_Yasskx78_Xgey_Lgik_LI.vtmx3fbkx78youtx3d9i3lllg363g094l7ji53g5h1lj90ihi9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -837,7 +839,7 @@ export class LindeSummer
 
 @Component({
   selector: 'Jeorge',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jeorge:_Perfect_Shot" title="Jeorge: Perfect Shot"><img alt="Jeorge Perfect Shot Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fPkux78mk_Vkx78lkiz_Ynuz_Lgik_LI.vtmx2f775vd-Pkux78mk_Vkx78lkiz_Ynuz_Lgik_LI.vtmx3fbkx78youtx3d2543759hl7j61l3h2j8i4igl019h7hijx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg0x2fPkux78mk_Vkx78lkiz_Ynuz_Lgik_LI.vtmx3fbkx78youtx3d2543759hl7j61l3h2j8i4igl019h7hijx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fPkux78mk_Vkx78lkiz_Ynuz_Lgik_LI.vtmx2f35vd-Pkux78mk_Vkx78lkiz_Ynuz_Lgik_LI.vtmx3fbkx78youtx3d2543759hl7j61l3h2j8i4igl019h7hijx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -859,7 +861,7 @@ export class Jeorge
 
 @Component({
   selector: 'Michalis',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Michalis:_Ambitious_King" title="Michalis: Ambitious King"><img alt="Michalis Ambitious King Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl3x2fSoingroy_Gshozouay_Qotm_Lgik_LI.vtmx2f775vd-Soingroy_Gshozouay_Qotm_Lgik_LI.vtmx3fbkx78youtx3d4542097824g21k1h7826i4k5682173g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl3x2fSoingroy_Gshozouay_Qotm_Lgik_LI.vtmx3fbkx78youtx3d4542097824g21k1h7826i4k5682173g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl3x2fSoingroy_Gshozouay_Qotm_Lgik_LI.vtmx2f35vd-Soingroy_Gshozouay_Qotm_Lgik_LI.vtmx3fbkx78youtx3d4542097824g21k1h7826i4k5682173g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -881,7 +883,7 @@ export class Michalis
 
 @Component({
   selector: 'Minerva',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Minerva:_Red_Dragoon" title="Minerva: Red Dragoon"><img alt="Minerva Red Dragoon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fSotkx78bg_Xkj_Jx78gmuut_Lgik_LI.vtmx2f775vd-Sotkx78bg_Xkj_Jx78gmuut_Lgik_LI.vtmx3fbkx78youtx3d031gh42hkk009h2811hi73hjg01i555jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi8x2fSotkx78bg_Xkj_Jx78gmuut_Lgik_LI.vtmx3fbkx78youtx3d031gh42hkk009h2811hi73hjg01i555jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fSotkx78bg_Xkj_Jx78gmuut_Lgik_LI.vtmx2f35vd-Sotkx78bg_Xkj_Jx78gmuut_Lgik_LI.vtmx3fbkx78youtx3d031gh42hkk009h2811hi73hjg01i555jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -903,7 +905,7 @@ export class Minerva
 
 @Component({
   selector: 'Maria',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Maria:_Minerva%27s_Sister" title="Maria: Minerva's Sister"><img alt="Maria Minervas Sister Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f80x2fSgx78og_Sotkx78bgy_Yoyzkx78_Lgik_LI.vtmx2f775vd-Sgx78og_Sotkx78bgy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3digi39ijhgj5jgjj039872lh65g1587lix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f80x2fSgx78og_Sotkx78bgy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3digi39ijhgj5jgjj039872lh65g1587lix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f80x2fSgx78og_Sotkx78bgy_Yoyzkx78_Lgik_LI.vtmx2f35vd-Sgx78og_Sotkx78bgy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3digi39ijhgj5jgjj039872lh65g1587lix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -925,7 +927,7 @@ export class Maria
 
 @Component({
   selector: 'Palla',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Palla:_Eldest_Whitewing" title="Palla: Eldest Whitewing"><img alt="Palla Eldest Whitewing Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6hx2fVgrrg_Krjkyz_Cnozkcotm_Lgik_LI.vtmx2f775vd-Vgrrg_Krjkyz_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d0g5211k7l7059i0g90i5lhi96j5khgi0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6hx2fVgrrg_Krjkyz_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d0g5211k7l7059i0g90i5lhi96j5khgi0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6hx2fVgrrg_Krjkyz_Cnozkcotm_Lgik_LI.vtmx2f35vd-Vgrrg_Krjkyz_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d0g5211k7l7059i0g90i5lhi96j5khgi0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -947,7 +949,7 @@ export class Palla
 
 @Component({
   selector: 'Catria',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Catria:_Middle_Whitewing" title="Catria: Middle Whitewing"><img alt="Catria Middle Whitewing Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fIgzx78og_Sojjrk_Cnozkcotm_Lgik_LI.vtmx2f775vd-Igzx78og_Sojjrk_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d44kj965l11kli996jhh0k3k61lgih856x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f43x2fIgzx78og_Sojjrk_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d44kj965l11kli996jhh0k3k61lgih856x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fIgzx78og_Sojjrk_Cnozkcotm_Lgik_LI.vtmx2f35vd-Igzx78og_Sojjrk_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d44kj965l11kli996jhh0k3k61lgih856x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -969,7 +971,7 @@ export class Catria
 
 @Component({
   selector: 'CatriaSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Catria:_Spring_Whitewing" title="Catria: Spring Whitewing"><img alt="Catria Spring Whitewing Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f42x2fIgzx78og_Yvx78otm_Cnozkcotm_Lgik_LI.vtmx2f775vd-Igzx78og_Yvx78otm_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d21i1il6l10j6k8015i556168hgij46l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f42x2fIgzx78og_Yvx78otm_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d21i1il6l10j6k8015i556168hgij46l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f42x2fIgzx78og_Yvx78otm_Cnozkcotm_Lgik_LI.vtmx2f35vd-Igzx78og_Yvx78otm_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d21i1il6l10j6k8015i556168hgij46l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -991,7 +993,7 @@ export class CatriaSpring
 
 @Component({
   selector: 'Est',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Est:_Junior_Whitewing" title="Est: Junior Whitewing"><img alt="Est Junior Whitewing Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fKyz_Patoux78_Cnozkcotm_Lgik_LI.vtmx2f775vd-Kyz_Patoux78_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d5lh115li93j7i99l8l59557h975j5i01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f29x2fKyz_Patoux78_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d5lh115li93j7i99l8l59557h975j5i01x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fKyz_Patoux78_Cnozkcotm_Lgik_LI.vtmx2f35vd-Kyz_Patoux78_Cnozkcotm_Lgik_LI.vtmx3fbkx78youtx3d5lh115li93j7i99l8l59557h975j5i01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1013,7 +1015,7 @@ export class Est
 
 @Component({
   selector: 'Merric',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Merric:_Wind_Mage" title="Merric: Wind Mage"><img alt="Merric Wind Mage Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi4x2fSkx78x78oi_Cotj_Sgmk_Lgik_LI.vtmx2f775vd-Skx78x78oi_Cotj_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d938986ji7l71k2ik59l616548461ikl2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi4x2fSkx78x78oi_Cotj_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d938986ji7l71k2ik59l616548461ikl2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi4x2fSkx78x78oi_Cotj_Sgmk_Lgik_LI.vtmx2f35vd-Skx78x78oi_Cotj_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d938986ji7l71k2ik59l616548461ikl2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1035,7 +1037,7 @@ export class Merric
 
 @Component({
   selector: 'HardinFallen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hardin:_Dark_Emperor" title="Hardin: Dark Emperor"><img alt="Hardin Dark Emperor Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fNgx78jot_Jgx78q_Ksvkx78ux78_Lgik_LI.vtmx2f775vd-Ngx78jot_Jgx78q_Ksvkx78ux78_Lgik_LI.vtmx3fbkx78youtx3d233h086ljj01il3931292464i825g29hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg1x2fNgx78jot_Jgx78q_Ksvkx78ux78_Lgik_LI.vtmx3fbkx78youtx3d233h086ljj01il3931292464i825g29hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fNgx78jot_Jgx78q_Ksvkx78ux78_Lgik_LI.vtmx2f35vd-Ngx78jot_Jgx78q_Ksvkx78ux78_Lgik_LI.vtmx3fbkx78youtx3d233h086ljj01il3931292464i825g29hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1057,7 +1059,7 @@ export class HardinFallen
 
 @Component({
   selector: 'Camus',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camus:_Sable_Knight" title="Camus: Sable Knight"><img alt="Camus Sable Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2gx2fIgsay_Yghrk_Qtomnz_Lgik_LI.vtmx2f775vd-Igsay_Yghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dl044k79g835h8458jli001g267j7124ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2gx2fIgsay_Yghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dl044k79g835h8458jli001g267j7124ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2gx2fIgsay_Yghrk_Qtomnz_Lgik_LI.vtmx2f35vd-Igsay_Yghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dl044k79g835h8458jli001g267j7124ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1079,7 +1081,7 @@ export class Camus
 
 @Component({
   selector: 'Sheena',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sheena:_Princess_of_Gra" title="Sheena: Princess of Gra"><img alt="Sheena Princess of Gra Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fYnkktg_Vx78otikyy_ul_Mx78g_Lgik_LI.vtmx2f775vd-Ynkktg_Vx78otikyy_ul_Mx78g_Lgik_LI.vtmx3fbkx78youtx3dh687ig1i55k47763228k402799jlh857x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fllx2fYnkktg_Vx78otikyy_ul_Mx78g_Lgik_LI.vtmx3fbkx78youtx3dh687ig1i55k47763228k402799jlh857x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fYnkktg_Vx78otikyy_ul_Mx78g_Lgik_LI.vtmx2f35vd-Ynkktg_Vx78otikyy_ul_Mx78g_Lgik_LI.vtmx3fbkx78youtx3dh687ig1i55k47763228k402799jlh857x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1101,7 +1103,7 @@ export class Sheena
 
 @Component({
   selector: 'TikiYoung',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tiki:_Dragon_Scion" title="Tiki: Dragon Scion"><img alt="Tiki Dragon Scion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk9x2fZoqo_Jx78gmut_Yiout_Lgik_LI.vtmx2f775vd-Zoqo_Jx78gmut_Yiout_Lgik_LI.vtmx3fbkx78youtx3dgkh3j0j788k7i61998722i01h5h917i5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk9x2fZoqo_Jx78gmut_Yiout_Lgik_LI.vtmx3fbkx78youtx3dgkh3j0j788k7i61998722i01h5h917i5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk9x2fZoqo_Jx78gmut_Yiout_Lgik_LI.vtmx2f35vd-Zoqo_Jx78gmut_Yiout_Lgik_LI.vtmx3fbkx78youtx3dgkh3j0j788k7i61998722i01h5h917i5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1123,7 +1125,7 @@ export class TikiYoung
 
 @Component({
   selector: 'TikiYoungSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tiki:_Beachside_Scion" title="Tiki: Beachside Scion"><img alt="Tiki Beachside Scion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f22x2fZoqo_Hkginyojk_Yiout_Lgik_LI.vtmx2f775vd-Zoqo_Hkginyojk_Yiout_Lgik_LI.vtmx3fbkx78youtx3d1g32gl59696kli77l71540gh75846gkix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f22x2fZoqo_Hkginyojk_Yiout_Lgik_LI.vtmx3fbkx78youtx3d1g32gl59696kli77l71540gh75846gkix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f22x2fZoqo_Hkginyojk_Yiout_Lgik_LI.vtmx2f35vd-Zoqo_Hkginyojk_Yiout_Lgik_LI.vtmx3fbkx78youtx3d1g32gl59696kli77l71540gh75846gkix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1145,7 +1147,7 @@ export class TikiYoungSummer
 
 @Component({
   selector: 'TikiYoungLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tiki:_Legendary_Dragon" title="Tiki: Legendary Dragon"><img alt="Tiki Legendary Dragon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk4x2fZoqo_Rkmktjgx78e_Jx78gmut_Lgik_LI.vtmx2f775vd-Zoqo_Rkmktjgx78e_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3dil5h5k75557k7k07073hhj64hkl0i183x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk4x2fZoqo_Rkmktjgx78e_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3dil5h5k75557k7k07073hhj64hkl0i183x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk4x2fZoqo_Rkmktjgx78e_Jx78gmut_Lgik_LI.vtmx2f35vd-Zoqo_Rkmktjgx78e_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3dil5h5k75557k7k07073hhj64hkl0i183x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1167,7 +1169,7 @@ export class TikiYoungLegendary
 
 @Component({
   selector: 'Katarina',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Katarina:_Wayward_One" title="Katarina: Wayward One"><img alt="Katarina Wayward One Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fQgzgx78otg_Cgecgx78j_Utk_Lgik_LI.vtmx2f775vd-Qgzgx78otg_Cgecgx78j_Utk_Lgik_LI.vtmx3fbkx78youtx3d11ki93l5j233l932k25hjhkj00g26i6kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1gx2fQgzgx78otg_Cgecgx78j_Utk_Lgik_LI.vtmx3fbkx78youtx3d11ki93l5j233l932k25hjhkj00g26i6kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fQgzgx78otg_Cgecgx78j_Utk_Lgik_LI.vtmx2f35vd-Qgzgx78otg_Cgecgx78j_Utk_Lgik_LI.vtmx3fbkx78youtx3d11ki93l5j233l932k25hjhkj00g26i6kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1190,7 +1192,7 @@ export class Katarina
 
 @Component({
   selector: 'Clarisse',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Clarisse:_Sniper_in_the_Dark" title="Clarisse: Sniper in the Dark"><img alt="Clarisse Sniper in the Dark Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7jx2fIrgx78oyyk_Ytovkx78_ot_znk_Jgx78q_Lgik_LI.vtmx2f775vd-Irgx78oyyk_Ytovkx78_ot_znk_Jgx78q_Lgik_LI.vtmx3fbkx78youtx3d8h415ii18725lh6010449303j516g268x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7jx2fIrgx78oyyk_Ytovkx78_ot_znk_Jgx78q_Lgik_LI.vtmx3fbkx78youtx3d8h415ii18725lh6010449303j516g268x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7jx2fIrgx78oyyk_Ytovkx78_ot_znk_Jgx78q_Lgik_LI.vtmx2f35vd-Irgx78oyyk_Ytovkx78_ot_znk_Jgx78q_Lgik_LI.vtmx3fbkx78youtx3d8h415ii18725lh6010449303j516g268x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1212,7 +1214,7 @@ export class Clarisse
 
 @Component({
   selector: 'Legion',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Legion:_Masked_Maniac" title="Legion: Masked Maniac"><img alt="Legion Masked Maniac Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0lx2fRkmout_Sgyqkj_Sgtogi_Lgik_LI.vtmx2f775vd-Rkmout_Sgyqkj_Sgtogi_Lgik_LI.vtmx3fbkx78youtx3d9k4464558k39754501g02ij66i694012x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0lx2fRkmout_Sgyqkj_Sgtogi_Lgik_LI.vtmx3fbkx78youtx3d9k4464558k39754501g02ij66i694012x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0lx2fRkmout_Sgyqkj_Sgtogi_Lgik_LI.vtmx2f35vd-Rkmout_Sgyqkj_Sgtogi_Lgik_LI.vtmx3fbkx78youtx3d9k4464558k39754501g02ij66i694012x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1234,7 +1236,7 @@ export class Legion
 
 @Component({
   selector: 'Navarre',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Navarre:_Scarlet_Sword" title="Navarre: Scarlet Sword"><img alt="Navarre Scarlet Sword Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fTgbgx78x78k_Yigx78rkz_Ycux78j_Lgik_LI.vtmx2f775vd-Tgbgx78x78k_Yigx78rkz_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3dl4016hg41jk14j418h362115gk51101ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg1x2fTgbgx78x78k_Yigx78rkz_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3dl4016hg41jk14j418h362115gk51101ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fTgbgx78x78k_Yigx78rkz_Ycux78j_Lgik_LI.vtmx2f35vd-Tgbgx78x78k_Yigx78rkz_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3dl4016hg41jk14j418h362115gk51101ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1256,7 +1258,7 @@ export class Navarre
 
 @Component({
   selector: 'Wrys',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Wrys:_Kindly_Priest" title="Wrys: Kindly Priest"><img alt="Wrys Kindly Priest Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f40x2fCx78ey_Qotjre_Vx78okyz_Lgik_LI.vtmx2f775vd-Cx78ey_Qotjre_Vx78okyz_Lgik_LI.vtmx3fbkx78youtx3d67i681617j5gii5519h4g84i6gk6k13gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f40x2fCx78ey_Qotjre_Vx78okyz_Lgik_LI.vtmx3fbkx78youtx3d67i681617j5gii5519h4g84i6gk6k13gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f40x2fCx78ey_Qotjre_Vx78okyz_Lgik_LI.vtmx2f35vd-Cx78ey_Qotjre_Vx78okyz_Lgik_LI.vtmx3fbkx78youtx3d67i681617j5gii5519h4g84i6gk6k13gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1278,7 +1280,7 @@ export class Wrys
 
 @Component({
   selector: 'Athena',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Athena:_Borderland_Sword" title="Athena: Borderland Sword"><img alt="Athena Borderland Sword Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fGznktg_Hux78jkx78rgtj_Ycux78j_Lgik_LI.vtmx2f775vd-Gznktg_Hux78jkx78rgtj_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d25990k3235350k780kg555l0010j388kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f29x2fGznktg_Hux78jkx78rgtj_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d25990k3235350k780kg555l0010j388kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fGznktg_Hux78jkx78rgtj_Ycux78j_Lgik_LI.vtmx2f35vd-Gznktg_Hux78jkx78rgtj_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d25990k3235350k780kg555l0010j388kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1300,7 +1302,7 @@ export class Athena
 
 @Component({
   selector: 'Gharnef',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gharnef:_Dark_Pontifex" title="Gharnef: Dark Pontifex"><img alt="Gharnef Dark Pontifex Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f64x2fMngx78tkl_Jgx78q_Vutzolkd_Lgik_LI.vtmx2f775vd-Mngx78tkl_Jgx78q_Vutzolkd_Lgik_LI.vtmx3fbkx78youtx3d6kli1711ikk79l06992l21118g252032x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f64x2fMngx78tkl_Jgx78q_Vutzolkd_Lgik_LI.vtmx3fbkx78youtx3d6kli1711ikk79l06992l21118g252032x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f64x2fMngx78tkl_Jgx78q_Vutzolkd_Lgik_LI.vtmx2f35vd-Mngx78tkl_Jgx78q_Vutzolkd_Lgik_LI.vtmx3fbkx78youtx3d6kli1711ikk79l06992l21118g252032x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1322,7 +1324,7 @@ export class Gharnef
 
 @Component({
   selector: 'Alm',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Alm:_Hero_of_Prophecy" title="Alm: Hero of Prophecy"><img alt="Alm Hero of Prophecy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fGrs_Nkx78u_ul_Vx78uvnkie_Lgik_LI.vtmx2f775vd-Grs_Nkx78u_ul_Vx78uvnkie_Lgik_LI.vtmx3fbkx78youtx3dhki1g77g3237597099h1114k15g499jjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2figx2fGrs_Nkx78u_ul_Vx78uvnkie_Lgik_LI.vtmx3fbkx78youtx3dhki1g77g3237597099h1114k15g499jjx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fGrs_Nkx78u_ul_Vx78uvnkie_Lgik_LI.vtmx2f35vd-Grs_Nkx78u_ul_Vx78uvnkie_Lgik_LI.vtmx3fbkx78youtx3dhki1g77g3237597099h1114k15g499jjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1344,7 +1346,7 @@ export class Alm
 
 @Component({
   selector: 'Lukas',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lukas:_Sharp_Soldier" title="Lukas: Sharp Soldier"><img alt="Lukas Sharp Soldier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f93x2fRaqgy_Yngx78v_Yurjokx78_Lgik_LI.vtmx2f775vd-Raqgy_Yngx78v_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d256k953i0k2kgi4j2gk854h9806h6kh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f93x2fRaqgy_Yngx78v_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d256k953i0k2kgi4j2gk854h9806h6kh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f93x2fRaqgy_Yngx78v_Yurjokx78_Lgik_LI.vtmx2f35vd-Raqgy_Yngx78v_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d256k953i0k2kgi4j2gk854h9806h6kh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1366,7 +1368,7 @@ export class Lukas
 
 @Component({
   selector: 'Gray',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gray:_Wry_Comrade" title="Gray: Wry Comrade"><img alt="Gray Wry Comrade Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi3x2fMx78ge_Cx78e_Iusx78gjk_Lgik_LI.vtmx2f775vd-Mx78ge_Cx78e_Iusx78gjk_Lgik_LI.vtmx3fbkx78youtx3d279j211gkg327j51l49hkg5l64842490x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi3x2fMx78ge_Cx78e_Iusx78gjk_Lgik_LI.vtmx3fbkx78youtx3d279j211gkg327j51l49hkg5l64842490x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi3x2fMx78ge_Cx78e_Iusx78gjk_Lgik_LI.vtmx2f35vd-Mx78ge_Cx78e_Iusx78gjk_Lgik_LI.vtmx3fbkx78youtx3d279j211gkg327j51l49hkg5l64842490x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1388,7 +1390,7 @@ export class Gray
 
 @Component({
   selector: 'Tobin',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tobin:_The_Clueless_One" title="Tobin: The Clueless One"><img alt="Tobin The Clueless One Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f00x2fZuhot_Znk_Irakrkyy_Utk_Lgik_LI.vtmx2f775vd-Zuhot_Znk_Irakrkyy_Utk_Lgik_LI.vtmx3fbkx78youtx3dk9l9g727537i4hk83lk17978814ji1h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f00x2fZuhot_Znk_Irakrkyy_Utk_Lgik_LI.vtmx3fbkx78youtx3dk9l9g727537i4hk83lk17978814ji1h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f00x2fZuhot_Znk_Irakrkyy_Utk_Lgik_LI.vtmx2f35vd-Zuhot_Znk_Irakrkyy_Utk_Lgik_LI.vtmx3fbkx78youtx3dk9l9g727537i4hk83lk17978814ji1h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1410,7 +1412,7 @@ export class Tobin
 
 @Component({
   selector: 'Kliff',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kliff:_Curious_Spirit" title="Kliff: Curious Spirit"><img alt="Kliff Curious Spirit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f89x2fQroll_Iax78ouay_Yvox78oz_Lgik_LI.vtmx2f775vd-Qroll_Iax78ouay_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dkij37i5196lhgl66k025gi4ihgg92k73x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f89x2fQroll_Iax78ouay_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dkij37i5196lhgl66k025gi4ihgg92k73x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f89x2fQroll_Iax78ouay_Yvox78oz_Lgik_LI.vtmx2f35vd-Qroll_Iax78ouay_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dkij37i5196lhgl66k025gi4ihgg92k73x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1432,7 +1434,7 @@ export class Kliff
 
 @Component({
   selector: 'Faye',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Faye:_Devoted_Heart" title="Faye: Devoted Heart"><img alt="Faye Devoted Heart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f72x2fLgek_Jkbuzkj_Nkgx78z_Lgik_LI.vtmx2f775vd-Lgek_Jkbuzkj_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dihkg40h2glk76hi6l275722l5g6l5g40x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f72x2fLgek_Jkbuzkj_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dihkg40h2glk76hi6l275722l5g6l5g40x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f72x2fLgek_Jkbuzkj_Nkgx78z_Lgik_LI.vtmx2f35vd-Lgek_Jkbuzkj_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dihkg40h2glk76hi6l275722l5g6l5g40x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1454,7 +1456,7 @@ export class Faye
 
 @Component({
   selector: 'Clair',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Clair:_Highborn_Flier" title="Clair: Highborn Flier"><img alt="Clair Highborn Flier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f08x2fIrgox78_Nomnhux78t_Lrokx78_Lgik_LI.vtmx2f775vd-Irgox78_Nomnhux78t_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d90618l3h8hjj904gjk2789lijl6j25ghx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f08x2fIrgox78_Nomnhux78t_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d90618l3h8hjj904gjk2789lijl6j25ghx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f08x2fIrgox78_Nomnhux78t_Lrokx78_Lgik_LI.vtmx2f35vd-Irgox78_Nomnhux78t_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d90618l3h8hjj904gjk2789lijl6j25ghx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1476,7 +1478,7 @@ export class Clair
 
 @Component({
   selector: 'Clive',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Clive:_Idealistic_Knight" title="Clive: Idealistic Knight"><img alt="Clive Idealistic Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh9x2fIrobk_Ojkgroyzoi_Qtomnz_Lgik_LI.vtmx2f775vd-Irobk_Ojkgroyzoi_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dk06ghk7j3ij9189l9kgj3453250i10i6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh9x2fIrobk_Ojkgroyzoi_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dk06ghk7j3ij9189l9kgj3453250i10i6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh9x2fIrobk_Ojkgroyzoi_Qtomnz_Lgik_LI.vtmx2f35vd-Irobk_Ojkgroyzoi_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dk06ghk7j3ij9189l9kgj3453250i10i6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1499,7 +1501,7 @@ export class Clive
 
 @Component({
   selector: 'Celica',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Celica:_Caring_Princess" title="Celica: Caring Princess"><img alt="Celica Caring Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1hx2fIkroig_Igx78otm_Vx78otikyy_Lgik_LI.vtmx2f775vd-Ikroig_Igx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d892iigk931013h333658ig80gli8kg60x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1hx2fIkroig_Igx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d892iigk931013h333658ig80gli8kg60x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1hx2fIkroig_Igx78otm_Vx78otikyy_Lgik_LI.vtmx2f35vd-Ikroig_Igx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d892iigk931013h333658ig80gli8kg60x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1521,7 +1523,7 @@ export class Celica
 
 @Component({
   selector: 'CelicaFallen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Celica:_Imprisoned_Soul" title="Celica: Imprisoned Soul"><img alt="Celica Imprisoned Soul Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fIkroig_Osvx78oyutkj_Yuar_Lgik_LI.vtmx2f775vd-Ikroig_Osvx78oyutkj_Yuar_Lgik_LI.vtmx3fbkx78youtx3d7440228ik23i31j62391370j879332i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh6x2fIkroig_Osvx78oyutkj_Yuar_Lgik_LI.vtmx3fbkx78youtx3d7440228ik23i31j62391370j879332i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fIkroig_Osvx78oyutkj_Yuar_Lgik_LI.vtmx2f35vd-Ikroig_Osvx78oyutkj_Yuar_Lgik_LI.vtmx3fbkx78youtx3d7440228ik23i31j62391370j879332i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1543,7 +1545,7 @@ export class CelicaFallen
 
 @Component({
   selector: 'CelicaBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Celica:_Warrior_Priestess" title="Celica: Warrior Priestess"><img alt="Celica Warrior Priestess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fIkroig_Cgx78x78oux78_Vx78okyzkyy_Lgik_LI.vtmx2f775vd-Ikroig_Cgx78x78oux78_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dh3k8hj21llli4308l9hj1ij43j49hj7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f82x2fIkroig_Cgx78x78oux78_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dh3k8hj21llli4308l9hj1ij43j49hj7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fIkroig_Cgx78x78oux78_Vx78okyzkyy_Lgik_LI.vtmx2f35vd-Ikroig_Cgx78x78oux78_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dh3k8hj21llli4308l9hj1ij43j49hj7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1565,7 +1567,7 @@ export class CelicaBrave
 
 @Component({
   selector: 'Mae',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mae:_Bundle_of_Energy" title="Mae: Bundle of Energy"><img alt="Mae Bundle of Energy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7kx2fSgk_Hatjrk_ul_Ktkx78me_Lgik_LI.vtmx2f775vd-Sgk_Hatjrk_ul_Ktkx78me_Lgik_LI.vtmx3fbkx78youtx3dji64i281308256h4jji070gk62j903k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7kx2fSgk_Hatjrk_ul_Ktkx78me_Lgik_LI.vtmx3fbkx78youtx3dji64i281308256h4jji070gk62j903k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7kx2fSgk_Hatjrk_ul_Ktkx78me_Lgik_LI.vtmx2f35vd-Sgk_Hatjrk_ul_Ktkx78me_Lgik_LI.vtmx3fbkx78youtx3dji64i281308256h4jji070gk62j903k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1587,7 +1589,7 @@ export class Mae
 
 @Component({
   selector: 'Boey',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Boey:_Skillful_Survivor" title="Boey: Skillful Survivor"><img alt="Boey Skillful Survivor Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1hx2fHuke_Yqorrlar_Yax78bobux78_Lgik_LI.vtmx2f775vd-Huke_Yqorrlar_Yax78bobux78_Lgik_LI.vtmx3fbkx78youtx3d419j3722h95g36690068281823k589j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1hx2fHuke_Yqorrlar_Yax78bobux78_Lgik_LI.vtmx3fbkx78youtx3d419j3722h95g36690068281823k589j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1hx2fHuke_Yqorrlar_Yax78bobux78_Lgik_LI.vtmx2f35vd-Huke_Yqorrlar_Yax78bobux78_Lgik_LI.vtmx3fbkx78youtx3d419j3722h95g36690068281823k589j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1609,7 +1611,7 @@ export class Boey
 
 @Component({
   selector: 'Genny',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Genny:_Endearing_Ally" title="Genny: Endearing Ally"><img alt="Genny Endearing Ally Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0gx2fMktte_Ktjkgx78otm_Grre_Lgik_LI.vtmx2f775vd-Mktte_Ktjkgx78otm_Grre_Lgik_LI.vtmx3fbkx78youtx3d027j2hgi261hg230j60969l999kl9h60x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0gx2fMktte_Ktjkgx78otm_Grre_Lgik_LI.vtmx3fbkx78youtx3d027j2hgi261hg230j60969l999kl9h60x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0gx2fMktte_Ktjkgx78otm_Grre_Lgik_LI.vtmx2f35vd-Mktte_Ktjkgx78otm_Grre_Lgik_LI.vtmx3fbkx78youtx3d027j2hgi261hg230j60969l999kl9h60x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1631,7 +1633,7 @@ export class Genny
 
 @Component({
   selector: 'Saber',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Saber:_Driven_Mercenary" title="Saber: Driven Mercenary"><img alt="Saber Driven Mercenary Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4jx2fYghkx78_Jx78obkt_Skx78iktgx78e_Lgik_LI.vtmx2f775vd-Yghkx78_Jx78obkt_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3di6j81032662g9l650jj64k45023hg867x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4jx2fYghkx78_Jx78obkt_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3di6j81032662g9l650jj64k45023hg867x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4jx2fYghkx78_Jx78obkt_Skx78iktgx78e_Lgik_LI.vtmx2f35vd-Yghkx78_Jx78obkt_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3di6j81032662g9l650jj64k45023hg867x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1653,7 +1655,7 @@ export class Saber
 
 @Component({
   selector: 'Leon',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Leon:_True_of_Heart" title="Leon: True of Heart"><img alt="Leon True of Heart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0gx2fRkut_Zx78ak_ul_Nkgx78z_Lgik_LI.vtmx2f775vd-Rkut_Zx78ak_ul_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dk3840k91k74h970ggl26j37852895850x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0gx2fRkut_Zx78ak_ul_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dk3840k91k74h970ggl26j37852895850x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0gx2fRkut_Zx78ak_ul_Nkgx78z_Lgik_LI.vtmx2f35vd-Rkut_Zx78ak_ul_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3dk3840k91k74h970ggl26j37852895850x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1675,7 +1677,7 @@ export class Leon
 
 @Component({
   selector: 'Mathilda',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mathilda:_Legendary_Knight" title="Mathilda: Legendary Knight"><img alt="Mathilda Legendary Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f37x2fSgznorjg_Rkmktjgx78e_Qtomnz_Lgik_LI.vtmx2f775vd-Sgznorjg_Rkmktjgx78e_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d333ji226ki3l1hgi9309i6h7klh0kk9kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f37x2fSgznorjg_Rkmktjgx78e_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d333ji226ki3l1hgi9309i6h7klh0kk9kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f37x2fSgznorjg_Rkmktjgx78e_Qtomnz_Lgik_LI.vtmx2f35vd-Sgznorjg_Rkmktjgx78e_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d333ji226ki3l1hgi9309i6h7klh0kk9kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1698,7 +1700,7 @@ export class Mathilda
 
 @Component({
   selector: 'Delthea',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Delthea:_Free_Spirit" title="Delthea: Free Spirit"><img alt="Delthea Free Spirit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f15x2fJkrznkg_Lx78kk_Yvox78oz_Lgik_LI.vtmx2f775vd-Jkrznkg_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dl2hihlg804jgij4253gh3gjk24il3g4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f15x2fJkrznkg_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dl2hihlg804jgij4253gh3gjk24il3g4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f15x2fJkrznkg_Lx78kk_Yvox78oz_Lgik_LI.vtmx2f35vd-Jkrznkg_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3dl2hihlg804jgij4253gh3gjk24il3g4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1720,7 +1722,7 @@ export class Delthea
 
 @Component({
   selector: 'Sonya',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sonya:_Vengeful_Mage" title="Sonya: Vengeful Mage"><img alt="Sonya Vengeful Mage Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fYuteg_Bktmklar_Sgmk_Lgik_LI.vtmx2f775vd-Yuteg_Bktmklar_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d67lg2i03kl9i2l828299354725k42633x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f16x2fYuteg_Bktmklar_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d67lg2i03kl9i2l828299354725k42633x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fYuteg_Bktmklar_Sgmk_Lgik_LI.vtmx2f35vd-Yuteg_Bktmklar_Sgmk_Lgik_LI.vtmx3fbkx78youtx3d67lg2i03kl9i2l828299354725k42633x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1742,7 +1744,7 @@ export class Sonya
 
 @Component({
   selector: 'Berkut',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Berkut:_Prideful_Prince" title="Berkut: Prideful Prince"><img alt="Berkut Prideful Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8jx2fHkx78qaz_Vx78ojklar_Vx78otik_Lgik_LI.vtmx2f775vd-Hkx78qaz_Vx78ojklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dj7060k6kh3j4ijg5410i9i380678k7h3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8jx2fHkx78qaz_Vx78ojklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dj7060k6kh3j4ijg5410i9i380678k7h3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8jx2fHkx78qaz_Vx78ojklar_Vx78otik_Lgik_LI.vtmx2f35vd-Hkx78qaz_Vx78ojklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dj7060k6kh3j4ijg5410i9i380678k7h3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1764,7 +1766,7 @@ export class Berkut
 
 @Component({
   selector: 'Duma',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Duma:_God_of_Strength" title="Duma: God of Strength"><img alt="Duma God of Strength Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi9x2fJasg_Muj_ul_Yzx78ktmzn_Lgik_LI.vtmx2f775vd-Jasg_Muj_ul_Yzx78ktmzn_Lgik_LI.vtmx3fbkx78youtx3dhi5h9i404361k2k99i0739ilil4078h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi9x2fJasg_Muj_ul_Yzx78ktmzn_Lgik_LI.vtmx3fbkx78youtx3dhi5h9i404361k2k99i0739ilil4078h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi9x2fJasg_Muj_ul_Yzx78ktmzn_Lgik_LI.vtmx2f35vd-Jasg_Muj_ul_Yzx78ktmzn_Lgik_LI.vtmx3fbkx78youtx3dhi5h9i404361k2k99i0739ilil4078h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1786,7 +1788,7 @@ export class Duma
 
 @Component({
   selector: 'Sigurd',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sigurd:_Holy_Knight" title="Sigurd: Holy Knight"><img alt="Sigurd Holy Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2gx2fYomax78j_Nure_Qtomnz_Lgik_LI.vtmx2f775vd-Yomax78j_Nure_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3l6hj0g95k07403lg13j1lkk3k868168x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2gx2fYomax78j_Nure_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3l6hj0g95k07403lg13j1lkk3k868168x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2gx2fYomax78j_Nure_Qtomnz_Lgik_LI.vtmx2f35vd-Yomax78j_Nure_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3l6hj0g95k07403lg13j1lkk3k868168x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1808,7 +1810,7 @@ export class Sigurd
 
 @Component({
   selector: 'Arden',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Arden:_Strong_and_Tough" title="Arden: Strong and Tough"><img alt="Arden Strong and Tough Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk3x2fGx78jkt_Yzx78utm_gtj_Zuamn_Lgik_LI.vtmx2f775vd-Gx78jkt_Yzx78utm_gtj_Zuamn_Lgik_LI.vtmx3fbkx78youtx3d96l3727ggj9ik3ll71j313902090j86ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk3x2fGx78jkt_Yzx78utm_gtj_Zuamn_Lgik_LI.vtmx3fbkx78youtx3d96l3727ggj9ik3ll71j313902090j86ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk3x2fGx78jkt_Yzx78utm_gtj_Zuamn_Lgik_LI.vtmx2f35vd-Gx78jkt_Yzx78utm_gtj_Zuamn_Lgik_LI.vtmx3fbkx78youtx3d96l3727ggj9ik3ll71j313902090j86ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1830,7 +1832,7 @@ export class Arden
 
 @Component({
   selector: 'Arvis',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Arvis:_Emperor_of_Flame" title="Arvis: Emperor of Flame"><img alt="Arvis Emperor of Flame Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7ix2fGx78boy_Ksvkx78ux78_ul_Lrgsk_Lgik_LI.vtmx2f775vd-Gx78boy_Ksvkx78ux78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d26j2ki5l66794g74i62062g1i213ljiix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7ix2fGx78boy_Ksvkx78ux78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d26j2ki5l66794g74i62062g1i213ljiix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7ix2fGx78boy_Ksvkx78ux78_ul_Lrgsk_Lgik_LI.vtmx2f35vd-Gx78boy_Ksvkx78ux78_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3d26j2ki5l66794g74i62062g1i213ljiix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1852,7 +1854,7 @@ export class Arvis
 
 @Component({
   selector: 'Tailtiu',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tailtiu:_Thunder_Noble" title="Tailtiu: Thunder Noble"><img alt="Tailtiu Thunder Noble Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3gx2fZgorzoa_Znatjkx78_Tuhrk_Lgik_LI.vtmx2f775vd-Zgorzoa_Znatjkx78_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d2jhi2i73g530772jhjl08g42674516jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3gx2fZgorzoa_Znatjkx78_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d2jhi2i73g530772jhjl08g42674516jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3gx2fZgorzoa_Znatjkx78_Tuhrk_Lgik_LI.vtmx2f35vd-Zgorzoa_Znatjkx78_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d2jhi2i73g530772jhjl08g42674516jlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1874,7 +1876,7 @@ export class Tailtiu
 
 @Component({
   selector: 'Quan',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Quan:_Luminous_Lancer" title="Quan: Luminous Lancer"><img alt="Quan Luminous Lancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl5x2fWagt_Rasotuay_Rgtikx78_Lgik_LI.vtmx2f775vd-Wagt_Rasotuay_Rgtikx78_Lgik_LI.vtmx3fbkx78youtx3d0i44klh628j9863k47kj403l1il464lhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl5x2fWagt_Rasotuay_Rgtikx78_Lgik_LI.vtmx3fbkx78youtx3d0i44klh628j9863k47kj403l1il464lhx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl5x2fWagt_Rasotuay_Rgtikx78_Lgik_LI.vtmx2f35vd-Wagt_Rasotuay_Rgtikx78_Lgik_LI.vtmx3fbkx78youtx3d0i44klh628j9863k47kj403l1il464lhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1896,7 +1898,7 @@ export class Quan
 
 @Component({
   selector: 'Ethlyn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ethlyn:_Spirited_Princess" title="Ethlyn: Spirited Princess"><img alt="Ethlyn Spirited Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fKznret_Yvox78ozkj_Vx78otikyy_Lgik_LI.vtmx2f775vd-Kznret_Yvox78ozkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d8345i1117i34h82g8ii64j73g8i1436ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fggx2fKznret_Yvox78ozkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d8345i1117i34h82g8ii64j73g8i1436ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fKznret_Yvox78ozkj_Vx78otikyy_Lgik_LI.vtmx2f35vd-Kznret_Yvox78ozkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d8345i1117i34h82g8ii64j73g8i1436ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1918,7 +1920,7 @@ export class Ethlyn
 
 @Component({
   selector: 'Ayra',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ayra:_Astra%27s_Wielder" title="Ayra: Astra's Wielder"><img alt="Ayra Astras Wielder Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fGex78g_Gyzx78gy_Cokrjkx78_Lgik_LI.vtmx2f775vd-Gex78g_Gyzx78gy_Cokrjkx78_Lgik_LI.vtmx3fbkx78youtx3d30g24j7872igh2i561i750i32k8g551kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9gx2fGex78g_Gyzx78gy_Cokrjkx78_Lgik_LI.vtmx3fbkx78youtx3d30g24j7872igh2i561i750i32k8g551kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fGex78g_Gyzx78gy_Cokrjkx78_Lgik_LI.vtmx2f35vd-Gex78g_Gyzx78gy_Cokrjkx78_Lgik_LI.vtmx3fbkx78youtx3d30g24j7872igh2i561i750i32k8g551kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1940,7 +1942,7 @@ export class Ayra
 
 @Component({
   selector: 'Jamke',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jamke:_Prince_of_Verdane" title="Jamke: Prince of Verdane"><img alt="Jamke Prince of Verdane Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7ix2fPgsqk_Vx78otik_ul_Bkx78jgtk_Lgik_LI.vtmx2f775vd-Pgsqk_Vx78otik_ul_Bkx78jgtk_Lgik_LI.vtmx3fbkx78youtx3dg630i021lg35470jh93hh740hl41h7l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7ix2fPgsqk_Vx78otik_ul_Bkx78jgtk_Lgik_LI.vtmx3fbkx78youtx3dg630i021lg35470jh93hh740hl41h7l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7ix2fPgsqk_Vx78otik_ul_Bkx78jgtk_Lgik_LI.vtmx2f35vd-Pgsqk_Vx78otik_ul_Bkx78jgtk_Lgik_LI.vtmx3fbkx78youtx3dg630i021lg35470jh93hh740hl41h7l1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1962,7 +1964,7 @@ export class Jamke
 
 @Component({
   selector: 'Lewyn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lewyn:_Guiding_Breeze" title="Lewyn: Guiding Breeze"><img alt="Lewyn Guiding Breeze Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl2x2fRkcet_Maojotm_Hx78kkfk_Lgik_LI.vtmx2f775vd-Rkcet_Maojotm_Hx78kkfk_Lgik_LI.vtmx3fbkx78youtx3di974091h9326l29i180908829j7kj19gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl2x2fRkcet_Maojotm_Hx78kkfk_Lgik_LI.vtmx3fbkx78youtx3di974091h9326l29i180908829j7kj19gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl2x2fRkcet_Maojotm_Hx78kkfk_Lgik_LI.vtmx2f35vd-Rkcet_Maojotm_Hx78kkfk_Lgik_LI.vtmx3fbkx78youtx3di974091h9326l29i180908829j7kj19gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -1984,7 +1986,7 @@ export class Lewyn
 
 @Component({
   selector: 'Eldigan',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eldigan:_Lionheart" title="Eldigan: Lionheart"><img alt="Eldigan Lionheart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fKrjomgt_Routnkgx78z_Lgik_LI.vtmx2f775vd-Krjomgt_Routnkgx78z_Lgik_LI.vtmx3fbkx78youtx3d934h5963l25h8j78888k57458hj7i508x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg1x2fKrjomgt_Routnkgx78z_Lgik_LI.vtmx3fbkx78youtx3d934h5963l25h8j78888k57458hj7i508x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fKrjomgt_Routnkgx78z_Lgik_LI.vtmx2f35vd-Krjomgt_Routnkgx78z_Lgik_LI.vtmx3fbkx78youtx3d934h5963l25h8j78888k57458hj7i508x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2006,7 +2008,7 @@ export class Eldigan
 
 @Component({
   selector: 'Lachesis',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lachesis:_Lionheart%27s_Sister" title="Lachesis: Lionheart's Sister"><img alt="Lachesis Lionhearts Sister Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4lx2fRginkyoy_Routnkgx78zy_Yoyzkx78_Lgik_LI.vtmx2f775vd-Rginkyoy_Routnkgx78zy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3dj9jj7l076j9hih1609kgggii2j30i2h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4lx2fRginkyoy_Routnkgx78zy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3dj9jj7l076j9hih1609kgggii2j30i2h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4lx2fRginkyoy_Routnkgx78zy_Yoyzkx78_Lgik_LI.vtmx2f35vd-Rginkyoy_Routnkgx78zy_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3dj9jj7l076j9hih1609kgggii2j30i2h7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2028,7 +2030,7 @@ export class Lachesis
 
 @Component({
   selector: 'Deirdre',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Deirdre:_Lady_of_the_Forest" title="Deirdre: Lady of the Forest"><img alt="Deirdre Lady of the Forest Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2hx2fJkox78jx78k_Rgje_ul_znk_Lux78kyz_Lgik_LI.vtmx2f775vd-Jkox78jx78k_Rgje_ul_znk_Lux78kyz_Lgik_LI.vtmx3fbkx78youtx3d9j0527j4l56khgi5gjj78l8ji92004h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2hx2fJkox78jx78k_Rgje_ul_znk_Lux78kyz_Lgik_LI.vtmx3fbkx78youtx3d9j0527j4l56khgi5gjj78l8ji92004h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2hx2fJkox78jx78k_Rgje_ul_znk_Lux78kyz_Lgik_LI.vtmx2f35vd-Jkox78jx78k_Rgje_ul_znk_Lux78kyz_Lgik_LI.vtmx3fbkx78youtx3d9j0527j4l56khgi5gjj78l8ji92004h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2050,7 +2052,7 @@ export class Deirdre
 
 @Component({
   selector: 'Silvia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Silvia:_Traveling_Dancer" title="Silvia: Traveling Dancer"><img alt="Silvia Traveling Dancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fYorbog_Zx78gbkrotm_Jgtikx78_Lgik_LI.vtmx2f775vd-Yorbog_Zx78gbkrotm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d09j532i9h14ik238457kki0g9jgl49i7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg0x2fYorbog_Zx78gbkrotm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d09j532i9h14ik238457kki0g9jgl49i7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fYorbog_Zx78gbkrotm_Jgtikx78_Lgik_LI.vtmx2f35vd-Yorbog_Zx78gbkrotm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d09j532i9h14ik238457kki0g9jgl49i7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2073,7 +2075,7 @@ export class Silvia
 
 @Component({
   selector: 'Seliph',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Seliph:_Heir_of_Light" title="Seliph: Heir of Light"><img alt="Seliph Heir of Light Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk1x2fYkrovn_Nkox78_ul_Romnz_Lgik_LI.vtmx2f775vd-Ykrovn_Nkox78_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3d09745kig2lgi819k0lk70783l6768hkgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk1x2fYkrovn_Nkox78_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3d09745kig2lgi819k0lk70783l6768hkgx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk1x2fYkrovn_Nkox78_ul_Romnz_Lgik_LI.vtmx2f35vd-Ykrovn_Nkox78_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3d09745kig2lgi819k0lk70783l6768hkgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2095,7 +2097,7 @@ export class Seliph
 
 @Component({
   selector: 'Julia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Julia:_Naga%27s_Blood" title="Julia: Naga's Blood"><img alt="Julia Nagas Blood Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg9x2fParog_Tgmgy_Hruuj_Lgik_LI.vtmx2f775vd-Parog_Tgmgy_Hruuj_Lgik_LI.vtmx3fbkx78youtx3d48ji4gg4h3l77jji34k091lk8693l845x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg9x2fParog_Tgmgy_Hruuj_Lgik_LI.vtmx3fbkx78youtx3d48ji4gg4h3l77jji34k091lk8693l845x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg9x2fParog_Tgmgy_Hruuj_Lgik_LI.vtmx2f35vd-Parog_Tgmgy_Hruuj_Lgik_LI.vtmx3fbkx78youtx3d48ji4gg4h3l77jji34k091lk8693l845x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2117,7 +2119,7 @@ export class Julia
 
 @Component({
   selector: 'Ares',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ares:_Black_Knight" title="Ares: Black Knight"><img alt="Ares Black Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fGx78ky_Hrgiq_Qtomnz_Lgik_LI.vtmx2f775vd-Gx78ky_Hrgiq_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d517h8929l24h10jjlj70722h3k09386jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f65x2fGx78ky_Hrgiq_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d517h8929l24h10jjlj70722h3k09386jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fGx78ky_Hrgiq_Qtomnz_Lgik_LI.vtmx2f35vd-Gx78ky_Hrgiq_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d517h8929l24h10jjlj70722h3k09386jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2139,7 +2141,7 @@ export class Ares
 
 @Component({
   selector: 'Lene',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lene:_Yearning_Dancer" title="Lene: Yearning Dancer"><img alt="Lene Yearning Dancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fRktk_Ekgx78totm_Jgtikx78_Lgik_LI.vtmx2f775vd-Rktk_Ekgx78totm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d19k299632k2g2938h02hii1i88g46816x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f84x2fRktk_Ekgx78totm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d19k299632k2g2938h02hii1i88g46816x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fRktk_Ekgx78totm_Jgtikx78_Lgik_LI.vtmx2f35vd-Rktk_Ekgx78totm_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d19k299632k2g2938h02hii1i88g46816x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2161,7 +2163,7 @@ export class Lene
 
 @Component({
   selector: 'Julius',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Julius:_Scion_of_Darkness" title="Julius: Scion of Darkness"><img alt="Julius Scion of Darkness Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg3x2fParoay_Yiout_ul_Jgx78qtkyy_Lgik_LI.vtmx2f775vd-Paroay_Yiout_ul_Jgx78qtkyy_Lgik_LI.vtmx3fbkx78youtx3d1k861ji26519501247l58hj259950ggkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg3x2fParoay_Yiout_ul_Jgx78qtkyy_Lgik_LI.vtmx3fbkx78youtx3d1k861ji26519501247l58hj259950ggkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg3x2fParoay_Yiout_ul_Jgx78qtkyy_Lgik_LI.vtmx2f35vd-Paroay_Yiout_ul_Jgx78qtkyy_Lgik_LI.vtmx3fbkx78youtx3d1k861ji26519501247l58hj259950ggkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2183,7 +2185,7 @@ export class Julius
 
 @Component({
   selector: 'Ishtar',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ishtar:_Thunder_Goddess" title="Ishtar: Thunder Goddess"><img alt="Ishtar Thunder Goddess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6lx2fOynzgx78_Znatjkx78_Mujjkyy_Lgik_LI.vtmx2f775vd-Oynzgx78_Znatjkx78_Mujjkyy_Lgik_LI.vtmx3fbkx78youtx3d6i84ikg3159gjih70kk1k8k22jli9696x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6lx2fOynzgx78_Znatjkx78_Mujjkyy_Lgik_LI.vtmx3fbkx78youtx3d6i84ikg3159gjih70kk1k8k22jli9696x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6lx2fOynzgx78_Znatjkx78_Mujjkyy_Lgik_LI.vtmx2f35vd-Oynzgx78_Znatjkx78_Mujjkyy_Lgik_LI.vtmx3fbkx78youtx3d6i84ikg3159gjih70kk1k8k22jli9696x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2205,7 +2207,7 @@ export class Ishtar
 
 @Component({
   selector: 'Leif',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Leif:_Prince_of_Leonster" title="Leif: Prince of Leonster"><img alt="Leif Prince of Leonster Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fRkol_Vx78otik_ul_Rkutyzkx78_Lgik_LI.vtmx2f775vd-Rkol_Vx78otik_ul_Rkutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d1l67440g9k9i0k2h775269h2gi5l518jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg6x2fRkol_Vx78otik_ul_Rkutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d1l67440g9k9i0k2h775269h2gi5l518jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fRkol_Vx78otik_ul_Rkutyzkx78_Lgik_LI.vtmx2f35vd-Rkol_Vx78otik_ul_Rkutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d1l67440g9k9i0k2h775269h2gi5l518jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2227,7 +2229,7 @@ export class Leif
 
 @Component({
   selector: 'Finn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Finn:_Lance_of_Legend" title="Finn: Lance of Legend"><img alt="Finn Lance of Legend Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f44x2fLott_Rgtik_ul_Rkmktj_Lgik_LI.vtmx2f775vd-Lott_Rgtik_ul_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d52h58l55276009508kh5i04j8l8h3h34x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f44x2fLott_Rgtik_ul_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d52h58l55276009508kh5i04j8l8h3h34x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f44x2fLott_Rgtik_ul_Rkmktj_Lgik_LI.vtmx2f35vd-Lott_Rgtik_ul_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d52h58l55276009508kh5i04j8l8h3h34x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2249,7 +2251,7 @@ export class Finn
 
 @Component({
   selector: 'Nanna',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nanna:_Nordion_Princess" title="Nanna: Nordion Princess"><img alt="Nanna Nordion Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fTgttg_Tux78jout_Vx78otikyy_Lgik_LI.vtmx2f775vd-Tgttg_Tux78jout_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dik7kik38hlki7gighi443753657ih7gix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f65x2fTgttg_Tux78jout_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dik7kik38hlki7gighi443753657ih7gix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fTgttg_Tux78jout_Vx78otikyy_Lgik_LI.vtmx2f35vd-Tgttg_Tux78jout_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dik7kik38hlki7gighi443753657ih7gix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2271,7 +2273,7 @@ export class Nanna
 
 @Component({
   selector: 'Reinhardt',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Reinhardt:_Thunder%27s_Fist" title="Reinhardt: Thunder's Fist"><img alt="Reinhardt Thunders Fist Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9lx2fXkotngx78jz_Znatjkx78y_Loyz_Lgik_LI.vtmx2f775vd-Xkotngx78jz_Znatjkx78y_Loyz_Lgik_LI.vtmx3fbkx78youtx3di51142lj6i024lgk68312l024949g358x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9lx2fXkotngx78jz_Znatjkx78y_Loyz_Lgik_LI.vtmx3fbkx78youtx3di51142lj6i024lgk68312l024949g358x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9lx2fXkotngx78jz_Znatjkx78y_Loyz_Lgik_LI.vtmx2f35vd-Xkotngx78jz_Znatjkx78y_Loyz_Lgik_LI.vtmx3fbkx78youtx3di51142lj6i024lgk68312l024949g358x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2293,7 +2295,7 @@ export class Reinhardt
 
 @Component({
   selector: 'ReinhardtWorldofThracia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Reinhardt:_Thunder%27s_Sword" title="Reinhardt: Thunder's Sword"><img alt="Reinhardt Thunders Sword Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl9x2fXkotngx78jz_Znatjkx78y_Ycux78j_Lgik_LI.vtmx2f775vd-Xkotngx78jz_Znatjkx78y_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d34g8723li68999ggi39hl72g90hkg35kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl9x2fXkotngx78jz_Znatjkx78y_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d34g8723li68999ggi39hl72g90hkg35kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl9x2fXkotngx78jz_Znatjkx78y_Ycux78j_Lgik_LI.vtmx2f35vd-Xkotngx78jz_Znatjkx78y_Ycux78j_Lgik_LI.vtmx3fbkx78youtx3d34g8723li68999ggi39hl72g90hkg35kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2315,7 +2317,7 @@ export class ReinhardtWorldofThracia
 
 @Component({
   selector: 'Olwen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Olwen:_Blue_Mage_Knight" title="Olwen: Blue Mage Knight"><img alt="Olwen Blue Mage Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f53x2fUrckt_Hrak_Sgmk_Qtomnz_Lgik_LI.vtmx2f775vd-Urckt_Hrak_Sgmk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3djig03igik7362l509679lj3089159l05x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f53x2fUrckt_Hrak_Sgmk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3djig03igik7362l509679lj3089159l05x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f53x2fUrckt_Hrak_Sgmk_Qtomnz_Lgik_LI.vtmx2f35vd-Urckt_Hrak_Sgmk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3djig03igik7362l509679lj3089159l05x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2337,7 +2339,7 @@ export class Olwen
 
 @Component({
   selector: 'OlwenWorldofThracia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Olwen:_Righteous_Knight" title="Olwen: Righteous Knight"><img alt="Olwen Righteous Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3kx2fUrckt_Xomnzkuay_Qtomnz_Lgik_LI.vtmx2f775vd-Urckt_Xomnzkuay_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d30014120h60lk837h6j941i4l8961lg0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3kx2fUrckt_Xomnzkuay_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d30014120h60lk837h6j941i4l8961lg0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3kx2fUrckt_Xomnzkuay_Qtomnz_Lgik_LI.vtmx2f35vd-Urckt_Xomnzkuay_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d30014120h60lk837h6j941i4l8961lg0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2359,7 +2361,7 @@ export class OlwenWorldofThracia
 
 @Component({
   selector: 'Saias',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Saias:_Bishop_of_Flame" title="Saias: Bishop of Flame"><img alt="Saias Bishop of Flame Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f79x2fYgogy_Hoynuv_ul_Lrgsk_Lgik_LI.vtmx2f775vd-Ygogy_Hoynuv_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3dhigjl3172j30j3k1242491631k045j4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f79x2fYgogy_Hoynuv_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3dhigjl3172j30j3k1242491631k045j4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f79x2fYgogy_Hoynuv_ul_Lrgsk_Lgik_LI.vtmx2f35vd-Ygogy_Hoynuv_ul_Lrgsk_Lgik_LI.vtmx3fbkx78youtx3dhigjl3172j30j3k1242491631k045j4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2381,7 +2383,7 @@ export class Saias
 
 @Component({
   selector: 'Roy',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Roy:_Young_Lion" title="Roy: Young Lion"><img alt="Roy Young Lion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgix2fXue_Euatm_Rout_Lgik_LI.vtmx2f775vd-Xue_Euatm_Rout_Lgik_LI.vtmx3fbkx78youtx3d8744405h15l763k3l1041l4i605jjkh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fgix2fXue_Euatm_Rout_Lgik_LI.vtmx3fbkx78youtx3d8744405h15l763k3l1041l4i605jjkh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgix2fXue_Euatm_Rout_Lgik_LI.vtmx2f35vd-Xue_Euatm_Rout_Lgik_LI.vtmx3fbkx78youtx3d8744405h15l763k3l1041l4i605jjkh8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2403,7 +2405,7 @@ export class Roy
 
 @Component({
   selector: 'RoyBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Roy:_Brave_Lion" title="Roy: Brave Lion"><img alt="Roy Brave Lion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjhx2fXue_Hx78gbk_Rout_Lgik_LI.vtmx2f775vd-Xue_Hx78gbk_Rout_Lgik_LI.vtmx3fbkx78youtx3d064lg6hg216j146lkl9l284gh7g58h9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjhx2fXue_Hx78gbk_Rout_Lgik_LI.vtmx3fbkx78youtx3d064lg6hg216j146lkl9l284gh7g58h9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjhx2fXue_Hx78gbk_Rout_Lgik_LI.vtmx2f35vd-Xue_Hx78gbk_Rout_Lgik_LI.vtmx3fbkx78youtx3d064lg6hg216j146lkl9l284gh7g58h9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2425,7 +2427,7 @@ export class RoyBrave
 
 @Component({
   selector: 'RoyValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Roy:_Youthful_Gifts" title="Roy: Youthful Gifts"><img alt="Roy Youthful Gifts Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fXue_Euaznlar_Molzy_Lgik_LI.vtmx2f775vd-Xue_Euaznlar_Molzy_Lgik_LI.vtmx3fbkx78youtx3dkgj992l459416l4lll6994216176k2ggx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj4x2fXue_Euaznlar_Molzy_Lgik_LI.vtmx3fbkx78youtx3dkgj992l459416l4lll6994216176k2ggx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fXue_Euaznlar_Molzy_Lgik_LI.vtmx2f35vd-Xue_Euaznlar_Molzy_Lgik_LI.vtmx3fbkx78youtx3dkgj992l459416l4lll6994216176k2ggx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2447,7 +2449,7 @@ export class RoyValentines
 
 @Component({
   selector: 'RoyLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Roy:_Blazing_Lion" title="Roy: Blazing Lion"><img alt="Roy Blazing Lion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9hx2fXue_Hrgfotm_Rout_Lgik_LI.vtmx2f775vd-Xue_Hrgfotm_Rout_Lgik_LI.vtmx3fbkx78youtx3d94l96h32039i5gk4515490ikj22klihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9hx2fXue_Hrgfotm_Rout_Lgik_LI.vtmx3fbkx78youtx3d94l96h32039i5gk4515490ikj22klihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9hx2fXue_Hrgfotm_Rout_Lgik_LI.vtmx2f35vd-Xue_Hrgfotm_Rout_Lgik_LI.vtmx3fbkx78youtx3d94l96h32039i5gk4515490ikj22klihkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2469,7 +2471,7 @@ export class RoyLegendary
 
 @Component({
   selector: 'Lilina',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lilina:_Delightful_Noble" title="Lilina: Delightful Noble"><img alt="Lilina Delightful Noble Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5lx2fRorotg_Jkromnzlar_Tuhrk_Lgik_LI.vtmx2f775vd-Rorotg_Jkromnzlar_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d3i85kihk1kl10h190ih70j785k0865klx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f5lx2fRorotg_Jkromnzlar_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d3i85kihk1kl10h190ih70j785k0865klx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5lx2fRorotg_Jkromnzlar_Tuhrk_Lgik_LI.vtmx2f35vd-Rorotg_Jkromnzlar_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3d3i85kihk1kl10h190ih70j785k0865klx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2491,7 +2493,7 @@ export class Lilina
 
 @Component({
   selector: 'LilinaValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lilina:_Blush_of_Youth" title="Lilina: Blush of Youth"><img alt="Lilina Blush of Youth Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fRorotg_Hrayn_ul_Euazn_Lgik_LI.vtmx2f775vd-Rorotg_Hrayn_ul_Euazn_Lgik_LI.vtmx3fbkx78youtx3dil7gl98hjig2671456j670832i4j2314x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4gx2fRorotg_Hrayn_ul_Euazn_Lgik_LI.vtmx3fbkx78youtx3dil7gl98hjig2671456j670832i4j2314x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fRorotg_Hrayn_ul_Euazn_Lgik_LI.vtmx2f35vd-Rorotg_Hrayn_ul_Euazn_Lgik_LI.vtmx3fbkx78youtx3dil7gl98hjig2671456j670832i4j2314x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2513,7 +2515,7 @@ export class LilinaValentines
 
 @Component({
   selector: 'Gwendolyn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gwendolyn:_Adorable_Knight" title="Gwendolyn: Adorable Knight"><img alt="Gwendolyn Adorable Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fMcktjuret_Gjux78ghrk_Qtomnz_Lgik_LI.vtmx2f775vd-Mcktjuret_Gjux78ghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d2749i5l34h87j3k1i92998hl0524g6l3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4ix2fMcktjuret_Gjux78ghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d2749i5l34h87j3k1i92998hl0524g6l3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fMcktjuret_Gjux78ghrk_Qtomnz_Lgik_LI.vtmx2f35vd-Mcktjuret_Gjux78ghrk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d2749i5l34h87j3k1i92998hl0524g6l3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2535,7 +2537,7 @@ export class Gwendolyn
 
 @Component({
   selector: 'Lugh',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lugh:_Anima_Child" title="Lugh: Anima Child"><img alt="Lugh Anima Child Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8hx2fRamn_Gtosg_Inorj_Lgik_LI.vtmx2f775vd-Ramn_Gtosg_Inorj_Lgik_LI.vtmx3fbkx78youtx3d4i47hlj41g5476ki5gh38233516641g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8hx2fRamn_Gtosg_Inorj_Lgik_LI.vtmx3fbkx78youtx3d4i47hlj41g5476ki5gh38233516641g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8hx2fRamn_Gtosg_Inorj_Lgik_LI.vtmx2f35vd-Ramn_Gtosg_Inorj_Lgik_LI.vtmx3fbkx78youtx3d4i47hlj41g5476ki5gh38233516641g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2557,7 +2559,7 @@ export class Lugh
 
 @Component({
   selector: 'Raigh',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Raigh:_Dark_Child" title="Raigh: Dark Child"><img alt="Raigh Dark Child Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2lx2fXgomn_Jgx78q_Inorj_Lgik_LI.vtmx2f775vd-Xgomn_Jgx78q_Inorj_Lgik_LI.vtmx3fbkx78youtx3dgi81088l27363hlh89hjj077727l41llx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2lx2fXgomn_Jgx78q_Inorj_Lgik_LI.vtmx3fbkx78youtx3dgi81088l27363hlh89hjj077727l41llx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2lx2fXgomn_Jgx78q_Inorj_Lgik_LI.vtmx2f35vd-Xgomn_Jgx78q_Inorj_Lgik_LI.vtmx3fbkx78youtx3dgi81088l27363hlh89hjj077727l41llx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2579,7 +2581,7 @@ export class Raigh
 
 @Component({
   selector: 'Cecilia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cecilia:_Etrurian_General" title="Cecilia: Etrurian General"><img alt="Cecilia Etrurian General Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f44x2fIkiorog_Kzx78ax78ogt_Mktkx78gr_Lgik_LI.vtmx2f775vd-Ikiorog_Kzx78ax78ogt_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d908i66782606k5j734jh7h62055107l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f44x2fIkiorog_Kzx78ax78ogt_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d908i66782606k5j734jh7h62055107l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f44x2fIkiorog_Kzx78ax78ogt_Mktkx78gr_Lgik_LI.vtmx2f35vd-Ikiorog_Kzx78ax78ogt_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d908i66782606k5j734jh7h62055107l9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2601,7 +2603,7 @@ export class Cecilia
 
 @Component({
   selector: 'CeciliaWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cecilia:_Festive_Instructor" title="Cecilia: Festive Instructor"><img alt="Cecilia Festive Instructor Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fIkiorog_Lkyzobk_Otyzx78aizux78_Lgik_LI.vtmx2f775vd-Ikiorog_Lkyzobk_Otyzx78aizux78_Lgik_LI.vtmx3fbkx78youtx3dk889503gi233g9l8i1h3242gi5j79lhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f23x2fIkiorog_Lkyzobk_Otyzx78aizux78_Lgik_LI.vtmx3fbkx78youtx3dk889503gi233g9l8i1h3242gi5j79lhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fIkiorog_Lkyzobk_Otyzx78aizux78_Lgik_LI.vtmx2f35vd-Ikiorog_Lkyzobk_Otyzx78aizux78_Lgik_LI.vtmx3fbkx78youtx3dk889503gi233g9l8i1h3242gi5j79lhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2623,7 +2625,7 @@ export class CeciliaWinter
 
 @Component({
   selector: 'Klein',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Klein:_Silver_Nobleman" title="Klein: Silver Nobleman"><img alt="Klein Silver Nobleman Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk2x2fQrkot_Yorbkx78_Tuhrksgt_Lgik_LI.vtmx2f775vd-Qrkot_Yorbkx78_Tuhrksgt_Lgik_LI.vtmx3fbkx78youtx3d78hg86h5j8846k7jk6j1ji2kgg344504x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk2x2fQrkot_Yorbkx78_Tuhrksgt_Lgik_LI.vtmx3fbkx78youtx3d78hg86h5j8846k7jk6j1ji2kgg344504x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk2x2fQrkot_Yorbkx78_Tuhrksgt_Lgik_LI.vtmx2f35vd-Qrkot_Yorbkx78_Tuhrksgt_Lgik_LI.vtmx3fbkx78youtx3d78hg86h5j8846k7jk6j1ji2kgg344504x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2645,7 +2647,7 @@ export class Klein
 
 @Component({
   selector: 'Clarine',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Clarine:_Refined_Noble" title="Clarine: Refined Noble"><img alt="Clarine Refined Noble Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fIrgx78otk_Xklotkj_Tuhrk_Lgik_LI.vtmx2f775vd-Irgx78otk_Xklotkj_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3diijj3i26ihi6gj7jhj9ih466h10996g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi8x2fIrgx78otk_Xklotkj_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3diijj3i26ihi6gj7jhj9ih466h10996g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fIrgx78otk_Xklotkj_Tuhrk_Lgik_LI.vtmx2f35vd-Irgx78otk_Xklotkj_Tuhrk_Lgik_LI.vtmx3fbkx78youtx3diijj3i26ihi6gj7jhj9ih466h10996g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2667,7 +2669,7 @@ export class Clarine
 
 @Component({
   selector: 'Zephiel',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Zephiel:_The_Liberator" title="Zephiel: The Liberator"><img alt="Zephiel The Liberator Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f49x2fFkvnokr_Znk_Rohkx78gzux78_Lgik_LI.vtmx2f775vd-Fkvnokr_Znk_Rohkx78gzux78_Lgik_LI.vtmx3fbkx78youtx3d1gg155hgi1h0k586gi7956885j1889jgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f49x2fFkvnokr_Znk_Rohkx78gzux78_Lgik_LI.vtmx3fbkx78youtx3d1gg155hgi1h0k586gi7956885j1889jgx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f49x2fFkvnokr_Znk_Rohkx78gzux78_Lgik_LI.vtmx2f35vd-Fkvnokr_Znk_Rohkx78gzux78_Lgik_LI.vtmx3fbkx78youtx3d1gg155hgi1h0k586gi7956885j1889jgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2689,7 +2691,7 @@ export class Zephiel
 
 @Component({
   selector: 'Narcian',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Narcian:_Wyvern_General" title="Narcian: Wyvern General"><img alt="Narcian Wyvern General Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fTgx78iogt_Cebkx78t_Mktkx78gr_Lgik_LI.vtmx2f775vd-Tgx78iogt_Cebkx78t_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3dg198il43442ljl855hkh40l436i7l4l5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl0x2fTgx78iogt_Cebkx78t_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3dg198il43442ljl855hkh40l436i7l4l5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fTgx78iogt_Cebkx78t_Mktkx78gr_Lgik_LI.vtmx2f35vd-Tgx78iogt_Cebkx78t_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3dg198il43442ljl855hkh40l436i7l4l5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2711,7 +2713,7 @@ export class Narcian
 
 @Component({
   selector: 'Thea',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Thea:_Stormy_Flier" title="Thea: Stormy Flier"><img alt="Thea Stormy Flier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fZnkg_Yzux78se_Lrokx78_Lgik_LI.vtmx2f775vd-Znkg_Yzux78se_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3dj7kk122h2ihjg2kg2jg9klllg50k05k2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fZnkg_Yzux78se_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3dj7kk122h2ihjg2kg2jg9klllg50k05k2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fZnkg_Yzux78se_Lrokx78_Lgik_LI.vtmx2f35vd-Znkg_Yzux78se_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3dj7kk122h2ihjg2kg2jg9klllg50k05k2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2733,7 +2735,7 @@ export class Thea
 
 @Component({
   selector: 'Shanna',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Shanna:_Sprightly_Flier" title="Shanna: Sprightly Flier"><img alt="Shanna Sprightly Flier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fYngttg_Yvx78omnzre_Lrokx78_Lgik_LI.vtmx2f775vd-Yngttg_Yvx78omnzre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d43l94h93l39l92139gi7g687l53j7845x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi6x2fYngttg_Yvx78omnzre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d43l94h93l39l92139gi7g687l53j7845x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fYngttg_Yvx78omnzre_Lrokx78_Lgik_LI.vtmx2f35vd-Yngttg_Yvx78omnzre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d43l94h93l39l92139gi7g687l53j7845x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2755,7 +2757,7 @@ export class Shanna
 
 @Component({
   selector: 'Sue',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sue:_Doe_of_the_Plains" title="Sue: Doe of the Plains"><img alt="Sue Doe of the Plains Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f98x2fYak_Juk_ul_znk_Vrgoty_Lgik_LI.vtmx2f775vd-Yak_Juk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dgl393i01jih8j03948j6k41ll064g165x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f98x2fYak_Juk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dgl393i01jih8j03948j6k41ll064g165x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f98x2fYak_Juk_ul_znk_Vrgoty_Lgik_LI.vtmx2f35vd-Yak_Juk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dgl393i01jih8j03948j6k41ll064g165x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2777,7 +2779,7 @@ export class Sue
 
 @Component({
   selector: 'Bartre',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Bartre:_Fearless_Warrior" title="Bartre: Fearless Warrior"><img alt="Bartre Fearless Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7lx2fHgx78zx78k_Lkgx78rkyy_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Hgx78zx78k_Lkgx78rkyy_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dg8g4963k7g66h63l02h361598996567kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7lx2fHgx78zx78k_Lkgx78rkyy_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dg8g4963k7g66h63l02h361598996567kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7lx2fHgx78zx78k_Lkgx78rkyy_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Hgx78zx78k_Lkgx78rkyy_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dg8g4963k7g66h63l02h361598996567kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2799,7 +2801,7 @@ export class Bartre
 
 @Component({
   selector: 'Fir',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Fir:_Sword_Student" title="Fir: Sword Student"><img alt="Fir Sword Student Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi3x2fLox78_Ycux78j_Yzajktz_Lgik_LI.vtmx2f775vd-Lox78_Ycux78j_Yzajktz_Lgik_LI.vtmx3fbkx78youtx3d8993i2jhj98k1492i08hgjl57gk76953x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi3x2fLox78_Ycux78j_Yzajktz_Lgik_LI.vtmx3fbkx78youtx3d8993i2jhj98k1492i08hgjl57gk76953x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi3x2fLox78_Ycux78j_Yzajktz_Lgik_LI.vtmx2f35vd-Lox78_Ycux78j_Yzajktz_Lgik_LI.vtmx3fbkx78youtx3d8993i2jhj98k1492i08hgjl57gk76953x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2821,7 +2823,7 @@ export class Fir
 
 @Component({
   selector: 'Rutger',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Rutger:_Lone_Swordsman" title="Rutger: Lone Swordsman"><img alt="Rutger Lone Swordsman Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh2x2fXazmkx78_Rutk_Ycux78jysgt_Lgik_LI.vtmx2f775vd-Xazmkx78_Rutk_Ycux78jysgt_Lgik_LI.vtmx3fbkx78youtx3dl81166230ljkgk6i926h520778l8i288x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh2x2fXazmkx78_Rutk_Ycux78jysgt_Lgik_LI.vtmx3fbkx78youtx3dl81166230ljkgk6i926h520778l8i288x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh2x2fXazmkx78_Rutk_Ycux78jysgt_Lgik_LI.vtmx2f35vd-Xazmkx78_Rutk_Ycux78jysgt_Lgik_LI.vtmx3fbkx78youtx3dl81166230ljkgk6i926h520778l8i288x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2843,7 +2845,7 @@ export class Rutger
 
 @Component({
   selector: 'Sophia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sophia:_Nabata_Prophet" title="Sophia: Nabata Prophet"><img alt="Sophia Nabata Prophet Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f91x2fYuvnog_Tghgzg_Vx78uvnkz_Lgik_LI.vtmx2f775vd-Yuvnog_Tghgzg_Vx78uvnkz_Lgik_LI.vtmx3fbkx78youtx3d2303hll0h8k2h2g5j0lggljll8likhj1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f91x2fYuvnog_Tghgzg_Vx78uvnkz_Lgik_LI.vtmx3fbkx78youtx3d2303hll0h8k2h2g5j0lggljll8likhj1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f91x2fYuvnog_Tghgzg_Vx78uvnkz_Lgik_LI.vtmx2f35vd-Yuvnog_Tghgzg_Vx78uvnkz_Lgik_LI.vtmx3fbkx78youtx3d2303hll0h8k2h2g5j0lggljll8likhj1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2865,7 +2867,7 @@ export class Sophia
 
 @Component({
   selector: 'Fae',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Fae:_Divine_Dragon" title="Fae: Divine Dragon"><img alt="Fae Divine Dragon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6kx2fLgk_Jobotk_Jx78gmut_Lgik_LI.vtmx2f775vd-Lgk_Jobotk_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d511lj7i79kill720752l8860i39h1146x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6kx2fLgk_Jobotk_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d511lj7i79kill720752l8860i39h1146x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6kx2fLgk_Jobotk_Jx78gmut_Lgik_LI.vtmx2f35vd-Lgk_Jobotk_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d511lj7i79kill720752l8860i39h1146x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2887,7 +2889,7 @@ export class Fae
 
 @Component({
   selector: 'FaeWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Fae:_Holiday_Dear" title="Fae: Holiday Dear"><img alt="Fae Holiday Dear Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fLgk_Nurojge_Jkgx78_Lgik_LI.vtmx2f775vd-Lgk_Nurojge_Jkgx78_Lgik_LI.vtmx3fbkx78youtx3d60g173h4gj80ggk751kj144j501gji29x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fkix2fLgk_Nurojge_Jkgx78_Lgik_LI.vtmx3fbkx78youtx3d60g173h4gj80ggk751kj144j501gji29x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fLgk_Nurojge_Jkgx78_Lgik_LI.vtmx2f35vd-Lgk_Nurojge_Jkgx78_Lgik_LI.vtmx3fbkx78youtx3d60g173h4gj80ggk751kj144j501gji29x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2909,7 +2911,7 @@ export class FaeWinter
 
 @Component({
   selector: 'Idunn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Idunn:_Dark_Priestess" title="Idunn: Dark Priestess"><img alt="Idunn Dark Priestess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fOjatt_Jgx78q_Vx78okyzkyy_Lgik_LI.vtmx2f775vd-Ojatt_Jgx78q_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dhlhi149kj930lg001i70g99g2i0j8286x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj4x2fOjatt_Jgx78q_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dhlhi149kj930lg001i70g99g2i0j8286x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fOjatt_Jgx78q_Vx78okyzkyy_Lgik_LI.vtmx2f35vd-Ojatt_Jgx78q_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dhlhi149kj930lg001i70g99g2i0j8286x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2931,7 +2933,7 @@ export class Idunn
 
 @Component({
   selector: 'Eliwood',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eliwood:_Knight_of_Lycia" title="Eliwood: Knight of Lycia"><img alt="Eliwood Knight of Lycia Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi5x2fKrocuuj_Qtomnz_ul_Reiog_Lgik_LI.vtmx2f775vd-Krocuuj_Qtomnz_ul_Reiog_Lgik_LI.vtmx3fbkx78youtx3d2902ik4582i6g256il20kil600i93g9lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi5x2fKrocuuj_Qtomnz_ul_Reiog_Lgik_LI.vtmx3fbkx78youtx3d2902ik4582i6g256il20kil600i93g9lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi5x2fKrocuuj_Qtomnz_ul_Reiog_Lgik_LI.vtmx2f35vd-Krocuuj_Qtomnz_ul_Reiog_Lgik_LI.vtmx3fbkx78youtx3d2902ik4582i6g256il20kil600i93g9lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2953,7 +2955,7 @@ export class Eliwood
 
 @Component({
   selector: 'EliwoodValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eliwood:_Devoted_Love" title="Eliwood: Devoted Love"><img alt="Eliwood Devoted Love Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6kx2fKrocuuj_Jkbuzkj_Rubk_Lgik_LI.vtmx2f775vd-Krocuuj_Jkbuzkj_Rubk_Lgik_LI.vtmx3fbkx78youtx3d2j7i6216k9011674l5l542h759l6i100x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6kx2fKrocuuj_Jkbuzkj_Rubk_Lgik_LI.vtmx3fbkx78youtx3d2j7i6216k9011674l5l542h759l6i100x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6kx2fKrocuuj_Jkbuzkj_Rubk_Lgik_LI.vtmx2f35vd-Krocuuj_Jkbuzkj_Rubk_Lgik_LI.vtmx3fbkx78youtx3d2j7i6216k9011674l5l542h759l6i100x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2975,7 +2977,7 @@ export class EliwoodValentines
 
 @Component({
   selector: 'Lyn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyn:_Lady_of_the_Plains" title="Lyn: Lady of the Plains"><img alt="Lyn Lady of the Plains Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fRet_Rgje_ul_znk_Vrgoty_Lgik_LI.vtmx2f775vd-Ret_Rgje_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dg0j953ikllgkj369k2gj6ih69kh71h4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhgx2fRet_Rgje_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dg0j953ikllgkj369k2gj6ih69kh71h4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fRet_Rgje_ul_znk_Vrgoty_Lgik_LI.vtmx2f35vd-Ret_Rgje_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dg0j953ikllgkj369k2gj6ih69kh71h4lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -2997,7 +2999,7 @@ export class Lyn
 
 @Component({
   selector: 'LynBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyn:_Bride_of_the_Plains" title="Lyn: Bride of the Plains"><img alt="Lyn Bride of the Plains Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj2x2fRet_Hx78ojk_ul_znk_Vrgoty_Lgik_LI.vtmx2f775vd-Ret_Hx78ojk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dj82959j46i1i6ill64j06886i602g79kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj2x2fRet_Hx78ojk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dj82959j46i1i6ill64j06886i602g79kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj2x2fRet_Hx78ojk_ul_znk_Vrgoty_Lgik_LI.vtmx2f35vd-Ret_Hx78ojk_ul_znk_Vrgoty_Lgik_LI.vtmx3fbkx78youtx3dj82959j46i1i6ill64j06886i602g79kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3019,7 +3021,7 @@ export class LynBridal
 
 @Component({
   selector: 'LynBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyn:_Brave_Lady" title="Lyn: Brave Lady"><img alt="Lyn Brave Lady Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjgx2fRet_Hx78gbk_Rgje_Lgik_LI.vtmx2f775vd-Ret_Hx78gbk_Rgje_Lgik_LI.vtmx3fbkx78youtx3dgk7609j851j158l3i3574kkj0l3j51g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjgx2fRet_Hx78gbk_Rgje_Lgik_LI.vtmx3fbkx78youtx3dgk7609j851j158l3i3574kkj0l3j51g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjgx2fRet_Hx78gbk_Rgje_Lgik_LI.vtmx2f35vd-Ret_Hx78gbk_Rgje_Lgik_LI.vtmx3fbkx78youtx3dgk7609j851j158l3i3574kkj0l3j51g0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3041,7 +3043,7 @@ export class LynBrave
 
 @Component({
   selector: 'LynValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyn:_Wind%27s_Embrace" title="Lyn: Wind's Embrace"><img alt="Lyn Winds Embrace Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fRet_Cotjy_Kshx78gik_Lgik_LI.vtmx2f775vd-Ret_Cotjy_Kshx78gik_Lgik_LI.vtmx3fbkx78youtx3dl4h25i2ji51579jl82jl9lk706k29547x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg6x2fRet_Cotjy_Kshx78gik_Lgik_LI.vtmx3fbkx78youtx3dl4h25i2ji51579jl82jl9lk706k29547x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fRet_Cotjy_Kshx78gik_Lgik_LI.vtmx2f35vd-Ret_Cotjy_Kshx78gik_Lgik_LI.vtmx3fbkx78youtx3dl4h25i2ji51579jl82jl9lk706k29547x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3063,7 +3065,7 @@ export class LynValentines
 
 @Component({
   selector: 'LynLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyn:_Lady_of_the_Wind" title="Lyn: Lady of the Wind"><img alt="Lyn Lady of the Wind Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fRet_Rgje_ul_znk_Cotj_Lgik_LI.vtmx2f775vd-Ret_Rgje_ul_znk_Cotj_Lgik_LI.vtmx3fbkx78youtx3di28996j727kh49h59i48j2864h38g413x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4ix2fRet_Rgje_ul_znk_Cotj_Lgik_LI.vtmx3fbkx78youtx3di28996j727kh49h59i48j2864h38g413x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fRet_Rgje_ul_znk_Cotj_Lgik_LI.vtmx2f35vd-Ret_Rgje_ul_znk_Cotj_Lgik_LI.vtmx3fbkx78youtx3di28996j727kh49h59i48j2864h38g413x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3085,7 +3087,7 @@ export class LynLegendary
 
 @Component({
   selector: 'Hector',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hector:_General_of_Ostia" title="Hector: General of Ostia"><img alt="Hector General of Ostia Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f86x2fNkizux78_Mktkx78gr_ul_Uyzog_Lgik_LI.vtmx2f775vd-Nkizux78_Mktkx78gr_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d04lk25j83246l5kkijg59kg3l744hk95x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f86x2fNkizux78_Mktkx78gr_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d04lk25j83246l5kkijg59kg3l744hk95x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f86x2fNkizux78_Mktkx78gr_ul_Uyzog_Lgik_LI.vtmx2f35vd-Nkizux78_Mktkx78gr_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d04lk25j83246l5kkijg59kg3l744hk95x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3108,7 +3110,7 @@ export class Hector
 
 @Component({
   selector: 'HectorValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hector:_Just_Here_to_Fight" title="Hector: Just Here to Fight"><img alt="Hector Just Here to Fight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9jx2fNkizux78_Payz_Nkx78k_zu_Lomnz_Lgik_LI.vtmx2f775vd-Nkizux78_Payz_Nkx78k_zu_Lomnz_Lgik_LI.vtmx3fbkx78youtx3dglhlk34hkg02i3h62k02i941k6jj1k83x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9jx2fNkizux78_Payz_Nkx78k_zu_Lomnz_Lgik_LI.vtmx3fbkx78youtx3dglhlk34hkg02i3h62k02i941k6jj1k83x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9jx2fNkizux78_Payz_Nkx78k_zu_Lomnz_Lgik_LI.vtmx2f35vd-Nkizux78_Payz_Nkx78k_zu_Lomnz_Lgik_LI.vtmx3fbkx78youtx3dglhlk34hkg02i3h62k02i941k6jj1k83x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3130,7 +3132,7 @@ export class HectorValentines
 
 @Component({
   selector: 'HectorLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hector:_Marquess_of_Ostia" title="Hector: Marquess of Ostia"><img alt="Hector Marquess of Ostia Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f77x2fNkizux78_Sgx78wakyy_ul_Uyzog_Lgik_LI.vtmx2f775vd-Nkizux78_Sgx78wakyy_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d01j86j9i135268hjh2lg2j1l04k0i4g8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f77x2fNkizux78_Sgx78wakyy_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d01j86j9i135268hjh2lg2j1l04k0i4g8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f77x2fNkizux78_Sgx78wakyy_ul_Uyzog_Lgik_LI.vtmx2f35vd-Nkizux78_Sgx78wakyy_ul_Uyzog_Lgik_LI.vtmx3fbkx78youtx3d01j86j9i135268hjh2lg2j1l04k0i4g8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3152,7 +3154,7 @@ export class HectorLegendary
 
 @Component({
   selector: 'HectorBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hector:_Brave_Warrior" title="Hector: Brave Warrior"><img alt="Hector Brave Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fklx2fNkizux78_Hx78gbk_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Nkizux78_Hx78gbk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3djlj31lg4232j9j45kjh299il0g66i312x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fklx2fNkizux78_Hx78gbk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3djlj31lg4232j9j45kjh299il0g66i312x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fklx2fNkizux78_Hx78gbk_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Nkizux78_Hx78gbk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3djlj31lg4232j9j45kjh299il0g66i312x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3174,7 +3176,7 @@ export class HectorBrave
 
 @Component({
   selector: 'Matthew',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Matthew:_Faithful_Spy" title="Matthew: Faithful Spy"><img alt="Matthew Faithful Spy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fSgzznkc_Lgoznlar_Yve_Lgik_LI.vtmx2f775vd-Sgzznkc_Lgoznlar_Yve_Lgik_LI.vtmx3fbkx78youtx3dh304g466l4264i154j70833l5h376561x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f82x2fSgzznkc_Lgoznlar_Yve_Lgik_LI.vtmx3fbkx78youtx3dh304g466l4264i154j70833l5h376561x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fSgzznkc_Lgoznlar_Yve_Lgik_LI.vtmx2f35vd-Sgzznkc_Lgoznlar_Yve_Lgik_LI.vtmx3fbkx78youtx3dh304g466l4264i154j70833l5h376561x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3196,7 +3198,7 @@ export class Matthew
 
 @Component({
   selector: 'Serra',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Serra:_Outspoken_Cleric" title="Serra: Outspoken Cleric"><img alt="Serra Outspoken Cleric Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fYkx78x78g_Uazyvuqkt_Irkx78oi_Lgik_LI.vtmx2f775vd-Ykx78x78g_Uazyvuqkt_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3d98723ll2ighi322i5hk3g068kl29j285x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f38x2fYkx78x78g_Uazyvuqkt_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3d98723ll2ighi322i5hk3g068kl29j285x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fYkx78x78g_Uazyvuqkt_Irkx78oi_Lgik_LI.vtmx2f35vd-Ykx78x78g_Uazyvuqkt_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3d98723ll2ighi322i5hk3g068kl29j285x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3218,7 +3220,7 @@ export class Serra
 
 @Component({
   selector: 'Raven',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Raven:_Peerless_Fighter" title="Raven: Peerless Fighter"><img alt="Raven Peerless Fighter Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f18x2fXgbkt_Vkkx78rkyy_Lomnzkx78_Lgik_LI.vtmx2f775vd-Xgbkt_Vkkx78rkyy_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d26j92g6530h99l77gi423275g8491421x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f18x2fXgbkt_Vkkx78rkyy_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d26j92g6530h99l77gi423275g8491421x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f18x2fXgbkt_Vkkx78rkyy_Lomnzkx78_Lgik_LI.vtmx2f35vd-Xgbkt_Vkkx78rkyy_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d26j92g6530h99l77gi423275g8491421x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3240,7 +3242,7 @@ export class Raven
 
 @Component({
   selector: 'Lucius',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lucius:_The_Light" title="Lucius: The Light"><img alt="Lucius The Light Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fRaioay_Znk_Romnz_Lgik_LI.vtmx2f775vd-Raioay_Znk_Romnz_Lgik_LI.vtmx3fbkx78youtx3d8h9i37108jl422hh1ihl75107jjj6lg6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl4x2fRaioay_Znk_Romnz_Lgik_LI.vtmx3fbkx78youtx3d8h9i37108jl422hh1ihl75107jjj6lg6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fRaioay_Znk_Romnz_Lgik_LI.vtmx2f35vd-Raioay_Znk_Romnz_Lgik_LI.vtmx3fbkx78youtx3d8h9i37108jl422hh1ihl75107jjj6lg6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3262,7 +3264,7 @@ export class Lucius
 
 @Component({
   selector: 'Rebecca',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Rebecca:_Wildflower" title="Rebecca: Wildflower"><img alt="Rebecca Wildflower Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fXkhkiig_Corjlruckx78_Lgik_LI.vtmx2f775vd-Xkhkiig_Corjlruckx78_Lgik_LI.vtmx3fbkx78youtx3d95j1l7g0758h59kll5hi287h1j3gg325x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjjx2fXkhkiig_Corjlruckx78_Lgik_LI.vtmx3fbkx78youtx3d95j1l7g0758h59kll5hi287h1j3gg325x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fXkhkiig_Corjlruckx78_Lgik_LI.vtmx2f35vd-Xkhkiig_Corjlruckx78_Lgik_LI.vtmx3fbkx78youtx3d95j1l7g0758h59kll5hi287h1j3gg325x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3284,7 +3286,7 @@ export class Rebecca
 
 @Component({
   selector: 'Priscilla',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Priscilla:_Delicate_Princess" title="Priscilla: Delicate Princess"><img alt="Priscilla Delicate Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f17x2fVx78oyiorrg_Jkroigzk_Vx78otikyy_Lgik_LI.vtmx2f775vd-Vx78oyiorrg_Jkroigzk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d24010h258jjj645g91539h037kgl678gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f17x2fVx78oyiorrg_Jkroigzk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d24010h258jjj645g91539h037kgl678gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f17x2fVx78oyiorrg_Jkroigzk_Vx78otikyy_Lgik_LI.vtmx2f35vd-Vx78oyiorrg_Jkroigzk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d24010h258jjj645g91539h037kgl678gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3306,7 +3308,7 @@ export class Priscilla
 
 @Component({
   selector: 'Dorcas',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Dorcas:_Serene_Warrior" title="Dorcas: Serene Warrior"><img alt="Dorcas Serene Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f79x2fJux78igy_Ykx78ktk_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Jux78igy_Ykx78ktk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3d4j3g2h7j688klhk9l66303g459ij91igx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f79x2fJux78igy_Ykx78ktk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3d4j3g2h7j688klhk9l66303g459ij91igx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f79x2fJux78igy_Ykx78ktk_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Jux78igy_Ykx78ktk_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3d4j3g2h7j688klhk9l66303g459ij91igx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3328,7 +3330,7 @@ export class Dorcas
 
 @Component({
   selector: 'DorcasHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Dorcas:_Pumpkin_Smasher" title="Dorcas: Pumpkin Smasher"><img alt="Dorcas Pumpkin Smasher Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj0x2fJux78igy_Vasvqot_Ysgynkx78_Lgik_LI.vtmx2f775vd-Jux78igy_Vasvqot_Ysgynkx78_Lgik_LI.vtmx3fbkx78youtx3d2671k39j24l04980hl9kgk32i1k014l4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj0x2fJux78igy_Vasvqot_Ysgynkx78_Lgik_LI.vtmx3fbkx78youtx3d2671k39j24l04980hl9kgk32i1k014l4x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj0x2fJux78igy_Vasvqot_Ysgynkx78_Lgik_LI.vtmx2f35vd-Jux78igy_Vasvqot_Ysgynkx78_Lgik_LI.vtmx3fbkx78youtx3d2671k39j24l04980hl9kgk32i1k014l4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3350,7 +3352,7 @@ export class DorcasHalloween
 
 @Component({
   selector: 'Florina',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Florina:_Lovely_Flier" title="Florina: Lovely Flier"><img alt="Florina Lovely Flier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f25x2fLrux78otg_Rubkre_Lrokx78_Lgik_LI.vtmx2f775vd-Lrux78otg_Rubkre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d53k8583k516965k0h38j7l45g54k7i7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f25x2fLrux78otg_Rubkre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d53k8583k516965k0h38j7l45g54k7i7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f25x2fLrux78otg_Rubkre_Lrokx78_Lgik_LI.vtmx2f35vd-Lrux78otg_Rubkre_Lrokx78_Lgik_LI.vtmx3fbkx78youtx3d53k8583k516965k0h38j7l45g54k7i7jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3372,7 +3374,7 @@ export class Florina
 
 @Component({
   selector: 'Canas',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Canas:_Wisdom_Seeker" title="Canas: Wisdom Seeker"><img alt="Canas Wisdom Seeker Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1lx2fIgtgy_Coyjus_Ykkqkx78_Lgik_LI.vtmx2f775vd-Igtgy_Coyjus_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3d7j304k117895lik9g8l9k8jg64g3k99gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1lx2fIgtgy_Coyjus_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3d7j304k117895lik9g8l9k8jg64g3k99gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1lx2fIgtgy_Coyjus_Ykkqkx78_Lgik_LI.vtmx2f35vd-Igtgy_Coyjus_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3d7j304k117895lik9g8l9k8jg64g3k99gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3394,7 +3396,7 @@ export class Canas
 
 @Component({
   selector: 'Karel',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Karel:_Sword_Demon" title="Karel: Sword Demon"><img alt="Karel Sword Demon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7kx2fQgx78kr_Ycux78j_Jksut_Lgik_LI.vtmx2f775vd-Qgx78kr_Ycux78j_Jksut_Lgik_LI.vtmx3fbkx78youtx3d6562509j5j0766l664k270lgg8i9765jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7kx2fQgx78kr_Ycux78j_Jksut_Lgik_LI.vtmx3fbkx78youtx3d6562509j5j0766l664k270lgg8i9765jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7kx2fQgx78kr_Ycux78j_Jksut_Lgik_LI.vtmx2f35vd-Qgx78kr_Ycux78j_Jksut_Lgik_LI.vtmx3fbkx78youtx3d6562509j5j0766l664k270lgg8i9765jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3416,7 +3418,7 @@ export class Karel
 
 @Component({
   selector: 'Karla',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Karla:_Sword_Vassal" title="Karla: Sword Vassal"><img alt="Karla Sword Vassal Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fQgx78rg_Ycux78j_Bgyygr_Lgik_LI.vtmx2f775vd-Qgx78rg_Ycux78j_Bgyygr_Lgik_LI.vtmx3fbkx78youtx3d46j8khi5k4jg33h71k4k0k4hj46h67gjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f29x2fQgx78rg_Ycux78j_Bgyygr_Lgik_LI.vtmx3fbkx78youtx3d46j8khi5k4jg33h71k4k0k4hj46h67gjx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fQgx78rg_Ycux78j_Bgyygr_Lgik_LI.vtmx2f35vd-Qgx78rg_Ycux78j_Bgyygr_Lgik_LI.vtmx3fbkx78youtx3d46j8khi5k4jg33h71k4k0k4hj46h67gjx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3438,7 +3440,7 @@ export class Karla
 
 @Component({
   selector: 'Hawkeye',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hawkeye:_Desert_Guardian" title="Hawkeye: Desert Guardian"><img alt="Hawkeye Desert Guardian Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fNgcqkek_Jkykx78z_Magx78jogt_Lgik_LI.vtmx2f775vd-Ngcqkek_Jkykx78z_Magx78jogt_Lgik_LI.vtmx3fbkx78youtx3dg1798k1l4306340622jjjlg3i44l4h92x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhgx2fNgcqkek_Jkykx78z_Magx78jogt_Lgik_LI.vtmx3fbkx78youtx3dg1798k1l4306340622jjjlg3i44l4h92x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fNgcqkek_Jkykx78z_Magx78jogt_Lgik_LI.vtmx2f35vd-Ngcqkek_Jkykx78z_Magx78jogt_Lgik_LI.vtmx3fbkx78youtx3dg1798k1l4306340622jjjlg3i44l4h92x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3460,7 +3462,7 @@ export class Hawkeye
 
 @Component({
   selector: 'Ninian',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ninian:_Oracle_of_Destiny" title="Ninian: Oracle of Destiny"><img alt="Ninian Oracle of Destiny Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f95x2fTotogt_Ux78girk_ul_Jkyzote_Lgik_LI.vtmx2f775vd-Totogt_Ux78girk_ul_Jkyzote_Lgik_LI.vtmx3fbkx78youtx3dgj7261h94894343l83l91037779i5894x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f95x2fTotogt_Ux78girk_ul_Jkyzote_Lgik_LI.vtmx3fbkx78youtx3dgj7261h94894343l83l91037779i5894x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f95x2fTotogt_Ux78girk_ul_Jkyzote_Lgik_LI.vtmx2f35vd-Totogt_Ux78girk_ul_Jkyzote_Lgik_LI.vtmx3fbkx78youtx3dgj7261h94894343l83l91037779i5894x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3482,7 +3484,7 @@ export class Ninian
 
 @Component({
   selector: 'NinianBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ninian:_Bright-Eyed_Bride" title="Ninian: Bright-Eyed Bride"><img alt="Ninian Bright-Eyed Bride Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjix2fTotogt_Hx78omnz-Kekj_Hx78ojk_Lgik_LI.vtmx2f775vd-Totogt_Hx78omnz-Kekj_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d5278i1665823k0142563g9j8gg07g6jkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjix2fTotogt_Hx78omnz-Kekj_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d5278i1665823k0142563g9j8gg07g6jkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjix2fTotogt_Hx78omnz-Kekj_Hx78ojk_Lgik_LI.vtmx2f35vd-Totogt_Hx78omnz-Kekj_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d5278i1665823k0142563g9j8gg07g6jkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3504,7 +3506,7 @@ export class NinianBridal
 
 @Component({
   selector: 'Lloyd',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lloyd:_White_Wolf" title="Lloyd: White Wolf"><img alt="Lloyd White Wolf Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f60x2fRruej_Cnozk_Curl_Lgik_LI.vtmx2f775vd-Rruej_Cnozk_Curl_Lgik_LI.vtmx3fbkx78youtx3dk08g176j4421j7g5jk1ij76h45144653x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f60x2fRruej_Cnozk_Curl_Lgik_LI.vtmx3fbkx78youtx3dk08g176j4421j7g5jk1ij76h45144653x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f60x2fRruej_Cnozk_Curl_Lgik_LI.vtmx2f35vd-Rruej_Cnozk_Curl_Lgik_LI.vtmx3fbkx78youtx3dk08g176j4421j7g5jk1ij76h45144653x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3526,7 +3528,7 @@ export class Lloyd
 
 @Component({
   selector: 'Linus',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Linus:_Mad_Dog" title="Linus: Mad Dog"><img alt="Linus Mad Dog Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fikx2fRotay_Sgj_Jum_Lgik_LI.vtmx2f775vd-Rotay_Sgj_Jum_Lgik_LI.vtmx3fbkx78youtx3d7694hg88600jhh885kl54h502hhk537lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fikx2fRotay_Sgj_Jum_Lgik_LI.vtmx3fbkx78youtx3d7694hg88600jhh885kl54h502hhk537lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fikx2fRotay_Sgj_Jum_Lgik_LI.vtmx2f35vd-Rotay_Sgj_Jum_Lgik_LI.vtmx3fbkx78youtx3d7694hg88600jhh885kl54h502hhk537lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3548,7 +3550,7 @@ export class Linus
 
 @Component({
   selector: 'Jaffar',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jaffar:_Angel_of_Death" title="Jaffar: Angel of Death"><img alt="Jaffar Angel of Death Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh8x2fPgllgx78_Gtmkr_ul_Jkgzn_Lgik_LI.vtmx2f775vd-Pgllgx78_Gtmkr_ul_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3dig3h0hkjg3073318i6lk0k3661j86hj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh8x2fPgllgx78_Gtmkr_ul_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3dig3h0hkjg3073318i6lk0k3661j86hj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh8x2fPgllgx78_Gtmkr_ul_Jkgzn_Lgik_LI.vtmx2f35vd-Pgllgx78_Gtmkr_ul_Jkgzn_Lgik_LI.vtmx3fbkx78youtx3dig3h0hkjg3073318i6lk0k3661j86hj7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3570,7 +3572,7 @@ export class Jaffar
 
 @Component({
   selector: 'Ursula',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ursula:_Blue_Crow" title="Ursula: Blue Crow"><img alt="Ursula Blue Crow Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fAx78yarg_Hrak_Ix78uc_Lgik_LI.vtmx2f775vd-Ax78yarg_Hrak_Ix78uc_Lgik_LI.vtmx3fbkx78youtx3d968ji8487jgjjik7k5hj8g3076gjl791x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi8x2fAx78yarg_Hrak_Ix78uc_Lgik_LI.vtmx3fbkx78youtx3d968ji8487jgjjik7k5hj8g3076gjl791x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi8x2fAx78yarg_Hrak_Ix78uc_Lgik_LI.vtmx2f35vd-Ax78yarg_Hrak_Ix78uc_Lgik_LI.vtmx3fbkx78youtx3d968ji8487jgjjik7k5hj8g3076gjl791x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3592,7 +3594,7 @@ export class Ursula
 
 @Component({
   selector: 'Nino',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nino:_Pious_Mage" title="Nino: Pious Mage"><img alt="Nino Pious Mage Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f03x2fTotu_Vouay_Sgmk_Lgik_LI.vtmx2f775vd-Totu_Vouay_Sgmk_Lgik_LI.vtmx3fbkx78youtx3di818ik53g74g741i125gjg37408gkl41x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f03x2fTotu_Vouay_Sgmk_Lgik_LI.vtmx3fbkx78youtx3di818ik53g74g741i125gjg37408gkl41x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f03x2fTotu_Vouay_Sgmk_Lgik_LI.vtmx2f35vd-Totu_Vouay_Sgmk_Lgik_LI.vtmx3fbkx78youtx3di818ik53g74g741i125gjg37408gkl41x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3614,7 +3616,7 @@ export class Nino
 
 @Component({
   selector: 'NinoScatteredFangs',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nino:_Pale_Flower" title="Nino: Pale Flower"><img alt="Nino Pale Flower Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj7x2fTotu_Vgrk_Lruckx78_Lgik_LI.vtmx2f775vd-Totu_Vgrk_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d393hkj99gj9ih536lhi1i6i8kli3791kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj7x2fTotu_Vgrk_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d393hkj99gj9ih536lhi1i6i8kli3791kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj7x2fTotu_Vgrk_Lruckx78_Lgik_LI.vtmx2f35vd-Totu_Vgrk_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d393hkj99gj9ih536lhi1i6i8kli3791kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3636,7 +3638,7 @@ export class NinoScatteredFangs
 
 @Component({
   selector: 'Legault',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Legault:_The_Hurricane" title="Legault: The Hurricane"><img alt="Legault The Hurricane Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fRkmgarz_Znk_Nax78x78oigtk_Lgik_LI.vtmx2f775vd-Rkmgarz_Znk_Nax78x78oigtk_Lgik_LI.vtmx3fbkx78youtx3d2h0hk77g73k313kil5g5kkhk9ii7j9j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi6x2fRkmgarz_Znk_Nax78x78oigtk_Lgik_LI.vtmx3fbkx78youtx3d2h0hk77g73k313kil5g5kkhk9ii7j9j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fRkmgarz_Znk_Nax78x78oigtk_Lgik_LI.vtmx2f35vd-Rkmgarz_Znk_Nax78x78oigtk_Lgik_LI.vtmx3fbkx78youtx3d2h0hk77g73k313kil5g5kkhk9ii7j9j8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3658,7 +3660,7 @@ export class Legault
 
 @Component({
   selector: 'Eirika',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eirika:_Restoration_Lady" title="Eirika: Restoration Lady"><img alt="Eirika Restoration Lady Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fglx2fKox78oqg_Xkyzux78gzout_Rgje_Lgik_LI.vtmx2f775vd-Kox78oqg_Xkyzux78gzout_Rgje_Lgik_LI.vtmx3fbkx78youtx3d72965h915j223i7gij1i505j86i9hl67x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fglx2fKox78oqg_Xkyzux78gzout_Rgje_Lgik_LI.vtmx3fbkx78youtx3d72965h915j223i7gij1i505j86i9hl67x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fglx2fKox78oqg_Xkyzux78gzout_Rgje_Lgik_LI.vtmx2f35vd-Kox78oqg_Xkyzux78gzout_Rgje_Lgik_LI.vtmx3fbkx78youtx3d72965h915j223i7gij1i505j86i9hl67x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3680,7 +3682,7 @@ export class Eirika
 
 @Component({
   selector: 'EirikaSacredMemories',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eirika:_Anamnesis_Lady" title="Eirika: Anamnesis Lady"><img alt="Eirika Anamnesis Lady Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flgx2fKox78oqg_Gtgstkyoy_Rgje_Lgik_LI.vtmx2f775vd-Kox78oqg_Gtgstkyoy_Rgje_Lgik_LI.vtmx3fbkx78youtx3dl61ilh1ig29i55kk6kkh468238953922x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2flgx2fKox78oqg_Gtgstkyoy_Rgje_Lgik_LI.vtmx3fbkx78youtx3dl61ilh1ig29i55kk6kkh468238953922x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flgx2fKox78oqg_Gtgstkyoy_Rgje_Lgik_LI.vtmx2f35vd-Kox78oqg_Gtgstkyoy_Rgje_Lgik_LI.vtmx3fbkx78youtx3dl61ilh1ig29i55kk6kkh468238953922x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3702,7 +3704,7 @@ export class EirikaSacredMemories
 
 @Component({
   selector: 'EirikaLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eirika:_Graceful_Resolve" title="Eirika: Graceful Resolve"><img alt="Eirika Graceful Resolve Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjgx2fKox78oqg_Mx78giklar_Xkyurbk_Lgik_LI.vtmx2f775vd-Kox78oqg_Mx78giklar_Xkyurbk_Lgik_LI.vtmx3fbkx78youtx3d23111k7h88619l6703g3hgl133h6iig3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjgx2fKox78oqg_Mx78giklar_Xkyurbk_Lgik_LI.vtmx3fbkx78youtx3d23111k7h88619l6703g3hgl133h6iig3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjgx2fKox78oqg_Mx78giklar_Xkyurbk_Lgik_LI.vtmx2f35vd-Kox78oqg_Mx78giklar_Xkyurbk_Lgik_LI.vtmx3fbkx78youtx3d23111k7h88619l6703g3hgl133h6iig3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3724,7 +3726,7 @@ export class EirikaLegendary
 
 @Component({
   selector: 'EirikaWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Eirika:_Gentle_as_Snow" title="Eirika: Gentle as Snow"><img alt="Eirika Gentle as Snow Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1ix2fKox78oqg_Mktzrk_gy_Ytuc_Lgik_LI.vtmx2f775vd-Kox78oqg_Mktzrk_gy_Ytuc_Lgik_LI.vtmx3fbkx78youtx3d32689465g4g1351458216j62g1hhl660x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1ix2fKox78oqg_Mktzrk_gy_Ytuc_Lgik_LI.vtmx3fbkx78youtx3d32689465g4g1351458216j62g1hhl660x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1ix2fKox78oqg_Mktzrk_gy_Ytuc_Lgik_LI.vtmx2f35vd-Kox78oqg_Mktzrk_gy_Ytuc_Lgik_LI.vtmx3fbkx78youtx3d32689465g4g1351458216j62g1hhl660x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3746,7 +3748,7 @@ export class EirikaWinter
 
 @Component({
   selector: 'Ephraim',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ephraim:_Restoration_Lord" title="Ephraim: Restoration Lord"><img alt="Ephraim Restoration Lord Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flhx2fKvnx78gos_Xkyzux78gzout_Rux78j_Lgik_LI.vtmx2f775vd-Kvnx78gos_Xkyzux78gzout_Rux78j_Lgik_LI.vtmx3fbkx78youtx3d10jk3834724k851h066290h327gg0869x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2flhx2fKvnx78gos_Xkyzux78gzout_Rux78j_Lgik_LI.vtmx3fbkx78youtx3d10jk3834724k851h066290h327gg0869x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2flhx2fKvnx78gos_Xkyzux78gzout_Rux78j_Lgik_LI.vtmx2f35vd-Kvnx78gos_Xkyzux78gzout_Rux78j_Lgik_LI.vtmx3fbkx78youtx3d10jk3834724k851h066290h327gg0869x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3768,7 +3770,7 @@ export class Ephraim
 
 @Component({
   selector: 'EphraimLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ephraim:_Legendary_Lord" title="Ephraim: Legendary Lord"><img alt="Ephraim Legendary Lord Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f54x2fKvnx78gos_Rkmktjgx78e_Rux78j_Lgik_LI.vtmx2f775vd-Kvnx78gos_Rkmktjgx78e_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dh6g1jhlk5h4jki4jlg364l6970h07j28x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f54x2fKvnx78gos_Rkmktjgx78e_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dh6g1jhlk5h4jki4jlg364l6970h07j28x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f54x2fKvnx78gos_Rkmktjgx78e_Rux78j_Lgik_LI.vtmx2f35vd-Kvnx78gos_Rkmktjgx78e_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dh6g1jhlk5h4jki4jlg364l6970h07j28x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3790,7 +3792,7 @@ export class EphraimLegendary
 
 @Component({
   selector: 'EphraimBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ephraim:_Sacred_Twin_Lord" title="Ephraim: Sacred Twin Lord"><img alt="Ephraim Sacred Twin Lord Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg3x2fKvnx78gos_Ygix78kj_Zcot_Rux78j_Lgik_LI.vtmx2f775vd-Kvnx78gos_Ygix78kj_Zcot_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dgggg110k0gj48jgh69585hih705308i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg3x2fKvnx78gos_Ygix78kj_Zcot_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dgggg110k0gj48jgh69585hih705308i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg3x2fKvnx78gos_Ygix78kj_Zcot_Rux78j_Lgik_LI.vtmx2f35vd-Kvnx78gos_Ygix78kj_Zcot_Rux78j_Lgik_LI.vtmx3fbkx78youtx3dgggg110k0gj48jgh69585hih705308i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3812,7 +3814,7 @@ export class EphraimBrave
 
 @Component({
   selector: 'EphraimWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ephraim:_Sparkling_Gallantly" title="Ephraim: Sparkling Gallantly"><img alt="Ephraim Sparkling Gallantly Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgjx2fKvnx78gos_Yvgx78qrotm_Mgrrgtzre_Lgik_LI.vtmx2f775vd-Kvnx78gos_Yvgx78qrotm_Mgrrgtzre_Lgik_LI.vtmx3fbkx78youtx3dgi7j24jl324g12g29k48ji856723296gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fgjx2fKvnx78gos_Yvgx78qrotm_Mgrrgtzre_Lgik_LI.vtmx3fbkx78youtx3dgi7j24jl324g12g29k48ji856723296gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgjx2fKvnx78gos_Yvgx78qrotm_Mgrrgtzre_Lgik_LI.vtmx2f35vd-Kvnx78gos_Yvgx78qrotm_Mgrrgtzre_Lgik_LI.vtmx3fbkx78youtx3dgi7j24jl324g12g29k48ji856723296gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3834,7 +3836,7 @@ export class EphraimWinter
 
 @Component({
   selector: 'Seth',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Seth:_Silver_Knight" title="Seth: Silver Knight"><img alt="Seth Silver Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fYkzn_Yorbkx78_Qtomnz_Lgik_LI.vtmx2f775vd-Ykzn_Yorbkx78_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3469kg524397jg78j00k1292342g910jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f04x2fYkzn_Yorbkx78_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3469kg524397jg78j00k1292342g910jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fYkzn_Yorbkx78_Qtomnz_Lgik_LI.vtmx2f35vd-Ykzn_Yorbkx78_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d3469kg524397jg78j00k1292342g910jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3856,7 +3858,7 @@ export class Seth
 
 @Component({
   selector: 'Lute',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lute:_Prodigy" title="Lute: Prodigy"><img alt="Lute Prodigy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7hx2fRazk_Vx78ujome_Lgik_LI.vtmx2f775vd-Razk_Vx78ujome_Lgik_LI.vtmx3fbkx78youtx3dg64hkk2i9j8i9l76h6jk57942l746307x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7hx2fRazk_Vx78ujome_Lgik_LI.vtmx3fbkx78youtx3dg64hkk2i9j8i9l76h6jk57942l746307x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7hx2fRazk_Vx78ujome_Lgik_LI.vtmx2f35vd-Razk_Vx78ujome_Lgik_LI.vtmx3fbkx78youtx3dg64hkk2i9j8i9l76h6jk57942l746307x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3879,7 +3881,7 @@ export class Lute
 
 @Component({
   selector: 'Innes',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Innes:_Regal_Strategician" title="Innes: Regal Strategician"><img alt="Innes Regal Strategician Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi2x2fOttky_Xkmgr_Yzx78gzkmoiogt_Lgik_LI.vtmx2f775vd-Ottky_Xkmgr_Yzx78gzkmoiogt_Lgik_LI.vtmx3fbkx78youtx3d2516178h93l83234244ji15jg05gk057x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi2x2fOttky_Xkmgr_Yzx78gzkmoiogt_Lgik_LI.vtmx3fbkx78youtx3d2516178h93l83234244ji15jg05gk057x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi2x2fOttky_Xkmgr_Yzx78gzkmoiogt_Lgik_LI.vtmx2f35vd-Ottky_Xkmgr_Yzx78gzkmoiogt_Lgik_LI.vtmx3fbkx78youtx3d2516178h93l83234244ji15jg05gk057x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3901,7 +3903,7 @@ export class Innes
 
 @Component({
   selector: 'InnesSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Innes:_Flawless_Form" title="Innes: Flawless Form"><img alt="Innes Flawless Form Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f57x2fOttky_Lrgcrkyy_Lux78s_Lgik_LI.vtmx2f775vd-Ottky_Lrgcrkyy_Lux78s_Lgik_LI.vtmx3fbkx78youtx3d868lk0562ki57i188igi22l856l8797ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f57x2fOttky_Lrgcrkyy_Lux78s_Lgik_LI.vtmx3fbkx78youtx3d868lk0562ki57i188igi22l856l8797ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f57x2fOttky_Lrgcrkyy_Lux78s_Lgik_LI.vtmx2f35vd-Ottky_Lrgcrkyy_Lux78s_Lgik_LI.vtmx3fbkx78youtx3d868lk0562ki57i188igi22l856l8797ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3923,7 +3925,7 @@ export class InnesSummer
 
 @Component({
   selector: 'Tana',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tana:_Winged_Princess" title="Tana: Winged Princess"><img alt="Tana Winged Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f60x2fZgtg_Cotmkj_Vx78otikyy_Lgik_LI.vtmx2f775vd-Zgtg_Cotmkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj6lig276106l950k942496h05k395422x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f60x2fZgtg_Cotmkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj6lig276106l950k942496h05k395422x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f60x2fZgtg_Cotmkj_Vx78otikyy_Lgik_LI.vtmx2f35vd-Zgtg_Cotmkj_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj6lig276106l950k942496h05k395422x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3945,7 +3947,7 @@ export class Tana
 
 @Component({
   selector: 'TanaSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tana:_Noble_and_Nimble" title="Tana: Noble and Nimble"><img alt="Tana Noble and Nimble Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fZgtg_Tuhrk_gtj_Toshrk_Lgik_LI.vtmx2f775vd-Zgtg_Tuhrk_gtj_Toshrk_Lgik_LI.vtmx3fbkx78youtx3d07684320122g3i93l8j26j4136h67jk9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1gx2fZgtg_Tuhrk_gtj_Toshrk_Lgik_LI.vtmx3fbkx78youtx3d07684320122g3i93l8j26j4136h67jk9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fZgtg_Tuhrk_gtj_Toshrk_Lgik_LI.vtmx2f35vd-Zgtg_Tuhrk_gtj_Toshrk_Lgik_LI.vtmx3fbkx78youtx3d07684320122g3i93l8j26j4136h67jk9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3967,7 +3969,7 @@ export class TanaSummer
 
 @Component({
   selector: 'Lyon',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lyon:_Shadow_Prince" title="Lyon: Shadow Prince"><img alt="Lyon Shadow Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f24x2fReut_Yngjuc_Vx78otik_Lgik_LI.vtmx2f775vd-Reut_Yngjuc_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk4jk557g921hh72l49g24ig0kh986jiix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f24x2fReut_Yngjuc_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk4jk557g921hh72l49g24ig0kh986jiix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f24x2fReut_Yngjuc_Vx78otik_Lgik_LI.vtmx2f35vd-Reut_Yngjuc_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk4jk557g921hh72l49g24ig0kh986jiix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -3989,7 +3991,7 @@ export class Lyon
 
 @Component({
   selector: 'Valter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Valter:_Dark_Moonstone" title="Valter: Dark Moonstone"><img alt="Valter Dark Moonstone Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fBgrzkx78_Jgx78q_Suutyzutk_Lgik_LI.vtmx2f775vd-Bgrzkx78_Jgx78q_Suutyzutk_Lgik_LI.vtmx3fbkx78youtx3d10080ig40931i533jih1gik388i0i6kgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl4x2fBgrzkx78_Jgx78q_Suutyzutk_Lgik_LI.vtmx3fbkx78youtx3d10080ig40931i533jih1gik388i0i6kgx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fBgrzkx78_Jgx78q_Suutyzutk_Lgik_LI.vtmx2f35vd-Bgrzkx78_Jgx78q_Suutyzutk_Lgik_LI.vtmx3fbkx78youtx3d10080ig40931i533jih1gik388i0i6kgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4011,7 +4013,7 @@ export class Valter
 
 @Component({
   selector: 'Amelia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Amelia:_Rose_of_the_War" title="Amelia: Rose of the War"><img alt="Amelia Rose of the War Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f10x2fGskrog_Xuyk_ul_znk_Cgx78_Lgik_LI.vtmx2f775vd-Gskrog_Xuyk_ul_znk_Cgx78_Lgik_LI.vtmx3fbkx78youtx3d0jh229li75il92ihh043li47hhh68gh7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f10x2fGskrog_Xuyk_ul_znk_Cgx78_Lgik_LI.vtmx3fbkx78youtx3d0jh229li75il92ihh043li47hhh68gh7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f10x2fGskrog_Xuyk_ul_znk_Cgx78_Lgik_LI.vtmx2f35vd-Gskrog_Xuyk_ul_znk_Cgx78_Lgik_LI.vtmx3fbkx78youtx3d0jh229li75il92ihh043li47hhh68gh7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4033,7 +4035,7 @@ export class Amelia
 
 @Component({
   selector: 'Joshua',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Joshua:_Tempest_King" title="Joshua: Tempest King"><img alt="Joshua Tempest King Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk7x2fPuynag_Zksvkyz_Qotm_Lgik_LI.vtmx2f775vd-Puynag_Zksvkyz_Qotm_Lgik_LI.vtmx3fbkx78youtx3d7gl46840li57753lh366jlj69620h8j7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk7x2fPuynag_Zksvkyz_Qotm_Lgik_LI.vtmx3fbkx78youtx3d7gl46840li57753lh366jlj69620h8j7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk7x2fPuynag_Zksvkyz_Qotm_Lgik_LI.vtmx2f35vd-Puynag_Zksvkyz_Qotm_Lgik_LI.vtmx3fbkx78youtx3d7gl46840li57753lh366jlj69620h8j7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4055,7 +4057,7 @@ export class Joshua
 
 @Component({
   selector: 'Marisa',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Marisa:_Crimson_Flash" title="Marisa: Crimson Flash"><img alt="Marisa Crimson Flash Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8jx2fSgx78oyg_Ix78osyut_Lrgyn_Lgik_LI.vtmx2f775vd-Sgx78oyg_Ix78osyut_Lrgyn_Lgik_LI.vtmx3fbkx78youtx3dg4kig538jj1l5hj7l4122g08237022g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8jx2fSgx78oyg_Ix78osyut_Lrgyn_Lgik_LI.vtmx3fbkx78youtx3dg4kig538jj1l5hj7l4122g08237022g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8jx2fSgx78oyg_Ix78osyut_Lrgyn_Lgik_LI.vtmx2f35vd-Sgx78oyg_Ix78osyut_Lrgyn_Lgik_LI.vtmx3fbkx78youtx3dg4kig538jj1l5hj7l4122g08237022g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4077,7 +4079,7 @@ export class Marisa
 
 @Component({
   selector: 'LArachel',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/L%27Arachel:_Princess_of_Light" title="L'Arachel: Princess of Light"><img alt="LArachel Princess of Light Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhlx2fRGx78ginkr_Vx78otikyy_ul_Romnz_Lgik_LI.vtmx2f775vd-RGx78ginkr_Vx78otikyy_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3dh77i206k027hi7g9k3879ii3k567kjl7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhlx2fRGx78ginkr_Vx78otikyy_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3dh77i206k027hi7g9k3879ii3k567kjl7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhlx2fRGx78ginkr_Vx78otikyy_ul_Romnz_Lgik_LI.vtmx2f35vd-RGx78ginkr_Vx78otikyy_ul_Romnz_Lgik_LI.vtmx3fbkx78youtx3dh77i206k027hi7g9k3879ii3k567kjl7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4099,7 +4101,7 @@ export class LArachel
 
 @Component({
   selector: 'Myrrh',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Myrrh:_Great_Dragon" title="Myrrh: Great Dragon"><img alt="Myrrh Great Dragon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fSex78x78n_Mx78kgz_Jx78gmut_Lgik_LI.vtmx2f775vd-Sex78x78n_Mx78kgz_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d2k8h12l22964k7k6h9lk01lj1h8k1880x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh6x2fSex78x78n_Mx78kgz_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d2k8h12l22964k7k6h9lk01lj1h8k1880x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fSex78x78n_Mx78kgz_Jx78gmut_Lgik_LI.vtmx2f35vd-Sex78x78n_Mx78kgz_Jx78gmut_Lgik_LI.vtmx3fbkx78youtx3d2k8h12l22964k7k6h9lk01lj1h8k1880x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4121,7 +4123,7 @@ export class Myrrh
 
 @Component({
   selector: 'MyrrhHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Myrrh:_Spooky_Monster" title="Myrrh: Spooky Monster"><img alt="Myrrh Spooky Monster Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0kx2fSex78x78n_Yvuuqe_Sutyzkx78_Lgik_LI.vtmx2f775vd-Sex78x78n_Yvuuqe_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3dg6039347g1i44i98k95j5ikg5245jh99x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0kx2fSex78x78n_Yvuuqe_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3dg6039347g1i44i98k95j5ikg5245jh99x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0kx2fSex78x78n_Yvuuqe_Sutyzkx78_Lgik_LI.vtmx2f35vd-Sex78x78n_Yvuuqe_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3dg6039347g1i44i98k95j5ikg5245jh99x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4143,7 +4145,7 @@ export class MyrrhHalloween
 
 @Component({
   selector: 'Ike',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ike:_Young_Mercenary" title="Ike: Young Mercenary"><img alt="Ike Young Mercenary Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh8x2fOqk_Euatm_Skx78iktgx78e_Lgik_LI.vtmx2f775vd-Oqk_Euatm_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3d2g0i2lhi4khh8hjh282h73788351khj2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh8x2fOqk_Euatm_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3d2g0i2lhi4khh8hjh282h73788351khj2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh8x2fOqk_Euatm_Skx78iktgx78e_Lgik_LI.vtmx2f35vd-Oqk_Euatm_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3d2g0i2lhi4khh8hjh282h73788351khj2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4165,7 +4167,7 @@ export class Ike
 
 @Component({
   selector: 'IkeBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ike:_Brave_Mercenary" title="Ike: Brave Mercenary"><img alt="Ike Brave Mercenary Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fOqk_Hx78gbk_Skx78iktgx78e_Lgik_LI.vtmx2f775vd-Oqk_Hx78gbk_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dh457lg4k01khi32950773j71327g6758x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl4x2fOqk_Hx78gbk_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dh457lg4k01khi32950773j71327g6758x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl4x2fOqk_Hx78gbk_Skx78iktgx78e_Lgik_LI.vtmx2f35vd-Oqk_Hx78gbk_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dh457lg4k01khi32950773j71327g6758x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4187,7 +4189,7 @@ export class IkeBrave
 
 @Component({
   selector: 'IkeValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ike:_Stalwart_Heart" title="Ike: Stalwart Heart"><img alt="Ike Stalwart Heart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgix2fOqk_Yzgrcgx78z_Nkgx78z_Lgik_LI.vtmx2f775vd-Oqk_Yzgrcgx78z_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d08j9i5jl93lhk4jk15i2g9hg1gl93061x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fgix2fOqk_Yzgrcgx78z_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d08j9i5jl93lhk4jk15i2g9hg1gl93061x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgix2fOqk_Yzgrcgx78z_Nkgx78z_Lgik_LI.vtmx2f35vd-Oqk_Yzgrcgx78z_Nkgx78z_Lgik_LI.vtmx3fbkx78youtx3d08j9i5jl93lhk4jk15i2g9hg1gl93061x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4209,7 +4211,7 @@ export class IkeValentines
 
 @Component({
   selector: 'Titania',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Titania:_Mighty_Mercenary" title="Titania: Mighty Mercenary"><img alt="Titania Mighty Mercenary Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fZozgtog_Somnze_Skx78iktgx78e_Lgik_LI.vtmx2f775vd-Zozgtog_Somnze_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dkhl7054j35l7l2hhgg0364i83051gk8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl0x2fZozgtog_Somnze_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dkhl7054j35l7l2hhgg0364i83051gk8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fZozgtog_Somnze_Skx78iktgx78e_Lgik_LI.vtmx2f35vd-Zozgtog_Somnze_Skx78iktgx78e_Lgik_LI.vtmx3fbkx78youtx3dkhl7054j35l7l2hhgg0364i83051gk8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4231,7 +4233,7 @@ export class Titania
 
 @Component({
   selector: 'TitaniaValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Titania:_Warm_Knight" title="Titania: Warm Knight"><img alt="Titania Warm Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fZozgtog_Cgx78s_Qtomnz_Lgik_LI.vtmx2f775vd-Zozgtog_Cgx78s_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh09j8959g7k659k2ki43j54312264li6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9gx2fZozgtog_Cgx78s_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh09j8959g7k659k2ki43j54312264li6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fZozgtog_Cgx78s_Qtomnz_Lgik_LI.vtmx2f35vd-Zozgtog_Cgx78s_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh09j8959g7k659k2ki43j54312264li6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4253,7 +4255,7 @@ export class TitaniaValentines
 
 @Component({
   selector: 'Soren',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Soren:_Shrewd_Strategist" title="Soren: Shrewd Strategist"><img alt="Soren Shrewd Strategist Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f77x2fYux78kt_Ynx78kcj_Yzx78gzkmoyz_Lgik_LI.vtmx2f775vd-Yux78kt_Ynx78kcj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d1i6487g028k05h8l86704g9lh2887426x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f77x2fYux78kt_Ynx78kcj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d1i6487g028k05h8l86704g9lh2887426x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f77x2fYux78kt_Ynx78kcj_Yzx78gzkmoyz_Lgik_LI.vtmx2f35vd-Yux78kt_Ynx78kcj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d1i6487g028k05h8l86704g9lh2887426x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4275,7 +4277,7 @@ export class Soren
 
 @Component({
   selector: 'SorenValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Soren:_Addled_Strategist" title="Soren: Addled Strategist"><img alt="Soren Addled Strategist Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f90x2fYux78kt_Gjjrkj_Yzx78gzkmoyz_Lgik_LI.vtmx2f775vd-Yux78kt_Gjjrkj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d2j9346656jj4lglll0ll969l8ii6ki63x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f90x2fYux78kt_Gjjrkj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d2j9346656jj4lglll0ll969l8ii6ki63x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f90x2fYux78kt_Gjjrkj_Yzx78gzkmoyz_Lgik_LI.vtmx2f35vd-Yux78kt_Gjjrkj_Yzx78gzkmoyz_Lgik_LI.vtmx3fbkx78youtx3d2j9346656jj4lglll0ll969l8ii6ki63x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4297,7 +4299,7 @@ export class SorenValentines
 
 @Component({
   selector: 'Mist',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mist:_Helpful_Sister" title="Mist: Helpful Sister"><img alt="Mist Helpful Sister Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fSoyz_Nkrvlar_Yoyzkx78_Lgik_LI.vtmx2f775vd-Soyz_Nkrvlar_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3d144l762995k6hk9289525hghj31i8506x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f50x2fSoyz_Nkrvlar_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3d144l762995k6hk9289525hghj31i8506x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fSoyz_Nkrvlar_Yoyzkx78_Lgik_LI.vtmx2f35vd-Soyz_Nkrvlar_Yoyzkx78_Lgik_LI.vtmx3fbkx78youtx3d144l762995k6hk9289525hghj31i8506x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4319,7 +4321,7 @@ export class Mist
 
 @Component({
   selector: 'MistValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mist:_Purest_Spirit" title="Mist: Purest Spirit"><img alt="Mist Purest Spirit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f45x2fSoyz_Vax78kyz_Yvox78oz_Lgik_LI.vtmx2f775vd-Soyz_Vax78kyz_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8gg58714655k0j652h0055519hjgl6h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f45x2fSoyz_Vax78kyz_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8gg58714655k0j652h0055519hjgl6h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f45x2fSoyz_Vax78kyz_Yvox78oz_Lgik_LI.vtmx2f35vd-Soyz_Vax78kyz_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8gg58714655k0j652h0055519hjgl6h2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4341,7 +4343,7 @@ export class MistValentines
 
 @Component({
   selector: 'GreilValentines',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Greil:_Heroic_Exemplar" title="Greil: Heroic Exemplar"><img alt="Greil Heroic Exemplar Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f76x2fMx78kor_Nkx78uoi_Kdksvrgx78_Lgik_LI.vtmx2f775vd-Mx78kor_Nkx78uoi_Kdksvrgx78_Lgik_LI.vtmx3fbkx78youtx3d227168g0gi39l8li7916g0l9j8ig3g35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f76x2fMx78kor_Nkx78uoi_Kdksvrgx78_Lgik_LI.vtmx3fbkx78youtx3d227168g0gi39l8li7916g0l9j8ig3g35x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f76x2fMx78kor_Nkx78uoi_Kdksvrgx78_Lgik_LI.vtmx2f35vd-Mx78kor_Nkx78uoi_Kdksvrgx78_Lgik_LI.vtmx3fbkx78youtx3d227168g0gi39l8li7916g0l9j8ig3g35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4363,7 +4365,7 @@ export class GreilValentines
 
 @Component({
   selector: 'Oscar',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Oscar:_Agile_Horseman" title="Oscar: Agile Horseman"><img alt="Oscar Agile Horseman Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4kx2fUyigx78_Gmork_Nux78yksgt_Lgik_LI.vtmx2f775vd-Uyigx78_Gmork_Nux78yksgt_Lgik_LI.vtmx3fbkx78youtx3d9i72429690304lh0k867931g788l8254x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4kx2fUyigx78_Gmork_Nux78yksgt_Lgik_LI.vtmx3fbkx78youtx3d9i72429690304lh0k867931g788l8254x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4kx2fUyigx78_Gmork_Nux78yksgt_Lgik_LI.vtmx2f35vd-Uyigx78_Gmork_Nux78yksgt_Lgik_LI.vtmx3fbkx78youtx3d9i72429690304lh0k867931g788l8254x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4385,7 +4387,7 @@ export class Oscar
 
 @Component({
   selector: 'Mia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mia:_Lady_of_Blades" title="Mia: Lady of Blades"><img alt="Mia Lady of Blades Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fSog_Rgje_ul_Hrgjky_Lgik_LI.vtmx2f775vd-Sog_Rgje_ul_Hrgjky_Lgik_LI.vtmx3fbkx78youtx3di86j3496j7il95i623lgkhh476474j4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2jx2fSog_Rgje_ul_Hrgjky_Lgik_LI.vtmx3fbkx78youtx3di86j3496j7il95i623lgkhh476474j4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fSog_Rgje_ul_Hrgjky_Lgik_LI.vtmx2f35vd-Sog_Rgje_ul_Hrgjky_Lgik_LI.vtmx3fbkx78youtx3di86j3496j7il95i623lgkhh476474j4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4407,7 +4409,7 @@ export class Mia
 
 @Component({
   selector: 'Elincia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Elincia:_Lost_Princess" title="Elincia: Lost Princess"><img alt="Elincia Lost Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fKrotiog_Ruyz_Vx78otikyy_Lgik_LI.vtmx2f775vd-Krotiog_Ruyz_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d506j9466960l1672g17illlkj8063jk5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh6x2fKrotiog_Ruyz_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d506j9466960l1672g17illlkj8063jk5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fKrotiog_Ruyz_Vx78otikyy_Lgik_LI.vtmx2f35vd-Krotiog_Ruyz_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d506j9466960l1672g17illlkj8063jk5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4429,7 +4431,7 @@ export class Elincia
 
 @Component({
   selector: 'Nephenee',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nephenee:_Fierce_Halberdier" title="Nephenee: Fierce Halberdier"><img alt="Nephenee Fierce Halberdier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg5x2fTkvnktkk_Lokx78ik_Ngrhkx78jokx78_Lgik_LI.vtmx2f775vd-Tkvnktkk_Lokx78ik_Ngrhkx78jokx78_Lgik_LI.vtmx3fbkx78youtx3dg6618ig4k80h624728hh73k8k1j94h9ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg5x2fTkvnktkk_Lokx78ik_Ngrhkx78jokx78_Lgik_LI.vtmx3fbkx78youtx3dg6618ig4k80h624728hh73k8k1j94h9ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg5x2fTkvnktkk_Lokx78ik_Ngrhkx78jokx78_Lgik_LI.vtmx2f35vd-Tkvnktkk_Lokx78ik_Ngrhkx78jokx78_Lgik_LI.vtmx3fbkx78youtx3dg6618ig4k80h624728hh73k8k1j94h9ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4451,7 +4453,7 @@ export class Nephenee
 
 @Component({
   selector: 'SanakiBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sanaki:_Apostle_in_White" title="Sanaki: Apostle in White"><img alt="Sanaki Apostle in White Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl6x2fYgtgqo_Gvuyzrk_ot_Cnozk_Lgik_LI.vtmx2f775vd-Ygtgqo_Gvuyzrk_ot_Cnozk_Lgik_LI.vtmx3fbkx78youtx3d5l0lg03j2601ji4hl582l02glg98h245x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl6x2fYgtgqo_Gvuyzrk_ot_Cnozk_Lgik_LI.vtmx3fbkx78youtx3d5l0lg03j2601ji4hl582l02glg98h245x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl6x2fYgtgqo_Gvuyzrk_ot_Cnozk_Lgik_LI.vtmx2f35vd-Ygtgqo_Gvuyzrk_ot_Cnozk_Lgik_LI.vtmx3fbkx78youtx3d5l0lg03j2601ji4hl582l02glg98h245x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4473,7 +4475,7 @@ export class SanakiBridal
 
 @Component({
   selector: 'BlackKnight',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Black_Knight:_Sinister_General" title="Black Knight: Sinister General"><img alt="Black Knight Sinister General Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f59x2fHrgiq_Qtomnz_Yotoyzkx78_Mktkx78gr_Lgik_LI.vtmx2f775vd-Hrgiq_Qtomnz_Yotoyzkx78_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d17j132927j7h679i53jgh34gkkh7kkk2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f59x2fHrgiq_Qtomnz_Yotoyzkx78_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d17j132927j7h679i53jgh34gkkh7kkk2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f59x2fHrgiq_Qtomnz_Yotoyzkx78_Mktkx78gr_Lgik_LI.vtmx2f35vd-Hrgiq_Qtomnz_Yotoyzkx78_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d17j132927j7h679i53jgh34gkkh7kkk2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4495,7 +4497,7 @@ export class BlackKnight
 
 @Component({
   selector: 'Micaiah',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Micaiah:_Priestess_of_Dawn" title="Micaiah: Priestess of Dawn"><img alt="Micaiah Priestess of Dawn Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fSoigogn_Vx78okyzkyy_ul_Jgct_Lgik_LI.vtmx2f775vd-Soigogn_Vx78okyzkyy_ul_Jgct_Lgik_LI.vtmx3fbkx78youtx3d112l4kh0gk97il99ig7jkk530024lll6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f16x2fSoigogn_Vx78okyzkyy_ul_Jgct_Lgik_LI.vtmx3fbkx78youtx3d112l4kh0gk97il99ig7jkk530024lll6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fSoigogn_Vx78okyzkyy_ul_Jgct_Lgik_LI.vtmx2f35vd-Soigogn_Vx78okyzkyy_ul_Jgct_Lgik_LI.vtmx3fbkx78youtx3d112l4kh0gk97il99ig7jkk530024lll6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4517,7 +4519,7 @@ export class Micaiah
 
 @Component({
   selector: 'MicaiahFestival',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Micaiah:_Summer%27s_Dawn" title="Micaiah: Summer's Dawn"><img alt="Micaiah Summers Dawn Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f15x2fSoigogn_Yasskx78y_Jgct_Lgik_LI.vtmx2f775vd-Soigogn_Yasskx78y_Jgct_Lgik_LI.vtmx3fbkx78youtx3d285kg6636l4j87i1h98i9510hk65903gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f15x2fSoigogn_Yasskx78y_Jgct_Lgik_LI.vtmx3fbkx78youtx3d285kg6636l4j87i1h98i9510hk65903gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f15x2fSoigogn_Yasskx78y_Jgct_Lgik_LI.vtmx2f35vd-Soigogn_Yasskx78y_Jgct_Lgik_LI.vtmx3fbkx78youtx3d285kg6636l4j87i1h98i9510hk65903gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4539,7 +4541,7 @@ export class MicaiahFestival
 
 @Component({
   selector: 'Sothe',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sothe:_Zephyr" title="Sothe: Zephyr"><img alt="Sothe Zephyr Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fYuznk_Fkvnex78_Lgik_LI.vtmx2f775vd-Yuznk_Fkvnex78_Lgik_LI.vtmx3fbkx78youtx3d3kk87lg59il6431h6j72i3hi07429j69x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2figx2fYuznk_Fkvnex78_Lgik_LI.vtmx3fbkx78youtx3d3kk87lg59il6431h6j72i3hi07429j69x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fYuznk_Fkvnex78_Lgik_LI.vtmx2f35vd-Yuznk_Fkvnex78_Lgik_LI.vtmx3fbkx78youtx3d3kk87lg59il6431h6j72i3hi07429j69x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4561,7 +4563,7 @@ export class Sothe
 
 @Component({
   selector: 'MiaHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mia:_Moonlit_Witch" title="Mia: Moonlit Witch"><img alt="Mia Moonlit Witch Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fSog_Suutroz_Cozin_Lgik_LI.vtmx2f775vd-Sog_Suutroz_Cozin_Lgik_LI.vtmx3fbkx78youtx3d88g2i5l3h6i6g5906k8305374997366lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjjx2fSog_Suutroz_Cozin_Lgik_LI.vtmx3fbkx78youtx3d88g2i5l3h6i6g5906k8305374997366lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fSog_Suutroz_Cozin_Lgik_LI.vtmx2f35vd-Sog_Suutroz_Cozin_Lgik_LI.vtmx3fbkx78youtx3d88g2i5l3h6i6g5906k8305374997366lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4583,7 +4585,7 @@ export class MiaHalloween
 
 @Component({
   selector: 'IkeLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ike:_Vanguard_Legend" title="Ike: Vanguard Legend"><img alt="Ike Vanguard Legend Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f47x2fOqk_Bgtmagx78j_Rkmktj_Lgik_LI.vtmx2f775vd-Oqk_Bgtmagx78j_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d06472k046j1k6ih0933h3028ghh51jh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f47x2fOqk_Bgtmagx78j_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d06472k046j1k6ih0933h3028ghh51jh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f47x2fOqk_Bgtmagx78j_Rkmktj_Lgik_LI.vtmx2f35vd-Oqk_Bgtmagx78j_Rkmktj_Lgik_LI.vtmx3fbkx78youtx3d06472k046j1k6ih0933h3028ghh51jh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4605,7 +4607,7 @@ export class IkeLegendary
 
 @Component({
   selector: 'ElinciaFestival',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Elincia:_Estival_Princess" title="Elincia: Estival Princess"><img alt="Elincia Estival Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk4x2fKrotiog_Kyzobgr_Vx78otikyy_Lgik_LI.vtmx2f775vd-Krotiog_Kyzobgr_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhkji8g76l9h30g51g03i6l1ki58lg1hgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk4x2fKrotiog_Kyzobgr_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhkji8g76l9h30g51g03i6l1ki58lg1hgx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk4x2fKrotiog_Kyzobgr_Vx78otikyy_Lgik_LI.vtmx2f35vd-Krotiog_Kyzobgr_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhkji8g76l9h30g51g03i6l1ki58lg1hgx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4627,7 +4629,7 @@ export class ElinciaFestival
 
 @Component({
   selector: 'Tibarn',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tibarn:_Lord_of_the_Air" title="Tibarn: Lord of the Air"><img alt="Tibarn Lord of the Air Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fZohgx78t_Rux78j_ul_znk_Gox78_Lgik_LI.vtmx2f775vd-Zohgx78t_Rux78j_ul_znk_Gox78_Lgik_LI.vtmx3fbkx78youtx3d02262815ggl1941l84ih6h0102gg33g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f65x2fZohgx78t_Rux78j_ul_znk_Gox78_Lgik_LI.vtmx3fbkx78youtx3d02262815ggl1941l84ih6h0102gg33g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fZohgx78t_Rux78j_ul_znk_Gox78_Lgik_LI.vtmx2f35vd-Zohgx78t_Rux78j_ul_znk_Gox78_Lgik_LI.vtmx3fbkx78youtx3d02262815ggl1941l84ih6h0102gg33g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4649,7 +4651,7 @@ export class Tibarn
 
 @Component({
   selector: 'Reyson',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Reyson:_White_Prince" title="Reyson: White Prince"><img alt="Reyson White Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fXkeyut_Cnozk_Vx78otik_Lgik_LI.vtmx2f775vd-Xkeyut_Cnozk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dh6l19ig7h494206gl1486j6ii0ll6i59x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f87x2fXkeyut_Cnozk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dh6l19ig7h494206gl1486j6ii0ll6i59x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fXkeyut_Cnozk_Vx78otik_Lgik_LI.vtmx2f35vd-Xkeyut_Cnozk_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dh6l19ig7h494206gl1486j6ii0ll6i59x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4671,7 +4673,7 @@ export class Reyson
 
 @Component({
   selector: 'Leanne',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Leanne:_Forest%27s_Song" title="Leanne: Forest's Song"><img alt="Leanne Forests Song Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f99x2fRkgttk_Lux78kyzy_Yutm_Lgik_LI.vtmx2f775vd-Rkgttk_Lux78kyzy_Yutm_Lgik_LI.vtmx3fbkx78youtx3d257k3132747139j746g7j96l8354ji35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f99x2fRkgttk_Lux78kyzy_Yutm_Lgik_LI.vtmx3fbkx78youtx3d257k3132747139j746g7j96l8354ji35x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f99x2fRkgttk_Lux78kyzy_Yutm_Lgik_LI.vtmx2f35vd-Rkgttk_Lux78kyzy_Yutm_Lgik_LI.vtmx3fbkx78youtx3d257k3132747139j746g7j96l8354ji35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4693,7 +4695,7 @@ export class Leanne
 
 @Component({
   selector: 'Naesala',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Naesala:_Sky%27s_Shadow" title="Naesala: Sky's Shadow"><img alt="Naesala Skys Shadow Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhjx2fTgkygrg_Yqey_Yngjuc_Lgik_LI.vtmx2f775vd-Tgkygrg_Yqey_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3dg0j28ijhlg01356552h3igj4563kjg5hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhjx2fTgkygrg_Yqey_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3dg0j28ijhlg01356552h3igj4563kjg5hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhjx2fTgkygrg_Yqey_Yngjuc_Lgik_LI.vtmx2f35vd-Tgkygrg_Yqey_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3dg0j28ijhlg01356552h3igj4563kjg5hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4715,7 +4717,7 @@ export class Naesala
 
 @Component({
   selector: 'Nailah',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nailah:_Unflinching_Eye" title="Nailah: Unflinching Eye"><img alt="Nailah Unflinching Eye Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fTgorgn_Atlrotinotm_Kek_Lgik_LI.vtmx2f775vd-Tgorgn_Atlrotinotm_Kek_Lgik_LI.vtmx3fbkx78youtx3dlh7l1i18k07643i0j12i67706g28l0h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f09x2fTgorgn_Atlrotinotm_Kek_Lgik_LI.vtmx3fbkx78youtx3dlh7l1i18k07643i0j12i67706g28l0h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fTgorgn_Atlrotinotm_Kek_Lgik_LI.vtmx2f35vd-Tgorgn_Atlrotinotm_Kek_Lgik_LI.vtmx3fbkx78youtx3dlh7l1i18k07643i0j12i67706g28l0h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4737,7 +4739,7 @@ export class Nailah
 
 @Component({
   selector: 'Sanaki',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sanaki:_Begnion%27s_Apostle" title="Sanaki: Begnion's Apostle"><img alt="Sanaki Begnions Apostle Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl8x2fYgtgqo_Hkmtouty_Gvuyzrk_Lgik_LI.vtmx2f775vd-Ygtgqo_Hkmtouty_Gvuyzrk_Lgik_LI.vtmx3fbkx78youtx3d251h8517k83l88lj575jk8751165k6j6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl8x2fYgtgqo_Hkmtouty_Gvuyzrk_Lgik_LI.vtmx3fbkx78youtx3d251h8517k83l88lj575jk8751165k6j6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl8x2fYgtgqo_Hkmtouty_Gvuyzrk_Lgik_LI.vtmx2f35vd-Ygtgqo_Hkmtouty_Gvuyzrk_Lgik_LI.vtmx3fbkx78youtx3d251h8517k83l88lj575jk8751165k6j6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4759,7 +4761,7 @@ export class Sanaki
 
 @Component({
   selector: 'Zelgius',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Zelgius:_Jet-Black_General" title="Zelgius: Jet-Black General"><img alt="Zelgius Jet-Black General Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fFkrmoay_Pkz-Hrgiq_Mktkx78gr_Lgik_LI.vtmx2f775vd-Fkrmoay_Pkz-Hrgiq_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d51lh690g961ih3k303gl9553543i7ki9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fggx2fFkrmoay_Pkz-Hrgiq_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d51lh690g961ih3k303gl9553543i7ki9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fggx2fFkrmoay_Pkz-Hrgiq_Mktkx78gr_Lgik_LI.vtmx2f35vd-Fkrmoay_Pkz-Hrgiq_Mktkx78gr_Lgik_LI.vtmx3fbkx78youtx3d51lh690g961ih3k303gl9553543i7ki9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4781,7 +4783,7 @@ export class Zelgius
 
 @Component({
   selector: 'Oliver',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Oliver:_Admirer_of_Beauty" title="Oliver: Admirer of Beauty"><img alt="Oliver Admirer of Beauty Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fUrobkx78_Gjsox78kx78_ul_Hkgaze_Lgik_LI.vtmx2f775vd-Urobkx78_Gjsox78kx78_ul_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dhi4320899hi81ljjg2ih0386k7932180x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f87x2fUrobkx78_Gjsox78kx78_ul_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dhi4320899hi81ljjg2ih0386k7932180x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fUrobkx78_Gjsox78kx78_ul_Hkgaze_Lgik_LI.vtmx2f35vd-Urobkx78_Gjsox78kx78_ul_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dhi4320899hi81ljjg2ih0386k7932180x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4803,7 +4805,7 @@ export class Oliver
 
 @Component({
   selector: 'Chrom',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Chrom:_Exalted_Prince" title="Chrom: Exalted Prince"><img alt="Chrom Exalted Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj3x2fInx78us_Kdgrzkj_Vx78otik_Lgik_LI.vtmx2f775vd-Inx78us_Kdgrzkj_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d8j16ji4335i4i9h4283l746lkgil844ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj3x2fInx78us_Kdgrzkj_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d8j16ji4335i4i9h4283l746lkgil844ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj3x2fInx78us_Kdgrzkj_Vx78otik_Lgik_LI.vtmx2f35vd-Inx78us_Kdgrzkj_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d8j16ji4335i4i9h4283l746lkgil844ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4825,7 +4827,7 @@ export class Chrom
 
 @Component({
   selector: 'ChromSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Chrom:_Spring_Exalt" title="Chrom: Spring Exalt"><img alt="Chrom Spring Exalt Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fInx78us_Yvx78otm_Kdgrz_Lgik_LI.vtmx2f775vd-Inx78us_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3dj766gg73l360gj20204gg895ijhi049gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f65x2fInx78us_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3dj766gg73l360gj20204gg895ijhi049gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f65x2fInx78us_Yvx78otm_Kdgrz_Lgik_LI.vtmx2f35vd-Inx78us_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3dj766gg73l360gj20204gg895ijhi049gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4847,7 +4849,7 @@ export class ChromSpring
 
 @Component({
   selector: 'ChromWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Chrom:_Gifted_Leader" title="Chrom: Gifted Leader"><img alt="Chrom Gifted Leader Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f26x2fInx78us_Molzkj_Rkgjkx78_Lgik_LI.vtmx2f775vd-Inx78us_Molzkj_Rkgjkx78_Lgik_LI.vtmx3fbkx78youtx3d75k88k824k040723h819j6j114l8l56hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f26x2fInx78us_Molzkj_Rkgjkx78_Lgik_LI.vtmx3fbkx78youtx3d75k88k824k040723h819j6j114l8l56hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f26x2fInx78us_Molzkj_Rkgjkx78_Lgik_LI.vtmx2f35vd-Inx78us_Molzkj_Rkgjkx78_Lgik_LI.vtmx3fbkx78youtx3d75k88k824k040723h819j6j114l8l56hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4869,7 +4871,7 @@ export class ChromWinter
 
 @Component({
   selector: 'ChromExalt',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Chrom:_Knight_Exalt" title="Chrom: Knight Exalt"><img alt="Chrom Knight Exalt Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh1x2fInx78us_Qtomnz_Kdgrz_Lgik_LI.vtmx2f775vd-Inx78us_Qtomnz_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d15k11055j5868lkh7kk188836g2848l0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh1x2fInx78us_Qtomnz_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d15k11055j5868lkh7kk188836g2848l0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh1x2fInx78us_Qtomnz_Kdgrz_Lgik_LI.vtmx2f35vd-Inx78us_Qtomnz_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d15k11055j5868lkh7kk188836g2848l0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4891,7 +4893,7 @@ export class ChromExalt
 
 @Component({
   selector: 'RobinM',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_High_Deliverer" title="Robin: High Deliverer"><img alt="Robin High Deliverer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fXuhot_Nomn_Jkrobkx78kx78_Lgik_LI.vtmx2f775vd-Xuhot_Nomn_Jkrobkx78kx78_Lgik_LI.vtmx3fbkx78youtx3d8709iikg28k28992gi9lklg28l6jljj6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fXuhot_Nomn_Jkrobkx78kx78_Lgik_LI.vtmx3fbkx78youtx3d8709iikg28k28992gi9lklg28l6jljj6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fXuhot_Nomn_Jkrobkx78kx78_Lgik_LI.vtmx2f35vd-Xuhot_Nomn_Jkrobkx78kx78_Lgik_LI.vtmx3fbkx78youtx3d8709iikg28k28992gi9lklg28l6jljj6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4913,7 +4915,7 @@ export class RobinM
 
 @Component({
   selector: 'RobinMWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_Festive_Tactician" title="Robin: Festive Tactician"><img alt="Robin Festive Tactician Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fijx2fXuhot_Lkyzobk_Zgizoiogt_Lgik_LI.vtmx2f775vd-Xuhot_Lkyzobk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3d58k700k79li2266i934ji3i1igg5hik7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fijx2fXuhot_Lkyzobk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3d58k700k79li2266i934ji3i1igg5hik7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fijx2fXuhot_Lkyzobk_Zgizoiogt_Lgik_LI.vtmx2f35vd-Xuhot_Lkyzobk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3d58k700k79li2266i934ji3i1igg5hik7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4935,7 +4937,7 @@ export class RobinMWinter
 
 @Component({
   selector: 'RobinMFallen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_Fell_Reincarnation" title="Robin: Fell Reincarnation"><img alt="Robin Fell Reincarnation Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fXuhot_Lkrr_Xkotigx78tgzout_Lgik_LI.vtmx2f775vd-Xuhot_Lkrr_Xkotigx78tgzout_Lgik_LI.vtmx3fbkx78youtx3dk5678g11ig8856lhi239j1ijj1l6j06jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fXuhot_Lkrr_Xkotigx78tgzout_Lgik_LI.vtmx3fbkx78youtx3dk5678g11ig8856lhi239j1ijj1l6j06jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fXuhot_Lkrr_Xkotigx78tgzout_Lgik_LI.vtmx2f35vd-Xuhot_Lkrr_Xkotigx78tgzout_Lgik_LI.vtmx3fbkx78youtx3dk5678g11ig8856lhi239j1ijj1l6j06jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4957,7 +4959,7 @@ export class RobinMFallen
 
 @Component({
   selector: 'RobinF',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_Mystery_Tactician" title="Robin: Mystery Tactician"><img alt="Robin Mystery Tactician Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhhx2fXuhot_Seyzkx78e_Zgizoiogt_Lgik_LI.vtmx2f775vd-Xuhot_Seyzkx78e_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dk51g6l1iji76637li6kij7l2403i70ikx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhhx2fXuhot_Seyzkx78e_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dk51g6l1iji76637li6kij7l2403i70ikx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhhx2fXuhot_Seyzkx78e_Zgizoiogt_Lgik_LI.vtmx2f35vd-Xuhot_Seyzkx78e_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dk51g6l1iji76637li6kij7l2403i70ikx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -4979,7 +4981,7 @@ export class RobinF
 
 @Component({
   selector: 'RobinFSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_Seaside_Tactician" title="Robin: Seaside Tactician"><img alt="Robin Seaside Tactician Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fXuhot_Ykgyojk_Zgizoiogt_Lgik_LI.vtmx2f775vd-Xuhot_Ykgyojk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dg362hkhk35i012kjl87j3966k8gj4j23x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f09x2fXuhot_Ykgyojk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dg362hkhk35i012kjl87j3966k8gj4j23x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fXuhot_Ykgyojk_Zgizoiogt_Lgik_LI.vtmx2f35vd-Xuhot_Ykgyojk_Zgizoiogt_Lgik_LI.vtmx3fbkx78youtx3dg362hkhk35i012kjl87j3966k8gj4j23x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5001,7 +5003,7 @@ export class RobinFSummer
 
 @Component({
   selector: 'RobinFFallen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Robin:_Fell_Vessel" title="Robin: Fell Vessel"><img alt="Robin Fell Vessel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk2x2fXuhot_Lkrr_Bkyykr_Lgik_LI.vtmx2f775vd-Xuhot_Lkrr_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d2lh4il74j8714l56hg4992l572k34h5jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk2x2fXuhot_Lkrr_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d2lh4il74j8714l56hg4992l572k34h5jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk2x2fXuhot_Lkrr_Bkyykr_Lgik_LI.vtmx2f35vd-Xuhot_Lkrr_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d2lh4il74j8714l56hg4992l572k34h5jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5023,7 +5025,7 @@ export class RobinFFallen
 
 @Component({
   selector: 'Lissa',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lissa:_Sprightly_Cleric" title="Lissa: Sprightly Cleric"><img alt="Lissa Sprightly Cleric Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3ix2fRoyyg_Yvx78omnzre_Irkx78oi_Lgik_LI.vtmx2f775vd-Royyg_Yvx78omnzre_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3dl2069gilg2jj1gk95g8hgh9945g1jl59x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3ix2fRoyyg_Yvx78omnzre_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3dl2069gilg2jj1gk95g8hgh9945g1jl59x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3ix2fRoyyg_Yvx78omnzre_Irkx78oi_Lgik_LI.vtmx2f35vd-Royyg_Yvx78omnzre_Irkx78oi_Lgik_LI.vtmx3fbkx78youtx3dl2069gilg2jj1gk95g8hgh9945g1jl59x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5045,7 +5047,7 @@ export class Lissa
 
 @Component({
   selector: 'LissaWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lissa:_Pure_Joy" title="Lissa: Pure Joy"><img alt="Lissa Pure Joy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh0x2fRoyyg_Vax78k_Pue_Lgik_LI.vtmx2f775vd-Royyg_Vax78k_Pue_Lgik_LI.vtmx3fbkx78youtx3d30929l077gi65916g492k21192454kklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh0x2fRoyyg_Vax78k_Pue_Lgik_LI.vtmx3fbkx78youtx3d30929l077gi65916g492k21192454kklx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh0x2fRoyyg_Vax78k_Pue_Lgik_LI.vtmx2f35vd-Royyg_Vax78k_Pue_Lgik_LI.vtmx3fbkx78youtx3d30929l077gi65916g492k21192454kklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5067,7 +5069,7 @@ export class LissaWinter
 
 @Component({
   selector: 'Frederick',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Frederick:_Polite_Knight" title="Frederick: Polite Knight"><img alt="Frederick Polite Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f52x2fLx78kjkx78oiq_Vurozk_Qtomnz_Lgik_LI.vtmx2f775vd-Lx78kjkx78oiq_Vurozk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dii787j83k51605273h3h700843167602x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f52x2fLx78kjkx78oiq_Vurozk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dii787j83k51605273h3h700843167602x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f52x2fLx78kjkx78oiq_Vurozk_Qtomnz_Lgik_LI.vtmx2f35vd-Lx78kjkx78oiq_Vurozk_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dii787j83k51605273h3h700843167602x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5089,7 +5091,7 @@ export class Frederick
 
 @Component({
   selector: 'FrederickSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Frederick:_Horizon_Watcher" title="Frederick: Horizon Watcher"><img alt="Frederick Horizon Watcher Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2kx2fLx78kjkx78oiq_Nux78ofut_Cgzinkx78_Lgik_LI.vtmx2f775vd-Lx78kjkx78oiq_Nux78ofut_Cgzinkx78_Lgik_LI.vtmx3fbkx78youtx3d4g518j6h7991kk79678ig3793hhkh066x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2kx2fLx78kjkx78oiq_Nux78ofut_Cgzinkx78_Lgik_LI.vtmx3fbkx78youtx3d4g518j6h7991kk79678ig3793hhkh066x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2kx2fLx78kjkx78oiq_Nux78ofut_Cgzinkx78_Lgik_LI.vtmx2f35vd-Lx78kjkx78oiq_Nux78ofut_Cgzinkx78_Lgik_LI.vtmx3fbkx78youtx3d4g518j6h7991kk79678ig3793hhkh066x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5111,7 +5113,7 @@ export class FrederickSummer
 
 @Component({
   selector: 'Sully',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sully:_Crimson_Knight" title="Sully: Crimson Knight"><img alt="Sully Crimson Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f48x2fYarre_Ix78osyut_Qtomnz_Lgik_LI.vtmx2f775vd-Yarre_Ix78osyut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d0klgi4lg46736982h06i6i4199716792x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f48x2fYarre_Ix78osyut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d0klgi4lg46736982h06i6i4199716792x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f48x2fYarre_Ix78osyut_Qtomnz_Lgik_LI.vtmx2f35vd-Yarre_Ix78osyut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d0klgi4lg46736982h06i6i4199716792x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5133,7 +5135,7 @@ export class Sully
 
 @Component({
   selector: 'Stahl',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Stahl:_Viridian_Knight" title="Stahl: Viridian Knight"><img alt="Stahl Viridian Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3kx2fYzgnr_Box78ojogt_Qtomnz_Lgik_LI.vtmx2f775vd-Yzgnr_Box78ojogt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dj8h2hkgl0jg80413i0iiigg7ki952686x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3kx2fYzgnr_Box78ojogt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dj8h2hkgl0jg80413i0iiigg7ki952686x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3kx2fYzgnr_Box78ojogt_Qtomnz_Lgik_LI.vtmx2f35vd-Yzgnr_Box78ojogt_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dj8h2hkgl0jg80413i0iiigg7ki952686x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5155,7 +5157,7 @@ export class Stahl
 
 @Component({
   selector: 'Sumia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sumia:_Maid_of_Flowers" title="Sumia: Maid of Flowers"><img alt="Sumia Maid of Flowers Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fYasog_Sgoj_ul_Lruckx78y_Lgik_LI.vtmx2f775vd-Yasog_Sgoj_ul_Lruckx78y_Lgik_LI.vtmx3fbkx78youtx3dkj6k20li11j445ij51g76hllg7846ih9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f50x2fYasog_Sgoj_ul_Lruckx78y_Lgik_LI.vtmx3fbkx78youtx3dkj6k20li11j445ij51g76hllg7846ih9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fYasog_Sgoj_ul_Lruckx78y_Lgik_LI.vtmx2f35vd-Yasog_Sgoj_ul_Lruckx78y_Lgik_LI.vtmx3fbkx78youtx3dkj6k20li11j445ij51g76hllg7846ih9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5177,7 +5179,7 @@ export class Sumia
 
 @Component({
   selector: 'Maribelle',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Maribelle:_Dire_Damsel" title="Maribelle: Dire Damsel"><img alt="Maribelle Dire Damsel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f19x2fSgx78ohkrrk_Jox78k_Jgsykr_Lgik_LI.vtmx2f775vd-Sgx78ohkrrk_Jox78k_Jgsykr_Lgik_LI.vtmx3fbkx78youtx3d438687i0h57h5ig18gl9737j60k331g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f19x2fSgx78ohkrrk_Jox78k_Jgsykr_Lgik_LI.vtmx3fbkx78youtx3d438687i0h57h5ig18gl9737j60k331g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f19x2fSgx78ohkrrk_Jox78k_Jgsykr_Lgik_LI.vtmx2f35vd-Sgx78ohkrrk_Jox78k_Jgsykr_Lgik_LI.vtmx3fbkx78youtx3d438687i0h57h5ig18gl9737j60k331g6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5199,7 +5201,7 @@ export class Maribelle
 
 @Component({
   selector: 'Cordelia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cordelia:_Knight_Paragon" title="Cordelia: Knight Paragon"><img alt="Cordelia Knight Paragon Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gmut_Lgik_LI.vtmx2f775vd-Iux78jkrog_Qtomnz_Vgx78gmut_Lgik_LI.vtmx3fbkx78youtx3di5534100kh410496486g1j46j57hl05lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gmut_Lgik_LI.vtmx3fbkx78youtx3di5534100kh410496486g1j46j57hl05lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gmut_Lgik_LI.vtmx2f35vd-Iux78jkrog_Qtomnz_Vgx78gmut_Lgik_LI.vtmx3fbkx78youtx3di5534100kh410496486g1j46j57hl05lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5221,7 +5223,7 @@ export class Cordelia
 
 @Component({
   selector: 'CordeliaBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cordelia:_Perfect_Bride" title="Cordelia: Perfect Bride"><img alt="Cordelia Perfect Bride Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6ix2fIux78jkrog_Vkx78lkiz_Hx78ojk_Lgik_LI.vtmx2f775vd-Iux78jkrog_Vkx78lkiz_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d39hj6911k8g33544j2ik90k2hh947jl8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f6ix2fIux78jkrog_Vkx78lkiz_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d39hj6911k8g33544j2ik90k2hh947jl8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f6ix2fIux78jkrog_Vkx78lkiz_Hx78ojk_Lgik_LI.vtmx2f35vd-Iux78jkrog_Vkx78lkiz_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3d39hj6911k8g33544j2ik90k2hh947jl8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5243,7 +5245,7 @@ export class CordeliaBridal
 
 @Component({
   selector: 'CordeliaSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cordelia:_Knight_Paradise" title="Cordelia: Knight Paradise"><img alt="Cordelia Knight Paradise Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gjoyk_Lgik_LI.vtmx2f775vd-Iux78jkrog_Qtomnz_Vgx78gjoyk_Lgik_LI.vtmx3fbkx78youtx3d301g28h48k426326k68jg91k2i24931jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gjoyk_Lgik_LI.vtmx3fbkx78youtx3d301g28h48k426326k68jg91k2i24931jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkix2fIux78jkrog_Qtomnz_Vgx78gjoyk_Lgik_LI.vtmx2f35vd-Iux78jkrog_Qtomnz_Vgx78gjoyk_Lgik_LI.vtmx3fbkx78youtx3d301g28h48k426326k68jg91k2i24931jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5265,7 +5267,7 @@ export class CordeliaSummer
 
 @Component({
   selector: 'Libra',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Libra:_Fetching_Friar" title="Libra: Fetching Friar"><img alt="Libra Fetching Friar Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8gx2fRohx78g_Lkzinotm_Lx78ogx78_Lgik_LI.vtmx2f775vd-Rohx78g_Lkzinotm_Lx78ogx78_Lgik_LI.vtmx3fbkx78youtx3di640h90j280k345l909i7k798j2j2j12x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8gx2fRohx78g_Lkzinotm_Lx78ogx78_Lgik_LI.vtmx3fbkx78youtx3di640h90j280k345l909i7k798j2j2j12x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8gx2fRohx78g_Lkzinotm_Lx78ogx78_Lgik_LI.vtmx2f35vd-Rohx78g_Lkzinotm_Lx78ogx78_Lgik_LI.vtmx3fbkx78youtx3di640h90j280k345l909i7k798j2j2j12x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5287,7 +5289,7 @@ export class Libra
 
 @Component({
   selector: 'Gaius',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gaius:_Candy_Stealer" title="Gaius: Candy Stealer"><img alt="Gaius Candy Stealer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1jx2fMgoay_Igtje_Yzkgrkx78_Lgik_LI.vtmx2f775vd-Mgoay_Igtje_Yzkgrkx78_Lgik_LI.vtmx3fbkx78youtx3d4k1158jgg2i71834hggi9kl316324l3lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1jx2fMgoay_Igtje_Yzkgrkx78_Lgik_LI.vtmx3fbkx78youtx3d4k1158jgg2i71834hggi9kl316324l3lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1jx2fMgoay_Igtje_Yzkgrkx78_Lgik_LI.vtmx2f35vd-Mgoay_Igtje_Yzkgrkx78_Lgik_LI.vtmx3fbkx78youtx3d4k1158jgg2i71834hggi9kl316324l3lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5309,7 +5311,7 @@ export class Gaius
 
 @Component({
   selector: 'GaiusSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gaius:_Thief_Exposed" title="Gaius: Thief Exposed"><img alt="Gaius Thief Exposed Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f01x2fMgoay_Znokl_Kdvuykj_Lgik_LI.vtmx2f775vd-Mgoay_Znokl_Kdvuykj_Lgik_LI.vtmx3fbkx78youtx3dhl1g8560j97502264031ll3k5973i435x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f01x2fMgoay_Znokl_Kdvuykj_Lgik_LI.vtmx3fbkx78youtx3dhl1g8560j97502264031ll3k5973i435x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f01x2fMgoay_Znokl_Kdvuykj_Lgik_LI.vtmx2f35vd-Mgoay_Znokl_Kdvuykj_Lgik_LI.vtmx3fbkx78youtx3dhl1g8560j97502264031ll3k5973i435x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5331,7 +5333,7 @@ export class GaiusSummer
 
 @Component({
   selector: 'Donnel',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Donnel:_Village_Hero" title="Donnel: Village Hero"><img alt="Donnel Village Hero Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi4x2fJuttkr_Borrgmk_Nkx78u_Lgik_LI.vtmx2f775vd-Juttkr_Borrgmk_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3dk1gh414i995g28kk6938lg94lgk76h0jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi4x2fJuttkr_Borrgmk_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3dk1gh414i995g28kk6938lg94lgk76h0jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi4x2fJuttkr_Borrgmk_Nkx78u_Lgik_LI.vtmx2f35vd-Juttkr_Borrgmk_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3dk1gh414i995g28kk6938lg94lgk76h0jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5353,7 +5355,7 @@ export class Donnel
 
 @Component({
   selector: 'Lonqu',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lon%27qu:_Solitary_Blade" title="Lon'qu: Solitary Blade"><img alt="Lonqu Solitary Blade Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhkx2fRutwa_Yurozgx78e_Hrgjk_Lgik_LI.vtmx2f775vd-Rutwa_Yurozgx78e_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d7l519i0ih99j499129hgg5kll87j1942x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhkx2fRutwa_Yurozgx78e_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d7l519i0ih99j499129hgg5kll87j1942x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhkx2fRutwa_Yurozgx78e_Hrgjk_Lgik_LI.vtmx2f35vd-Rutwa_Yurozgx78e_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d7l519i0ih99j499129hgg5kll87j1942x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5375,7 +5377,7 @@ export class Lonqu
 
 @Component({
   selector: 'Olivia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Olivia:_Blushing_Beauty" title="Olivia: Blushing Beauty"><img alt="Olivia Blushing Beauty Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f74x2fUrobog_Hraynotm_Hkgaze_Lgik_LI.vtmx2f775vd-Urobog_Hraynotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dk8549h148h7494g230i81l769433l743x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f74x2fUrobog_Hraynotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dk8549h148h7494g230i81l769433l743x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f74x2fUrobog_Hraynotm_Hkgaze_Lgik_LI.vtmx2f35vd-Urobog_Hraynotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3dk8549h148h7494g230i81l769433l743x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5397,7 +5399,7 @@ export class Olivia
 
 @Component({
   selector: 'OliviaPerforming',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Olivia:_Festival_Dancer" title="Olivia: Festival Dancer"><img alt="Olivia Festival Dancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fUrobog_Lkyzobgr_Jgtikx78_Lgik_LI.vtmx2f775vd-Urobog_Lkyzobgr_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d777ii90h5921515j8701khk1jj4k309lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f16x2fUrobog_Lkyzobgr_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d777ii90h5921515j8701khk1jj4k309lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f16x2fUrobog_Lkyzobgr_Jgtikx78_Lgik_LI.vtmx2f35vd-Urobog_Lkyzobgr_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d777ii90h5921515j8701khk1jj4k309lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5419,7 +5421,7 @@ export class OliviaPerforming
 
 @Component({
   selector: 'OliviaYlisseanTravelers',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Olivia:_Sky-High_Dancer" title="Olivia: Sky-High Dancer"><img alt="Olivia Sky-High Dancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi1x2fUrobog_Yqe-Nomn_Jgtikx78_Lgik_LI.vtmx2f775vd-Urobog_Yqe-Nomn_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d5g15kj9145i9jjk6142547548gj07g4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi1x2fUrobog_Yqe-Nomn_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d5g15kj9145i9jjk6142547548gj07g4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi1x2fUrobog_Yqe-Nomn_Jgtikx78_Lgik_LI.vtmx2f35vd-Urobog_Yqe-Nomn_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d5g15kj9145i9jjk6142547548gj07g4ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5441,7 +5443,7 @@ export class OliviaYlisseanTravelers
 
 @Component({
   selector: 'Henry',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Henry:_Twisted_Mind" title="Henry: Twisted Mind"><img alt="Henry Twisted Mind Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f26x2fNktx78e_Zcoyzkj_Sotj_Lgik_LI.vtmx2f775vd-Nktx78e_Zcoyzkj_Sotj_Lgik_LI.vtmx3fbkx78youtx3dkk6glj282jg06j09lgkjk29669141ik3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f26x2fNktx78e_Zcoyzkj_Sotj_Lgik_LI.vtmx3fbkx78youtx3dkk6glj282jg06j09lgkjk29669141ik3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f26x2fNktx78e_Zcoyzkj_Sotj_Lgik_LI.vtmx2f35vd-Nktx78e_Zcoyzkj_Sotj_Lgik_LI.vtmx3fbkx78youtx3dkk6glj282jg06j09lgkjk29669141ik3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5463,7 +5465,7 @@ export class Henry
 
 @Component({
   selector: 'HenryHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Henry:_Happy_Vampire" title="Henry: Happy Vampire"><img alt="Henry Happy Vampire Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fNktx78e_Ngvve_Bgsvox78k_Lgik_LI.vtmx2f775vd-Nktx78e_Ngvve_Bgsvox78k_Lgik_LI.vtmx3fbkx78youtx3d6444h78711h5116ij038lgilhg186ii7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f87x2fNktx78e_Ngvve_Bgsvox78k_Lgik_LI.vtmx3fbkx78youtx3d6444h78711h5116ij038lgilhg186ii7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f87x2fNktx78e_Ngvve_Bgsvox78k_Lgik_LI.vtmx2f35vd-Nktx78e_Ngvve_Bgsvox78k_Lgik_LI.vtmx3fbkx78youtx3d6444h78711h5116ij038lgilhg186ii7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5485,7 +5487,7 @@ export class HenryHalloween
 
 @Component({
   selector: 'Tharja',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tharja:_Dark_Shadow" title="Tharja: Dark Shadow"><img alt="Tharja Dark Shadow Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f47x2fZngx78pg_Jgx78q_Yngjuc_Lgik_LI.vtmx2f775vd-Zngx78pg_Jgx78q_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3d57k49887kk4l8l3l849ii759jhi7j9i4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f47x2fZngx78pg_Jgx78q_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3d57k49887kk4l8l3l849ii759jhi7j9i4x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f47x2fZngx78pg_Jgx78q_Yngjuc_Lgik_LI.vtmx2f35vd-Zngx78pg_Jgx78q_Yngjuc_Lgik_LI.vtmx3fbkx78youtx3d57k49887kk4l8l3l849ii759jhi7j9i4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5507,7 +5509,7 @@ export class Tharja
 
 @Component({
   selector: 'TharjaWinter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tharja:_%22Normal_Girl%22" title="Tharja: &quot;Normal Girl&quot;"><img alt="Tharja Normal Girl Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0kx2fZngx78pg_Tux78sgr_Mox78r_Lgik_LI.vtmx2f775vd-Zngx78pg_Tux78sgr_Mox78r_Lgik_LI.vtmx3fbkx78youtx3d2kh73ilkl0849g034j353lhhjli2lh65x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0kx2fZngx78pg_Tux78sgr_Mox78r_Lgik_LI.vtmx3fbkx78youtx3d2kh73ilkl0849g034j353lhhjli2lh65x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0kx2fZngx78pg_Tux78sgr_Mox78r_Lgik_LI.vtmx2f35vd-Zngx78pg_Tux78sgr_Mox78r_Lgik_LI.vtmx3fbkx78youtx3d2kh73ilkl0849g034j353lhhjli2lh65x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5529,7 +5531,7 @@ export class TharjaWinter
 
 @Component({
   selector: 'TharjaBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tharja:_Obsessive_Bride" title="Tharja: Obsessive Bride"><img alt="Tharja Obsessive Bride Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj8x2fZngx78pg_Uhykyyobk_Hx78ojk_Lgik_LI.vtmx2f775vd-Zngx78pg_Uhykyyobk_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3dlj9447jiih03ii7j6302l5jk30g500jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj8x2fZngx78pg_Uhykyyobk_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3dlj9447jiih03ii7j6302l5jk30g500jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj8x2fZngx78pg_Uhykyyobk_Hx78ojk_Lgik_LI.vtmx2f35vd-Zngx78pg_Uhykyyobk_Hx78ojk_Lgik_LI.vtmx3fbkx78youtx3dlj9447jiih03ii7j6302l5jk30g500jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5551,7 +5553,7 @@ export class TharjaBridal
 
 @Component({
   selector: 'Aversa',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Aversa:_Dark_One" title="Aversa: Dark One"><img alt="Aversa Dark One Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f61x2fGbkx78yg_Jgx78q_Utk_Lgik_LI.vtmx2f775vd-Gbkx78yg_Jgx78q_Utk_Lgik_LI.vtmx3fbkx78youtx3d72kli618k941g6j983i146jl2jg09k14x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f61x2fGbkx78yg_Jgx78q_Utk_Lgik_LI.vtmx3fbkx78youtx3d72kli618k941g6j983i146jl2jg09k14x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f61x2fGbkx78yg_Jgx78q_Utk_Lgik_LI.vtmx2f35vd-Gbkx78yg_Jgx78q_Utk_Lgik_LI.vtmx3fbkx78youtx3d72kli618k941g6j983i146jl2jg09k14x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5574,7 +5576,7 @@ export class Aversa
 
 @Component({
   selector: 'Walhart',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Walhart:_The_Conqueror" title="Walhart: The Conqueror"><img alt="Walhart The Conqueror Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fiix2fCgrngx78z_Znk_Iutwakx78ux78_Lgik_LI.vtmx2f775vd-Cgrngx78z_Znk_Iutwakx78ux78_Lgik_LI.vtmx3fbkx78youtx3d7298i6j45h40gg0438k3953h09872h69x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fiix2fCgrngx78z_Znk_Iutwakx78ux78_Lgik_LI.vtmx3fbkx78youtx3d7298i6j45h40gg0438k3953h09872h69x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fiix2fCgrngx78z_Znk_Iutwakx78ux78_Lgik_LI.vtmx2f35vd-Cgrngx78z_Znk_Iutwakx78ux78_Lgik_LI.vtmx3fbkx78youtx3d7298i6j45h40gg0438k3953h09872h69x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5596,7 +5598,7 @@ export class Walhart
 
 @Component({
   selector: 'Virion',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Virion:_Elite_Archer" title="Virion: Elite Archer"><img alt="Virion Elite Archer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f96x2fBox78out_Krozk_Gx78inkx78_Lgik_LI.vtmx2f775vd-Box78out_Krozk_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d5186l4k310l048416379k0ih8ik40542x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f96x2fBox78out_Krozk_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d5186l4k310l048416379k0ih8ik40542x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f96x2fBox78out_Krozk_Gx78inkx78_Lgik_LI.vtmx2f35vd-Box78out_Krozk_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d5186l4k310l048416379k0ih8ik40542x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5618,7 +5620,7 @@ export class Virion
 
 @Component({
   selector: 'Cherche',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Cherche:_Wyvern_Friend" title="Cherche: Wyvern Friend"><img alt="Cherche Wyvern Friend Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fInkx78ink_Cebkx78t_Lx78oktj_Lgik_LI.vtmx2f775vd-Inkx78ink_Cebkx78t_Lx78oktj_Lgik_LI.vtmx3fbkx78youtx3dk9234208kk6h5i721g47592k7i5g9974x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg0x2fInkx78ink_Cebkx78t_Lx78oktj_Lgik_LI.vtmx3fbkx78youtx3dk9234208kk6h5i721g47592k7i5g9974x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fInkx78ink_Cebkx78t_Lx78oktj_Lgik_LI.vtmx2f35vd-Inkx78ink_Cebkx78t_Lx78oktj_Lgik_LI.vtmx3fbkx78youtx3dk9234208kk6h5i721g47592k7i5g9974x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5640,7 +5642,7 @@ export class Cherche
 
 @Component({
   selector: 'TikiAdult',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tiki:_Naga%27s_Voice" title="Tiki: Naga's Voice"><img alt="Tiki Nagas Voice Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fZoqo_Tgmgy_Buoik_Lgik_LI.vtmx2f775vd-Zoqo_Tgmgy_Buoik_Lgik_LI.vtmx3fbkx78youtx3dhg2k1241j99k36ghg04i1j30hh75ggh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f04x2fZoqo_Tgmgy_Buoik_Lgik_LI.vtmx3fbkx78youtx3dhg2k1241j99k36ghg04i1j30hh75ggh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fZoqo_Tgmgy_Buoik_Lgik_LI.vtmx2f35vd-Zoqo_Tgmgy_Buoik_Lgik_LI.vtmx3fbkx78youtx3dhg2k1241j99k36ghg04i1j30hh75ggh1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5662,7 +5664,7 @@ export class TikiAdult
 
 @Component({
   selector: 'TikiAdultSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Tiki:_Summering_Scion" title="Tiki: Summering Scion"><img alt="Tiki Summering Scion Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjkx2fZoqo_Yasskx78otm_Yiout_Lgik_LI.vtmx2f775vd-Zoqo_Yasskx78otm_Yiout_Lgik_LI.vtmx3fbkx78youtx3dk61g5238g099j07h3l2806g204700g01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjkx2fZoqo_Yasskx78otm_Yiout_Lgik_LI.vtmx3fbkx78youtx3dk61g5238g099j07h3l2806g204700g01x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjkx2fZoqo_Yasskx78otm_Yiout_Lgik_LI.vtmx2f35vd-Zoqo_Yasskx78otm_Yiout_Lgik_LI.vtmx3fbkx78youtx3dk61g5238g099j07h3l2806g204700g01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5685,7 +5687,7 @@ export class TikiAdultSummer
 
 @Component({
   selector: 'Nowi',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nowi:_Eternal_Youth" title="Nowi: Eternal Youth"><img alt="Nowi Eternal Youth Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhjx2fTuco_Kzkx78tgr_Euazn_Lgik_LI.vtmx2f775vd-Tuco_Kzkx78tgr_Euazn_Lgik_LI.vtmx3fbkx78youtx3di9586h77g2g9hg983943jgkk9ih6j4g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhjx2fTuco_Kzkx78tgr_Euazn_Lgik_LI.vtmx3fbkx78youtx3di9586h77g2g9hg983943jgkk9ih6j4g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhjx2fTuco_Kzkx78tgr_Euazn_Lgik_LI.vtmx2f35vd-Tuco_Kzkx78tgr_Euazn_Lgik_LI.vtmx3fbkx78youtx3di9586h77g2g9hg983943jgkk9ih6j4g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5707,7 +5709,7 @@ export class Nowi
 
 @Component({
   selector: 'NowiHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nowi:_Eternal_Witch" title="Nowi: Eternal Witch"><img alt="Nowi Eternal Witch Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fTuco_Kzkx78tgr_Cozin_Lgik_LI.vtmx2f775vd-Tuco_Kzkx78tgr_Cozin_Lgik_LI.vtmx3fbkx78youtx3d2i23i1i28iljjk0g068j81l2ij0g6357x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg0x2fTuco_Kzkx78tgr_Cozin_Lgik_LI.vtmx3fbkx78youtx3d2i23i1i28iljjk0g068j81l2ij0g6357x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg0x2fTuco_Kzkx78tgr_Cozin_Lgik_LI.vtmx2f35vd-Tuco_Kzkx78tgr_Cozin_Lgik_LI.vtmx3fbkx78youtx3d2i23i1i28iljjk0g068j81l2ij0g6357x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5729,7 +5731,7 @@ export class NowiHalloween
 
 @Component({
   selector: 'Panne',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Panne:_Proud_Taguel" title="Panne: Proud Taguel"><img alt="Panne Proud Taguel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fVgttk_Vx78uaj_Zgmakr_Lgik_LI.vtmx2f775vd-Vgttk_Vx78uaj_Zgmakr_Lgik_LI.vtmx3fbkx78youtx3d96326l7i59h6i9325g6k6h81i3ig8641x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg1x2fVgttk_Vx78uaj_Zgmakr_Lgik_LI.vtmx3fbkx78youtx3d96326l7i59h6i9325g6k6h81i3ig8641x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg1x2fVgttk_Vx78uaj_Zgmakr_Lgik_LI.vtmx2f35vd-Vgttk_Vx78uaj_Zgmakr_Lgik_LI.vtmx3fbkx78youtx3d96326l7i59h6i9325g6k6h81i3ig8641x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5751,7 +5753,7 @@ export class Panne
 
 @Component({
   selector: 'Lucina',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lucina:_Future_Witness" title="Lucina: Future Witness"><img alt="Lucina Future Witness Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f02x2fRaiotg_Lazax78k_Coztkyy_Lgik_LI.vtmx2f775vd-Raiotg_Lazax78k_Coztkyy_Lgik_LI.vtmx3fbkx78youtx3dg8682i878g018l903g3gj8hj0igkkgg1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f02x2fRaiotg_Lazax78k_Coztkyy_Lgik_LI.vtmx3fbkx78youtx3dg8682i878g018l903g3gj8hj0igkkgg1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f02x2fRaiotg_Lazax78k_Coztkyy_Lgik_LI.vtmx2f35vd-Raiotg_Lazax78k_Coztkyy_Lgik_LI.vtmx3fbkx78youtx3dg8682i878g018l903g3gj8hj0igkkgg1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5773,7 +5775,7 @@ export class Lucina
 
 @Component({
   selector: 'LucinaSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lucina:_Spring_Exalt" title="Lucina: Spring Exalt"><img alt="Lucina Spring Exalt Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fglx2fRaiotg_Yvx78otm_Kdgrz_Lgik_LI.vtmx2f775vd-Raiotg_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d9l6ljk907lh02jlki2jh735g988l0141x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fglx2fRaiotg_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d9l6ljk907lh02jlki2jh735g988l0141x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fglx2fRaiotg_Yvx78otm_Kdgrz_Lgik_LI.vtmx2f35vd-Raiotg_Yvx78otm_Kdgrz_Lgik_LI.vtmx3fbkx78youtx3d9l6ljk907lh02jlki2jh735g988l0141x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5795,7 +5797,7 @@ export class LucinaSpring
 
 @Component({
   selector: 'LucinaMasked',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Marth:_Enigmatic_Blade" title="Marth: Enigmatic Blade"><img alt="Marth Enigmatic Blade Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f67x2fSgx78zn_Ktomsgzoi_Hrgjk_Lgik_LI.vtmx2f775vd-Sgx78zn_Ktomsgzoi_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d58716kl118371116g0485jh19ikil479x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f67x2fSgx78zn_Ktomsgzoi_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d58716kl118371116g0485jh19ikil479x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f67x2fSgx78zn_Ktomsgzoi_Hrgjk_Lgik_LI.vtmx2f35vd-Sgx78zn_Ktomsgzoi_Hrgjk_Lgik_LI.vtmx3fbkx78youtx3d58716kl118371116g0485jh19ikil479x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5817,7 +5819,7 @@ export class LucinaMasked
 
 @Component({
   selector: 'LucinaBrave',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lucina:_Brave_Princess" title="Lucina: Brave Princess"><img alt="Lucina Brave Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh1x2fRaiotg_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx2f775vd-Raiotg_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhji98i8gj5439g074lki955i0ii6i8lkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh1x2fRaiotg_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhji98i8gj5439g074lki955i0ii6i8lkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh1x2fRaiotg_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx2f35vd-Raiotg_Hx78gbk_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dhji98i8gj5439g074lki955i0ii6i8lkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5839,7 +5841,7 @@ export class LucinaBrave
 
 @Component({
   selector: 'LucinaLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Lucina:_Glorious_Archer" title="Lucina: Glorious Archer"><img alt="Lucina Glorious Archer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2ix2fRaiotg_Mrux78ouay_Gx78inkx78_Lgik_LI.vtmx2f775vd-Raiotg_Mrux78ouay_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d2878i9hji330hgg9ggl1i6ii9jjigh01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2ix2fRaiotg_Mrux78ouay_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d2878i9hji330hgg9ggl1i6ii9jjigh01x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2ix2fRaiotg_Mrux78ouay_Gx78inkx78_Lgik_LI.vtmx2f35vd-Raiotg_Mrux78ouay_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d2878i9hji330hgg9ggl1i6ii9jjigh01x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5861,7 +5863,7 @@ export class LucinaLegendary
 
 @Component({
   selector: 'Owain',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Owain:_Chosen_One" title="Owain: Chosen One"><img alt="Owain Chosen One Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f62x2fUcgot_Inuykt_Utk_Lgik_LI.vtmx2f775vd-Ucgot_Inuykt_Utk_Lgik_LI.vtmx3fbkx78youtx3dj0g13468456i89275597j901i164hljix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f62x2fUcgot_Inuykt_Utk_Lgik_LI.vtmx3fbkx78youtx3dj0g13468456i89275597j901i164hljix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f62x2fUcgot_Inuykt_Utk_Lgik_LI.vtmx2f35vd-Ucgot_Inuykt_Utk_Lgik_LI.vtmx3fbkx78youtx3dj0g13468456i89275597j901i164hljix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5883,7 +5885,7 @@ export class Owain
 
 @Component({
   selector: 'InigoPerforming',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Inigo:_Indigo_Dancer" title="Inigo: Indigo Dancer"><img alt="Inigo Indigo Dancer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fOtomu_Otjomu_Jgtikx78_Lgik_LI.vtmx2f775vd-Otomu_Otjomu_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d52l65l15l2ll4h215h095i9092i94501x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2jx2fOtomu_Otjomu_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d52l65l15l2ll4h215h095i9092i94501x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2jx2fOtomu_Otjomu_Jgtikx78_Lgik_LI.vtmx2f35vd-Otomu_Otjomu_Jgtikx78_Lgik_LI.vtmx3fbkx78youtx3d52l65l15l2ll4h215h095i9092i94501x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5905,7 +5907,7 @@ export class InigoPerforming
 
 @Component({
   selector: 'Gerome',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gerome:_Masked_Rider" title="Gerome: Masked Rider"><img alt="Gerome Masked Rider Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh2x2fMkx78usk_Sgyqkj_Xojkx78_Lgik_LI.vtmx2f775vd-Mkx78usk_Sgyqkj_Xojkx78_Lgik_LI.vtmx3fbkx78youtx3dlg04kl49130i4j0k6ll65g5h926864k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh2x2fMkx78usk_Sgyqkj_Xojkx78_Lgik_LI.vtmx3fbkx78youtx3dlg04kl49130i4j0k6ll65g5h926864k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh2x2fMkx78usk_Sgyqkj_Xojkx78_Lgik_LI.vtmx2f35vd-Mkx78usk_Sgyqkj_Xojkx78_Lgik_LI.vtmx3fbkx78youtx3dlg04kl49130i4j0k6ll65g5h926864k7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5927,7 +5929,7 @@ export class Gerome
 
 @Component({
   selector: 'MorganM',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Morgan:_Lad_from_Afar" title="Morgan: Lad from Afar"><img alt="Morgan Lad from Afar Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fSux78mgt_Rgj_lx78us_Glgx78_Lgik_LI.vtmx2f775vd-Sux78mgt_Rgj_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d692272k71893h28gjig12k4i433gjlk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f82x2fSux78mgt_Rgj_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d692272k71893h28gjig12k4i433gjlk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f82x2fSux78mgt_Rgj_lx78us_Glgx78_Lgik_LI.vtmx2f35vd-Sux78mgt_Rgj_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d692272k71893h28gjig12k4i433gjlk7x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5949,7 +5951,7 @@ export class MorganM
 
 @Component({
   selector: 'MorganF',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Morgan:_Lass_from_Afar" title="Morgan: Lass from Afar"><img alt="Morgan Lass from Afar Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg7x2fSux78mgt_Rgyy_lx78us_Glgx78_Lgik_LI.vtmx2f775vd-Sux78mgt_Rgyy_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d44j4ihh61k4l319jlkik34ij91ih1327x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg7x2fSux78mgt_Rgyy_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d44j4ihh61k4l319jlkik34ij91ih1327x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg7x2fSux78mgt_Rgyy_lx78us_Glgx78_Lgik_LI.vtmx2f35vd-Sux78mgt_Rgyy_lx78us_Glgx78_Lgik_LI.vtmx3fbkx78youtx3d44j4ihh61k4l319jlkik34ij91ih1327x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5971,7 +5973,7 @@ export class MorganF
 
 @Component({
   selector: 'NoireSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Noire:_Shade_Seeker" title="Noire: Shade Seeker"><img alt="Noire Shade Seeker Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fTuox78k_Yngjk_Ykkqkx78_Lgik_LI.vtmx2f775vd-Tuox78k_Yngjk_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3dgg307j17k3g99kh9gli5861669j4836lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fllx2fTuox78k_Yngjk_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3dgg307j17k3g99kh9gli5861669j4836lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fTuox78k_Yngjk_Ykkqkx78_Lgik_LI.vtmx2f35vd-Tuox78k_Yngjk_Ykkqkx78_Lgik_LI.vtmx3fbkx78youtx3dgg307j17k3g99kh9gli5861669j4836lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -5994,7 +5996,7 @@ export class NoireSummer
 
 @Component({
   selector: 'CorrinM',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Fateful_Prince" title="Corrin: Fateful Prince"><img alt="Corrin Fateful Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh3x2fIux78x78ot_Lgzklar_Vx78otik_Lgik_LI.vtmx2f775vd-Iux78x78ot_Lgzklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d96l480h54174l6729l408kg3l4l509ijx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh3x2fIux78x78ot_Lgzklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d96l480h54174l6729l408kg3l4l509ijx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh3x2fIux78x78ot_Lgzklar_Vx78otik_Lgik_LI.vtmx2f35vd-Iux78x78ot_Lgzklar_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d96l480h54174l6729l408kg3l4l509ijx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6016,7 +6018,7 @@ export class CorrinM
 
 @Component({
   selector: 'CorrinMNewYears',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Enjoying_Tradition" title="Corrin: Enjoying Tradition"><img alt="Corrin Enjoying Tradition Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2kx2fIux78x78ot_Ktpueotm_Zx78gjozout_Lgik_LI.vtmx2f775vd-Iux78x78ot_Ktpueotm_Zx78gjozout_Lgik_LI.vtmx3fbkx78youtx3d2i31h97g28ggh8829gliklh13jl9g5i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2kx2fIux78x78ot_Ktpueotm_Zx78gjozout_Lgik_LI.vtmx3fbkx78youtx3d2i31h97g28ggh8829gliklh13jl9g5i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2kx2fIux78x78ot_Ktpueotm_Zx78gjozout_Lgik_LI.vtmx2f35vd-Iux78x78ot_Ktpueotm_Zx78gjozout_Lgik_LI.vtmx3fbkx78youtx3d2i31h97g28ggh8829gliklh13jl9g5i3x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6038,7 +6040,7 @@ export class CorrinMNewYears
 
 @Component({
   selector: 'CorrinMAdrift',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Dream_Prince" title="Corrin: Dream Prince"><img alt="Corrin Dream Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fIux78x78ot_Jx78kgs_Vx78otik_Lgik_LI.vtmx2f775vd-Iux78x78ot_Jx78kgs_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk5ghgkk8h9lh7kghl88669l4021li324x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fIux78x78ot_Jx78kgs_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk5ghgkk8h9lh7kghl88669l4021li324x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fIux78x78ot_Jx78kgs_Vx78otik_Lgik_LI.vtmx2f35vd-Iux78x78ot_Jx78kgs_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dk5ghgkk8h9lh7kghl88669l4021li324x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6060,7 +6062,7 @@ export class CorrinMAdrift
 
 @Component({
   selector: 'CorrinF',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Fateful_Princess" title="Corrin: Fateful Princess"><img alt="Corrin Fateful Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f11x2fIux78x78ot_Lgzklar_Vx78otikyy_Lgik_LI.vtmx2f775vd-Iux78x78ot_Lgzklar_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d41h2j960499g75lkg26796258ig91jj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f11x2fIux78x78ot_Lgzklar_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d41h2j960499g75lkg26796258ig91jj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f11x2fIux78x78ot_Lgzklar_Vx78otikyy_Lgik_LI.vtmx2f35vd-Iux78x78ot_Lgzklar_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d41h2j960499g75lkg26796258ig91jj5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6082,7 +6084,7 @@ export class CorrinF
 
 @Component({
   selector: 'CorrinFSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Novice_Vacationer" title="Corrin: Novice Vacationer"><img alt="Corrin Novice Vacationer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3ix2fIux78x78ot_Tuboik_Bgigzoutkx78_Lgik_LI.vtmx2f775vd-Iux78x78ot_Tuboik_Bgigzoutkx78_Lgik_LI.vtmx3fbkx78youtx3d158h14854j64l0h41l7781886h962052x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3ix2fIux78x78ot_Tuboik_Bgigzoutkx78_Lgik_LI.vtmx3fbkx78youtx3d158h14854j64l0h41l7781886h962052x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3ix2fIux78x78ot_Tuboik_Bgigzoutkx78_Lgik_LI.vtmx2f35vd-Iux78x78ot_Tuboik_Bgigzoutkx78_Lgik_LI.vtmx3fbkx78youtx3d158h14854j64l0h41l7781886h962052x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6104,7 +6106,7 @@ export class CorrinFSummer
 
 @Component({
   selector: 'CorrinFAdrift',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Corrin:_Dream_Princess" title="Corrin: Dream Princess"><img alt="Corrin Dream Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk8x2fIux78x78ot_Jx78kgs_Vx78otikyy_Lgik_LI.vtmx2f775vd-Iux78x78ot_Jx78kgs_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dh431ghh95l32iijh8k0757647h271jj4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk8x2fIux78x78ot_Jx78kgs_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dh431ghh95l32iijh8k0757647h271jj4x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk8x2fIux78x78ot_Jx78kgs_Vx78otikyy_Lgik_LI.vtmx2f35vd-Iux78x78ot_Jx78kgs_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dh431ghh95l32iijh8k0757647h271jj4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6126,7 +6128,7 @@ export class CorrinFAdrift
 
 @Component({
   selector: 'Azura',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azura:_Lady_of_the_Lake" title="Azura: Lady of the Lake"><img alt="Azura Lady of the Lake Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fGfax78g_Rgje_ul_znk_Rgqk_Lgik_LI.vtmx2f775vd-Gfax78g_Rgje_ul_znk_Rgqk_Lgik_LI.vtmx3fbkx78youtx3dg99i9749l5j209043282297gi08gg048x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh6x2fGfax78g_Rgje_ul_znk_Rgqk_Lgik_LI.vtmx3fbkx78youtx3dg99i9749l5j209043282297gi08gg048x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh6x2fGfax78g_Rgje_ul_znk_Rgqk_Lgik_LI.vtmx2f35vd-Gfax78g_Rgje_ul_znk_Rgqk_Lgik_LI.vtmx3fbkx78youtx3dg99i9749l5j209043282297gi08gg048x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6148,7 +6150,7 @@ export class Azura
 
 @Component({
   selector: 'AzuraPerforming',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azura:_Lady_of_Ballads" title="Azura: Lady of Ballads"><img alt="Azura Lady of Ballads Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fGfax78g_Rgje_ul_Hgrrgjy_Lgik_LI.vtmx2f775vd-Gfax78g_Rgje_ul_Hgrrgjy_Lgik_LI.vtmx3fbkx78youtx3d426l86h963h0gg649j035671981901khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl0x2fGfax78g_Rgje_ul_Hgrrgjy_Lgik_LI.vtmx3fbkx78youtx3d426l86h963h0gg649j035671981901khx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl0x2fGfax78g_Rgje_ul_Hgrrgjy_Lgik_LI.vtmx2f35vd-Gfax78g_Rgje_ul_Hgrrgjy_Lgik_LI.vtmx3fbkx78youtx3d426l86h963h0gg649j035671981901khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6170,7 +6172,7 @@ export class AzuraPerforming
 
 @Component({
   selector: 'AzuraNewYears',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azura:_Celebratory_Spirit" title="Azura: Celebratory Spirit"><img alt="Azura Celebratory Spirit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fGfax78g_Ikrkhx78gzux78e_Yvox78oz_Lgik_LI.vtmx2f775vd-Gfax78g_Ikrkhx78gzux78e_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8h552711j99054jj140206gii44i5i1hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f50x2fGfax78g_Ikrkhx78gzux78e_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8h552711j99054jj140206gii44i5i1hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f50x2fGfax78g_Ikrkhx78gzux78e_Yvox78oz_Lgik_LI.vtmx2f35vd-Gfax78g_Ikrkhx78gzux78e_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d8h552711j99054jj140206gii44i5i1hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6192,7 +6194,7 @@ export class AzuraNewYears
 
 @Component({
   selector: 'AzuraYoung',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azura:_Young_Songstress" title="Azura: Young Songstress"><img alt="Azura Young Songstress Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fGfax78g_Euatm_Yutmyzx78kyy_Lgik_LI.vtmx2f775vd-Gfax78g_Euatm_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d48286hjkih3g63796hijh8i5274kli93x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fllx2fGfax78g_Euatm_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d48286hjkih3g63796hijh8i5274kli93x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fllx2fGfax78g_Euatm_Yutmyzx78kyy_Lgik_LI.vtmx2f35vd-Gfax78g_Euatm_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d48286hjkih3g63796hijh8i5274kli93x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6214,7 +6216,7 @@ export class AzuraYoung
 
 @Component({
   selector: 'AzuraLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azura:_Vallite_Songstress" title="Azura: Vallite Songstress"><img alt="Azura Vallite Songstress Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl3x2fGfax78g_Bgrrozk_Yutmyzx78kyy_Lgik_LI.vtmx2f775vd-Gfax78g_Bgrrozk_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d1lhg3l224g2751i170kj23h6jjhlh4khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl3x2fGfax78g_Bgrrozk_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d1lhg3l224g2751i170kj23h6jjhlh4khx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl3x2fGfax78g_Bgrrozk_Yutmyzx78kyy_Lgik_LI.vtmx2f35vd-Gfax78g_Bgrrozk_Yutmyzx78kyy_Lgik_LI.vtmx3fbkx78youtx3d1lhg3l224g2751i170kj23h6jjhlh4khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6236,7 +6238,7 @@ export class AzuraLegendary
 
 @Component({
   selector: 'Gunter',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Gunter:_Inveterate_Soldier" title="Gunter: Inveterate Soldier"><img alt="Gunter Inveterate Soldier Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fMatzkx78_Otbkzkx78gzk_Yurjokx78_Lgik_LI.vtmx2f775vd-Matzkx78_Otbkzkx78gzk_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d1ljl5khkg24801l3j65541h0558568j0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhgx2fMatzkx78_Otbkzkx78gzk_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d1ljl5khkg24801l3j65541h0558568j0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhgx2fMatzkx78_Otbkzkx78gzk_Yurjokx78_Lgik_LI.vtmx2f35vd-Matzkx78_Otbkzkx78gzk_Yurjokx78_Lgik_LI.vtmx3fbkx78youtx3d1ljl5khkg24801l3j65541h0558568j0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6258,7 +6260,7 @@ export class Gunter
 
 @Component({
   selector: 'Felicia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Felicia:_Maid_Mayhem" title="Felicia: Maid Mayhem"><img alt="Felicia Maid Mayhem Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fLkroiog_Sgoj_Sgenks_Lgik_LI.vtmx2f775vd-Lkroiog_Sgoj_Sgenks_Lgik_LI.vtmx3fbkx78youtx3d42l668k48j8k077i2297g31g4554k6g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi6x2fLkroiog_Sgoj_Sgenks_Lgik_LI.vtmx3fbkx78youtx3d42l668k48j8k077i2297g31g4554k6g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi6x2fLkroiog_Sgoj_Sgenks_Lgik_LI.vtmx2f35vd-Lkroiog_Sgoj_Sgenks_Lgik_LI.vtmx3fbkx78youtx3d42l668k48j8k077i2297g31g4554k6g5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6280,7 +6282,7 @@ export class Felicia
 
 @Component({
   selector: 'Jakob',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jakob:_Devoted_Servant" title="Jakob: Devoted Servant"><img alt="Jakob Devoted Servant Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f03x2fPgquh_Jkbuzkj_Ykx78bgtz_Lgik_LI.vtmx2f775vd-Pgquh_Jkbuzkj_Ykx78bgtz_Lgik_LI.vtmx3fbkx78youtx3d9649589hilj37g500l1341833099i73lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f03x2fPgquh_Jkbuzkj_Ykx78bgtz_Lgik_LI.vtmx3fbkx78youtx3d9649589hilj37g500l1341833099i73lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f03x2fPgquh_Jkbuzkj_Ykx78bgtz_Lgik_LI.vtmx2f35vd-Pgquh_Jkbuzkj_Ykx78bgtz_Lgik_LI.vtmx3fbkx78youtx3d9649589hilj37g500l1341833099i73lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6302,7 +6304,7 @@ export class Jakob
 
 @Component({
   selector: 'JakobHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Jakob:_Devoted_Monster" title="Jakob: Devoted Monster"><img alt="Jakob Devoted Monster Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f53x2fPgquh_Jkbuzkj_Sutyzkx78_Lgik_LI.vtmx2f775vd-Pgquh_Jkbuzkj_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d3ihl94li0h660139l43ii2gg923ijgklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f53x2fPgquh_Jkbuzkj_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d3ihl94li0h660139l43ii2gg923ijgklx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f53x2fPgquh_Jkbuzkj_Sutyzkx78_Lgik_LI.vtmx2f35vd-Pgquh_Jkbuzkj_Sutyzkx78_Lgik_LI.vtmx3fbkx78youtx3d3ihl94li0h660139l43ii2gg923ijgklx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6324,7 +6326,7 @@ export class JakobHalloween
 
 @Component({
   selector: 'Mikoto',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Mikoto:_Caring_Mother" title="Mikoto: Caring Mother"><img alt="Mikoto Caring Mother Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f33x2fSoquzu_Igx78otm_Suznkx78_Lgik_LI.vtmx2f775vd-Soquzu_Igx78otm_Suznkx78_Lgik_LI.vtmx3fbkx78youtx3dl700ig0i658h64k7l57487j96j21379jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f33x2fSoquzu_Igx78otm_Suznkx78_Lgik_LI.vtmx3fbkx78youtx3dl700ig0i658h64k7l57487j96j21379jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f33x2fSoquzu_Igx78otm_Suznkx78_Lgik_LI.vtmx2f35vd-Soquzu_Igx78otm_Suznkx78_Lgik_LI.vtmx3fbkx78youtx3dl700ig0i658h64k7l57487j96j21379jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6346,7 +6348,7 @@ export class Mikoto
 
 @Component({
   selector: 'Ryoma',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ryoma:_Peerless_Samurai" title="Ryoma: Peerless Samurai"><img alt="Ryoma Peerless Samurai Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8ix2fXeusg_Vkkx78rkyy_Ygsax78go_Lgik_LI.vtmx2f775vd-Xeusg_Vkkx78rkyy_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3di85h7281lggkllii901k392115287i8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f8ix2fXeusg_Vkkx78rkyy_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3di85h7281lggkllii901k392115287i8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f8ix2fXeusg_Vkkx78rkyy_Ygsax78go_Lgik_LI.vtmx2f35vd-Xeusg_Vkkx78rkyy_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3di85h7281lggkllii901k392115287i8jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6368,7 +6370,7 @@ export class Ryoma
 
 @Component({
   selector: 'RyomaLegendary',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="legendary" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ryoma:_Supreme_Samurai" title="Ryoma: Supreme Samurai"><img alt="Ryoma Supreme Samurai Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhhx2fXeusg_Yavx78ksk_Ygsax78go_Lgik_LI.vtmx2f775vd-Xeusg_Yavx78ksk_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d2i69846g370k676013527h4kg7g2l2j9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhhx2fXeusg_Yavx78ksk_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d2i69846g370k676013527h4kg7g2l2j9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhhx2fXeusg_Yavx78ksk_Ygsax78go_Lgik_LI.vtmx2f35vd-Xeusg_Yavx78ksk_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d2i69846g370k676013527h4kg7g2l2j9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6390,7 +6392,7 @@ export class RyomaLegendary
 
 @Component({
   selector: 'RyomaFestival',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ryoma:_Dancing_Samurai" title="Ryoma: Dancing Samurai"><img alt="Ryoma Dancing Samurai Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7jx2fXeusg_Jgtiotm_Ygsax78go_Lgik_LI.vtmx2f775vd-Xeusg_Jgtiotm_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d507h4hlkg02l551kk52hk4ggl0llk5khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f7jx2fXeusg_Jgtiotm_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d507h4hlkg02l551kk52hk4ggl0llk5khx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f7jx2fXeusg_Jgtiotm_Ygsax78go_Lgik_LI.vtmx2f35vd-Xeusg_Jgtiotm_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3d507h4hlkg02l551kk52hk4ggl0llk5khx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6412,7 +6414,7 @@ export class RyomaFestival
 
 @Component({
   selector: 'RyomaHotSprings',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ryoma:_Samurai_at_Ease" title="Ryoma: Samurai at Ease"><img alt="Ryoma Samurai at Ease Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh0x2fXeusg_Ygsax78go_gz_Kgyk_Lgik_LI.vtmx2f775vd-Xeusg_Ygsax78go_gz_Kgyk_Lgik_LI.vtmx3fbkx78youtx3d3035049lkkghk543h2jk2369gk327gihx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fh0x2fXeusg_Ygsax78go_gz_Kgyk_Lgik_LI.vtmx3fbkx78youtx3d3035049lkkghk543h2jk2369gk327gihx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fh0x2fXeusg_Ygsax78go_gz_Kgyk_Lgik_LI.vtmx2f35vd-Xeusg_Ygsax78go_gz_Kgyk_Lgik_LI.vtmx3fbkx78youtx3d3035049lkkghk543h2jk2369gk327gihx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6434,7 +6436,7 @@ export class RyomaHotSprings
 
 @Component({
   selector: 'Saizo',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Saizo:_Angry_Ninja" title="Saizo: Angry Ninja"><img alt="Saizo Angry Ninja Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f02x2fYgofu_Gtmx78e_Totpg_Lgik_LI.vtmx2f775vd-Ygofu_Gtmx78e_Totpg_Lgik_LI.vtmx3fbkx78youtx3dl3503993j11842i943k5lh7j10284108x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f02x2fYgofu_Gtmx78e_Totpg_Lgik_LI.vtmx3fbkx78youtx3dl3503993j11842i943k5lh7j10284108x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f02x2fYgofu_Gtmx78e_Totpg_Lgik_LI.vtmx2f35vd-Ygofu_Gtmx78e_Totpg_Lgik_LI.vtmx3fbkx78youtx3dl3503993j11842i943k5lh7j10284108x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6456,7 +6458,7 @@ export class Saizo
 
 @Component({
   selector: 'Kagero',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kagero:_Honorable_Ninja" title="Kagero: Honorable Ninja"><img alt="Kagero Honorable Ninja Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fQgmkx78u_Nutux78ghrk_Totpg_Lgik_LI.vtmx2f775vd-Qgmkx78u_Nutux78ghrk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1g93gi26693j86i51li341g85l322g31x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4gx2fQgmkx78u_Nutux78ghrk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1g93gi26693j86i51li341g85l322g31x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4gx2fQgmkx78u_Nutux78ghrk_Totpg_Lgik_LI.vtmx2f35vd-Qgmkx78u_Nutux78ghrk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1g93gi26693j86i51li341g85l322g31x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6478,7 +6480,7 @@ export class Kagero
 
 @Component({
   selector: 'KageroSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kagero:_Spring_Ninja" title="Kagero: Spring Ninja"><img alt="Kagero Spring Ninja Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f48x2fQgmkx78u_Yvx78otm_Totpg_Lgik_LI.vtmx2f775vd-Qgmkx78u_Yvx78otm_Totpg_Lgik_LI.vtmx3fbkx78youtx3d5gj07949358kgj203i8146h71j18lg34x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f48x2fQgmkx78u_Yvx78otm_Totpg_Lgik_LI.vtmx3fbkx78youtx3d5gj07949358kgj203i8146h71j18lg34x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f48x2fQgmkx78u_Yvx78otm_Totpg_Lgik_LI.vtmx2f35vd-Qgmkx78u_Yvx78otm_Totpg_Lgik_LI.vtmx3fbkx78youtx3d5gj07949358kgj203i8146h71j18lg34x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6500,7 +6502,7 @@ export class KageroSpring
 
 @Component({
   selector: 'KageroHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kagero:_Beverage_Ninja" title="Kagero: Beverage Ninja"><img alt="Kagero Beverage Ninja Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f99x2fQgmkx78u_Hkbkx78gmk_Totpg_Lgik_LI.vtmx2f775vd-Qgmkx78u_Hkbkx78gmk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1l11lgj3564gj5g8795929464gki3690x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f99x2fQgmkx78u_Hkbkx78gmk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1l11lgj3564gj5g8795929464gki3690x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f99x2fQgmkx78u_Hkbkx78gmk_Totpg_Lgik_LI.vtmx2f35vd-Qgmkx78u_Hkbkx78gmk_Totpg_Lgik_LI.vtmx3fbkx78youtx3d1l11lgj3564gj5g8795929464gki3690x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6522,7 +6524,7 @@ export class KageroHalloween
 
 @Component({
   selector: 'Hinoka',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hinoka:_Warrior_Princess" title="Hinoka: Warrior Princess"><img alt="Hinoka Warrior Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fNotuqg_Cgx78x78oux78_Vx78otikyy_Lgik_LI.vtmx2f775vd-Notuqg_Cgx78x78oux78_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj8g16j3ki62692k5513iilkg5k1hl001x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f23x2fNotuqg_Cgx78x78oux78_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj8g16j3ki62692k5513iilkg5k1hl001x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f23x2fNotuqg_Cgx78x78oux78_Vx78otikyy_Lgik_LI.vtmx2f35vd-Notuqg_Cgx78x78oux78_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dj8g16j3ki62692k5513iilkg5k1hl001x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6544,7 +6546,7 @@ export class Hinoka
 
 @Component({
   selector: 'HinokaWingsofFate',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hinoka:_Blue_Sky_Warrior" title="Hinoka: Blue Sky Warrior"><img alt="Hinoka Blue Sky Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fNotuqg_Hrak_Yqe_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Notuqg_Hrak_Yqe_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl13l5i703j8hl9jk18ij8g6470gg71kkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f7x2f71x2fNotuqg_Hrak_Yqe_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl13l5i703j8hl9jk18ij8g6470gg71kkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f7x2f71x2fNotuqg_Hrak_Yqe_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Notuqg_Hrak_Yqe_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl13l5i703j8hl9jk18ij8g6470gg71kkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6566,7 +6568,7 @@ export class HinokaWingsofFate
 
 @Component({
   selector: 'HinokaHotSprings',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hinoka:_Relaxed_Warrior" title="Hinoka: Relaxed Warrior"><img alt="Hinoka Relaxed Warrior Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fNotuqg_Xkrgdkj_Cgx78x78oux78_Lgik_LI.vtmx2f775vd-Notuqg_Xkrgdkj_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl18k161jji6gh9j625ii53894ijg0ki1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f04x2fNotuqg_Xkrgdkj_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl18k161jji6gh9j625ii53894ijg0ki1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f04x2fNotuqg_Xkrgdkj_Cgx78x78oux78_Lgik_LI.vtmx2f35vd-Notuqg_Xkrgdkj_Cgx78x78oux78_Lgik_LI.vtmx3fbkx78youtx3dl18k161jji6gh9j625ii53894ijg0ki1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6588,7 +6590,7 @@ export class HinokaHotSprings
 
 @Component({
   selector: 'Azama',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Azama:_Carefree_Monk" title="Azama: Carefree Monk"><img alt="Azama Carefree Monk Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fghx2fGfgsg_Igx78klx78kk_Sutq_Lgik_LI.vtmx2f775vd-Gfgsg_Igx78klx78kk_Sutq_Lgik_LI.vtmx3fbkx78youtx3d3444lgh7lh433276j02lk60i2h293547x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fghx2fGfgsg_Igx78klx78kk_Sutq_Lgik_LI.vtmx3fbkx78youtx3d3444lgh7lh433276j02lk60i2h293547x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fghx2fGfgsg_Igx78klx78kk_Sutq_Lgik_LI.vtmx2f35vd-Gfgsg_Igx78klx78kk_Sutq_Lgik_LI.vtmx3fbkx78youtx3d3444lgh7lh433276j02lk60i2h293547x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6610,7 +6612,7 @@ export class Azama
 
 @Component({
   selector: 'Setsuna',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Setsuna:_Absent_Archer" title="Setsuna: Absent Archer"><img alt="Setsuna Absent Archer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg7x2fYkzyatg_Ghyktz_Gx78inkx78_Lgik_LI.vtmx2f775vd-Ykzyatg_Ghyktz_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d04l3h44kgi9jjj1gkl7h04j032381720x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg7x2fYkzyatg_Ghyktz_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d04l3h44kgi9jjj1gkl7h04j032381720x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg7x2fYkzyatg_Ghyktz_Gx78inkx78_Lgik_LI.vtmx2f35vd-Ykzyatg_Ghyktz_Gx78inkx78_Lgik_LI.vtmx3fbkx78youtx3d04l3h44kgi9jjj1gkl7h04j032381720x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6632,7 +6634,7 @@ export class Setsuna
 
 @Component({
   selector: 'Takumi',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Takumi:_Wild_Card" title="Takumi: Wild Card"><img alt="Takumi Wild Card Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fZgqaso_Corj_Igx78j_Lgik_LI.vtmx2f775vd-Zgqaso_Corj_Igx78j_Lgik_LI.vtmx3fbkx78youtx3dh5h978k4i4jh02j201970i1g2ih302kix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9gx2fZgqaso_Corj_Igx78j_Lgik_LI.vtmx3fbkx78youtx3dh5h978k4i4jh02j201970i1g2ih302kix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fZgqaso_Corj_Igx78j_Lgik_LI.vtmx2f35vd-Zgqaso_Corj_Igx78j_Lgik_LI.vtmx3fbkx78youtx3dh5h978k4i4jh02j201970i1g2ih302kix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6654,7 +6656,7 @@ export class Takumi
 
 @Component({
   selector: 'TakumiNewYears',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Takumi:_Prince_of_Soup" title="Takumi: Prince of Soup"><img alt="Takumi Prince of Soup Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg4x2fZgqaso_Vx78otik_ul_Yuav_Lgik_LI.vtmx2f775vd-Zgqaso_Vx78otik_ul_Yuav_Lgik_LI.vtmx3fbkx78youtx3d652khkj1ik1i104i154g4540khgh4k3ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg4x2fZgqaso_Vx78otik_ul_Yuav_Lgik_LI.vtmx3fbkx78youtx3d652khkj1ik1i104i154g4540khgh4k3ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg4x2fZgqaso_Vx78otik_ul_Yuav_Lgik_LI.vtmx2f35vd-Zgqaso_Vx78otik_ul_Yuav_Lgik_LI.vtmx3fbkx78youtx3d652khkj1ik1i104i154g4540khgh4k3ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6676,7 +6678,7 @@ export class TakumiNewYears
 
 @Component({
   selector: 'TakumiFallen',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Takumi:_Empty_Vessel" title="Takumi: Empty Vessel"><img alt="Takumi Empty Vessel Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fZgqaso_Ksvze_Bkyykr_Lgik_LI.vtmx2f775vd-Zgqaso_Ksvze_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d90g9kg7h50k29k191ilkigi16j05jkglx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f56x2fZgqaso_Ksvze_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d90g9kg7h50k29k191ilkigi16j05jkglx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f56x2fZgqaso_Ksvze_Bkyykr_Lgik_LI.vtmx2f35vd-Zgqaso_Ksvze_Bkyykr_Lgik_LI.vtmx3fbkx78youtx3d90g9kg7h50k29k191ilkigi16j05jkglx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6698,7 +6700,7 @@ export class TakumiFallen
 
 @Component({
   selector: 'TakumiSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Takumi:_Prince_at_Play" title="Takumi: Prince at Play"><img alt="Takumi Prince at Play Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f93x2fZgqaso_Vx78otik_gz_Vrge_Lgik_LI.vtmx2f775vd-Zgqaso_Vx78otik_gz_Vrge_Lgik_LI.vtmx3fbkx78youtx3d142giihii92j518ljk93l01i802g138ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f93x2fZgqaso_Vx78otik_gz_Vrge_Lgik_LI.vtmx3fbkx78youtx3d142giihii92j518ljk93l01i802g138ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f93x2fZgqaso_Vx78otik_gz_Vrge_Lgik_LI.vtmx2f35vd-Zgqaso_Vx78otik_gz_Vrge_Lgik_LI.vtmx3fbkx78youtx3d142giihii92j518ljk93l01i802g138ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6720,7 +6722,7 @@ export class TakumiSummer
 
 @Component({
   selector: 'Hinata',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hinata:_Wild_Samurai" title="Hinata: Wild Samurai"><img alt="Hinata Wild Samurai Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fNotgzg_Corj_Ygsax78go_Lgik_LI.vtmx2f775vd-Notgzg_Corj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg168g2h8jk88k987g1gk8l407j2525l6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fjjx2fNotgzg_Corj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg168g2h8jk88k987g1gk8l407j2525l6x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fjjx2fNotgzg_Corj_Ygsax78go_Lgik_LI.vtmx2f35vd-Notgzg_Corj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg168g2h8jk88k987g1gk8l407j2525l6x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6742,7 +6744,7 @@ export class Hinata
 
 @Component({
   selector: 'Oboro',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Oboro:_Fierce_Fighter" title="Oboro: Fierce Fighter"><img alt="Oboro Fierce Fighter Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0jx2fUhux78u_Lokx78ik_Lomnzkx78_Lgik_LI.vtmx2f775vd-Uhux78u_Lokx78ik_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d9l1962384010i8hh6g77ljlj4lh2gj20x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f0jx2fUhux78u_Lokx78ik_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d9l1962384010i8hh6g77ljlj4lh2gj20x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f0jx2fUhux78u_Lokx78ik_Lomnzkx78_Lgik_LI.vtmx2f35vd-Uhux78u_Lokx78ik_Lomnzkx78_Lgik_LI.vtmx3fbkx78youtx3d9l1962384010i8hh6g77ljlj4lh2gj20x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6764,7 +6766,7 @@ export class Oboro
 
 @Component({
   selector: 'Sakura',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sakura:_Loving_Priestess" title="Sakura: Loving Priestess"><img alt="Sakura Loving Priestess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fijx2fYgqax78g_Rubotm_Vx78okyzkyy_Lgik_LI.vtmx2f775vd-Ygqax78g_Rubotm_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dghgl0g945502k1hj66525088929k7l93x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fijx2fYgqax78g_Rubotm_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dghgl0g945502k1hj66525088929k7l93x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fijx2fYgqax78g_Rubotm_Vx78okyzkyy_Lgik_LI.vtmx2f35vd-Ygqax78g_Rubotm_Vx78okyzkyy_Lgik_LI.vtmx3fbkx78youtx3dghgl0g945502k1hj66525088929k7l93x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6786,7 +6788,7 @@ export class Sakura
 
 @Component({
   selector: 'SakuraHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sakura:_Gentle_Nekomata" title="Sakura: Gentle Nekomata"><img alt="Sakura Gentle Nekomata Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fYgqax78g_Mktzrk_Tkqusgzg_Lgik_LI.vtmx2f775vd-Ygqax78g_Mktzrk_Tkqusgzg_Lgik_LI.vtmx3fbkx78youtx3dl2574k1g1311i37j30j7k52j43184518x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj4x2fYgqax78g_Mktzrk_Tkqusgzg_Lgik_LI.vtmx3fbkx78youtx3dl2574k1g1311i37j30j7k52j43184518x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj4x2fYgqax78g_Mktzrk_Tkqusgzg_Lgik_LI.vtmx2f35vd-Ygqax78g_Mktzrk_Tkqusgzg_Lgik_LI.vtmx3fbkx78youtx3dl2574k1g1311i37j30j7k52j43184518x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6808,7 +6810,7 @@ export class SakuraHalloween
 
 @Component({
   selector: 'SakuraHotSprings',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Sakura:_Hot-Spring_Healer" title="Sakura: Hot-Spring Healer"><img alt="Sakura Hot-Spring Healer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f24x2fYgqax78g_Nuz-Yvx78otm_Nkgrkx78_Lgik_LI.vtmx2f775vd-Ygqax78g_Nuz-Yvx78otm_Nkgrkx78_Lgik_LI.vtmx3fbkx78youtx3dgih3jh52ghkik2hg08kk479i8jj70jggx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f24x2fYgqax78g_Nuz-Yvx78otm_Nkgrkx78_Lgik_LI.vtmx3fbkx78youtx3dgih3jh52ghkik2hg08kk479i8jj70jggx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f24x2fYgqax78g_Nuz-Yvx78otm_Nkgrkx78_Lgik_LI.vtmx2f35vd-Ygqax78g_Nuz-Yvx78otm_Nkgrkx78_Lgik_LI.vtmx3fbkx78youtx3dgih3jh52ghkik2hg08kk479i8jj70jggx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6830,7 +6832,7 @@ export class SakuraHotSprings
 
 @Component({
   selector: 'Hana',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Hana:_Focused_Samurai" title="Hana: Focused Samurai"><img alt="Hana Focused Samurai Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fNgtg_Luiaykj_Ygsax78go_Lgik_LI.vtmx2f775vd-Ngtg_Luiaykj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg7171h3i7713j46jl607j3gij2k22j02x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f09x2fNgtg_Luiaykj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg7171h3i7713j46jl607j3gij2k22j02x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fNgtg_Luiaykj_Ygsax78go_Lgik_LI.vtmx2f35vd-Ngtg_Luiaykj_Ygsax78go_Lgik_LI.vtmx3fbkx78youtx3dg7171h3i7713j46jl607j3gij2k22j02x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6852,7 +6854,7 @@ export class Hana
 
 @Component({
   selector: 'Subaki',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Subaki:_Perfect_Expert" title="Subaki: Perfect Expert"><img alt="Subaki Perfect Expert Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk5x2fYahgqo_Vkx78lkiz_Kdvkx78z_Lgik_LI.vtmx2f775vd-Yahgqo_Vkx78lkiz_Kdvkx78z_Lgik_LI.vtmx3fbkx78youtx3d775kg560j1hg40hi7g049h14770ll74jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk5x2fYahgqo_Vkx78lkiz_Kdvkx78z_Lgik_LI.vtmx3fbkx78youtx3d775kg560j1hg40hi7g049h14770ll74jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk5x2fYahgqo_Vkx78lkiz_Kdvkx78z_Lgik_LI.vtmx2f35vd-Yahgqo_Vkx78lkiz_Kdvkx78z_Lgik_LI.vtmx3fbkx78youtx3d775kg560j1hg40hi7g049h14770ll74jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6874,7 +6876,7 @@ export class Subaki
 
 @Component({
   selector: 'Kaze',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kaze:_Easygoing_Ninja" title="Kaze: Easygoing Ninja"><img alt="Kaze Easygoing Ninja Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fQgfk_Kgyemuotm_Totpg_Lgik_LI.vtmx2f775vd-Qgfk_Kgyemuotm_Totpg_Lgik_LI.vtmx3fbkx78youtx3djh18i2kii6h2kgk5jk8k2jhk9g045139x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f43x2fQgfk_Kgyemuotm_Totpg_Lgik_LI.vtmx3fbkx78youtx3djh18i2kii6h2kgk5jk8k2jhk9g045139x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fQgfk_Kgyemuotm_Totpg_Lgik_LI.vtmx2f35vd-Qgfk_Kgyemuotm_Totpg_Lgik_LI.vtmx3fbkx78youtx3djh18i2kii6h2kgk5jk8k2jhk9g045139x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6896,7 +6898,7 @@ export class Kaze
 
 @Component({
   selector: 'Kaden',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kaden:_Kitsune_Braggart" title="Kaden: Kitsune Braggart"><img alt="Kaden Kitsune Braggart Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk0x2fQgjkt_Qozyatk_Hx78gmmgx78z_Lgik_LI.vtmx2f775vd-Qgjkt_Qozyatk_Hx78gmmgx78z_Lgik_LI.vtmx3fbkx78youtx3d7ggji6hj219k726927j7kh51g61j7g5kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk0x2fQgjkt_Qozyatk_Hx78gmmgx78z_Lgik_LI.vtmx3fbkx78youtx3d7ggji6hj219k726927j7kh51g61j7g5kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk0x2fQgjkt_Qozyatk_Hx78gmmgx78z_Lgik_LI.vtmx2f35vd-Qgjkt_Qozyatk_Hx78gmmgx78z_Lgik_LI.vtmx3fbkx78youtx3d7ggji6hj219k726927j7kh51g61j7g5kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6918,7 +6920,7 @@ export class Kaden
 
 @Component({
   selector: 'Garon',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Garon:_King_of_Nohr" title="Garon: King of Nohr"><img alt="Garon King of Nohr Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4hx2fMgx78ut_Qotm_ul_Tunx78_Lgik_LI.vtmx2f775vd-Mgx78ut_Qotm_ul_Tunx78_Lgik_LI.vtmx3fbkx78youtx3d904209700g1ji0j566j10ihl486j3709x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4hx2fMgx78ut_Qotm_ul_Tunx78_Lgik_LI.vtmx3fbkx78youtx3d904209700g1ji0j566j10ihl486j3709x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4hx2fMgx78ut_Qotm_ul_Tunx78_Lgik_LI.vtmx2f35vd-Mgx78ut_Qotm_ul_Tunx78_Lgik_LI.vtmx3fbkx78youtx3d904209700g1ji0j566j10ihl486j3709x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6940,7 +6942,7 @@ export class Garon
 
 @Component({
   selector: 'Xander',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Xander:_Paragon_Knight" title="Xander: Paragon Knight"><img alt="Xander Paragon Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi2x2fDgtjkx78_Vgx78gmut_Qtomnz_Lgik_LI.vtmx2f775vd-Dgtjkx78_Vgx78gmut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh9j93gj7k30h94j7492h0hk7332iljhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi2x2fDgtjkx78_Vgx78gmut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh9j93gj7k30h94j7492h0hk7332iljhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi2x2fDgtjkx78_Vgx78gmut_Qtomnz_Lgik_LI.vtmx2f35vd-Dgtjkx78_Vgx78gmut_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dh9j93gj7k30h94j7492h0hk7332iljhlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6962,7 +6964,7 @@ export class Xander
 
 @Component({
   selector: 'XanderSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Xander:_Spring_Prince" title="Xander: Spring Prince"><img alt="Xander Spring Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fDgtjkx78_Yvx78otm_Vx78otik_Lgik_LI.vtmx2f775vd-Dgtjkx78_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl7gki0210j61kk1i015215260kkjh11gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f43x2fDgtjkx78_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl7gki0210j61kk1i015215260kkjh11gx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f43x2fDgtjkx78_Yvx78otm_Vx78otik_Lgik_LI.vtmx2f35vd-Dgtjkx78_Yvx78otm_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3dl7gki0210j61kk1i015215260kkjh11gx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -6984,7 +6986,7 @@ export class XanderSpring
 
 @Component({
   selector: 'XanderSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Xander:_Student_Swimmer" title="Xander: Student Swimmer"><img alt="Xander Student Swimmer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2ix2fDgtjkx78_Yzajktz_Ycosskx78_Lgik_LI.vtmx2f775vd-Dgtjkx78_Yzajktz_Ycosskx78_Lgik_LI.vtmx3fbkx78youtx3d57k45l9g628ilji62714kik024j3j5g1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f2ix2fDgtjkx78_Yzajktz_Ycosskx78_Lgik_LI.vtmx3fbkx78youtx3d57k45l9g628ilji62714kik024j3j5g1x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f2ix2fDgtjkx78_Yzajktz_Ycosskx78_Lgik_LI.vtmx2f35vd-Dgtjkx78_Yzajktz_Ycosskx78_Lgik_LI.vtmx3fbkx78youtx3d57k45l9g628ilji62714kik024j3j5g1x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7006,7 +7008,7 @@ export class XanderSummer
 
 @Component({
   selector: 'XanderFestival',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Xander:_Dancing_Knight" title="Xander: Dancing Knight"><img alt="Xander Dancing Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fDgtjkx78_Jgtiotm_Qtomnz_Lgik_LI.vtmx2f775vd-Dgtjkx78_Jgtiotm_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d4602l7i01g6361300i05lh56243h26h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f8x2f84x2fDgtjkx78_Jgtiotm_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d4602l7i01g6361300i05lh56243h26h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f8x2f84x2fDgtjkx78_Jgtiotm_Qtomnz_Lgik_LI.vtmx2f35vd-Dgtjkx78_Jgtiotm_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3d4602l7i01g6361300i05lh56243h26h9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7028,7 +7030,7 @@ export class XanderFestival
 
 @Component({
   selector: 'Laslow',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Laslow:_Dancing_Duelist" title="Laslow: Dancing Duelist"><img alt="Laslow Dancing Duelist Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl1x2fRgyruc_Jgtiotm_Jakroyz_Lgik_LI.vtmx2f775vd-Rgyruc_Jgtiotm_Jakroyz_Lgik_LI.vtmx3fbkx78youtx3d72j2g8402k13460i49h08hig4i540k9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2flx2fl1x2fRgyruc_Jgtiotm_Jakroyz_Lgik_LI.vtmx3fbkx78youtx3d72j2g8402k13460i49h08hig4i540k9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2flx2fl1x2fRgyruc_Jgtiotm_Jakroyz_Lgik_LI.vtmx2f35vd-Rgyruc_Jgtiotm_Jakroyz_Lgik_LI.vtmx3fbkx78youtx3d72j2g8402k13460i49h08hig4i540k9jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7050,7 +7052,7 @@ export class Laslow
 
 @Component({
   selector: 'Peri',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Peri:_Playful_Slayer" title="Peri: Playful Slayer"><img alt="Peri Playful Slayer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fikx2fVkx78o_Vrgelar_Yrgekx78_Lgik_LI.vtmx2f775vd-Vkx78o_Vrgelar_Yrgekx78_Lgik_LI.vtmx3fbkx78youtx3d04j9l6hil4281glg97hlki645lk957i0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fikx2fVkx78o_Vrgelar_Yrgekx78_Lgik_LI.vtmx3fbkx78youtx3d04j9l6hil4281glg97hlki645lk957i0x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fikx2fVkx78o_Vrgelar_Yrgekx78_Lgik_LI.vtmx2f35vd-Vkx78o_Vrgelar_Yrgekx78_Lgik_LI.vtmx3fbkx78youtx3d04j9l6hil4281glg97hlki645lk957i0x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7072,7 +7074,7 @@ export class Peri
 
 @Component({
   selector: 'Camilla',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Bewitching_Beauty" title="Camilla: Bewitching Beauty"><img alt="Camilla Bewitching Beauty Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fIgsorrg_Hkcozinotm_Hkgaze_Lgik_LI.vtmx2f775vd-Igsorrg_Hkcozinotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d100j73l7l973i8gh04k79hh8685879g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9gx2fIgsorrg_Hkcozinotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d100j73l7l973i8gh04k79hh8685879g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9gx2fIgsorrg_Hkcozinotm_Hkgaze_Lgik_LI.vtmx2f35vd-Igsorrg_Hkcozinotm_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d100j73l7l973i8gh04k79hh8685879g2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7094,7 +7096,7 @@ export class Camilla
 
 @Component({
   selector: 'CamillaSpring',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Spring_Princess" title="Camilla: Spring Princess"><img alt="Camilla Spring Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f33x2fIgsorrg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx2f775vd-Igsorrg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d5kglhji5141j44kji207hk0l515hih66x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f33x2fIgsorrg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d5kglhji5141j44kji207hk0l515hih66x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f33x2fIgsorrg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx2f35vd-Igsorrg_Yvx78otm_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3d5kglhji5141j44kji207hk0l515hih66x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7116,7 +7118,7 @@ export class CamillaSpring
 
 @Component({
   selector: 'CamillaNewYears',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Holiday_Traveler" title="Camilla: Holiday Traveler"><img alt="Camilla Holiday Traveler Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj1x2fIgsorrg_Nurojge_Zx78gbkrkx78_Lgik_LI.vtmx2f775vd-Igsorrg_Nurojge_Zx78gbkrkx78_Lgik_LI.vtmx3fbkx78youtx3d980jh19g86hih170i6j4g32jlg0i5686x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj1x2fIgsorrg_Nurojge_Zx78gbkrkx78_Lgik_LI.vtmx3fbkx78youtx3d980jh19g86hih170i6j4g32jlg0i5686x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj1x2fIgsorrg_Nurojge_Zx78gbkrkx78_Lgik_LI.vtmx2f35vd-Igsorrg_Nurojge_Zx78gbkrkx78_Lgik_LI.vtmx3fbkx78youtx3d980jh19g86hih170i6j4g32jlg0i5686x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7138,7 +7140,7 @@ export class CamillaNewYears
 
 @Component({
   selector: 'CamillaSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Tropical_Beauty" title="Camilla: Tropical Beauty"><img alt="Camilla Tropical Beauty Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9ix2fIgsorrg_Zx78uvoigr_Hkgaze_Lgik_LI.vtmx2f775vd-Igsorrg_Zx78uvoigr_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d5ji3lg68jig5l3gl58j8kl3k7040lih8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9ix2fIgsorrg_Zx78uvoigr_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d5ji3lg68jig5l3gl58j8kl3k7040lih8x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9ix2fIgsorrg_Zx78uvoigr_Hkgaze_Lgik_LI.vtmx2f35vd-Igsorrg_Zx78uvoigr_Hkgaze_Lgik_LI.vtmx3fbkx78youtx3d5ji3lg68jig5l3gl58j8kl3k7040lih8x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7160,7 +7162,7 @@ export class CamillaSummer
 
 @Component({
   selector: 'CamillaAdrift',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Flower_of_Fantasy" title="Camilla: Flower of Fantasy"><img alt="Camilla Flower of Fantasy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj0x2fIgsorrg_Lruckx78_ul_Lgtzgye_Lgik_LI.vtmx2f775vd-Igsorrg_Lruckx78_ul_Lgtzgye_Lgik_LI.vtmx3fbkx78youtx3d4337i625g6181k35079k39jli6h20578x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj0x2fIgsorrg_Lruckx78_ul_Lgtzgye_Lgik_LI.vtmx3fbkx78youtx3d4337i625g6181k35079k39jli6h20578x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj0x2fIgsorrg_Lruckx78_ul_Lgtzgye_Lgik_LI.vtmx2f35vd-Igsorrg_Lruckx78_ul_Lgtzgye_Lgik_LI.vtmx3fbkx78youtx3d4337i625g6181k35079k39jli6h20578x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7182,7 +7184,7 @@ export class CamillaAdrift
 
 @Component({
   selector: 'CamillaHotSprings',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Camilla:_Steamy_Secrets" title="Camilla: Steamy Secrets"><img alt="Camilla Steamy Secrets Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj9x2fIgsorrg_Yzkgse_Ykix78kzy_Lgik_LI.vtmx2f775vd-Igsorrg_Yzkgse_Ykix78kzy_Lgik_LI.vtmx3fbkx78youtx3d416l24k8jg4i37973095j9jl3ll71kg5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj9x2fIgsorrg_Yzkgse_Ykix78kzy_Lgik_LI.vtmx3fbkx78youtx3d416l24k8jg4i37973095j9jl3ll71kg5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj9x2fIgsorrg_Yzkgse_Ykix78kzy_Lgik_LI.vtmx2f35vd-Igsorrg_Yzkgse_Ykix78kzy_Lgik_LI.vtmx3fbkx78youtx3d416l24k8jg4i37973095j9jl3ll71kg5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7204,7 +7206,7 @@ export class CamillaHotSprings
 
 @Component({
   selector: 'Selena',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Selena:_Cutting_Wit" title="Selena: Cutting Wit"><img alt="Selena Cutting Wit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fYkrktg_Iazzotm_Coz_Lgik_LI.vtmx2f775vd-Ykrktg_Iazzotm_Coz_Lgik_LI.vtmx3fbkx78youtx3d27kk6j18kj9i67kgi8j401ghh1k8h831x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2figx2fYkrktg_Iazzotm_Coz_Lgik_LI.vtmx3fbkx78youtx3d27kk6j18kj9i67kgi8j401ghh1k8h831x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2figx2fYkrktg_Iazzotm_Coz_Lgik_LI.vtmx2f35vd-Ykrktg_Iazzotm_Coz_Lgik_LI.vtmx3fbkx78youtx3d27kk6j18kj9i67kgi8j401ghh1k8h831x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7226,7 +7228,7 @@ export class Selena
 
 @Component({
   selector: 'Beruka',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Beruka:_Quiet_Assassin" title="Beruka: Quiet Assassin"><img alt="Beruka Quiet Assassin Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj7x2fHkx78aqg_Waokz_Gyygyyot_Lgik_LI.vtmx2f775vd-Hkx78aqg_Waokz_Gyygyyot_Lgik_LI.vtmx3fbkx78youtx3dh9jhl5gl8h7j63ig38hk42jij3lligh5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fjx2fj7x2fHkx78aqg_Waokz_Gyygyyot_Lgik_LI.vtmx3fbkx78youtx3dh9jhl5gl8h7j63ig38hk42jij3lligh5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fjx2fj7x2fHkx78aqg_Waokz_Gyygyyot_Lgik_LI.vtmx2f35vd-Hkx78aqg_Waokz_Gyygyyot_Lgik_LI.vtmx3fbkx78youtx3dh9jhl5gl8h7j63ig38hk42jij3lligh5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7248,7 +7250,7 @@ export class Beruka
 
 @Component({
   selector: 'Leo',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Leo:_Sorcerous_Prince" title="Leo: Sorcerous Prince"><img alt="Leo Sorcerous Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f94x2fRku_Yux78ikx78uay_Vx78otik_Lgik_LI.vtmx2f775vd-Rku_Yux78ikx78uay_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d9i8661g197k8i20j87gk64g55g893gg2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f94x2fRku_Yux78ikx78uay_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d9i8661g197k8i20j87gk64g55g893gg2x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f94x2fRku_Yux78ikx78uay_Vx78otik_Lgik_LI.vtmx2f35vd-Rku_Yux78ikx78uay_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d9i8661g197k8i20j87gk64g55g893gg2x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7270,7 +7272,7 @@ export class Leo
 
 @Component({
   selector: 'LeoSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Leo:_Seashore%27s_Prince" title="Leo: Seashore's Prince"><img alt="Leo Seashores Prince Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f58x2fRku_Ykgynux78ky_Vx78otik_Lgik_LI.vtmx2f775vd-Rku_Ykgynux78ky_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d258h7g775i8j41jgl4j7lig1i024674kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f58x2fRku_Ykgynux78ky_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d258h7g775i8j41jgl4j7lig1i024674kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f58x2fRku_Ykgynux78ky_Vx78otik_Lgik_LI.vtmx2f35vd-Rku_Ykgynux78ky_Vx78otik_Lgik_LI.vtmx3fbkx78youtx3d258h7g775i8j41jgl4j7lig1i024674kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7292,7 +7294,7 @@ export class LeoSummer
 
 @Component({
   selector: 'Odin',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Odin:_Potent_Force" title="Odin: Potent Force"><img alt="Odin Potent Force Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3gx2fUjot_Vuzktz_Lux78ik_Lgik_LI.vtmx2f775vd-Ujot_Vuzktz_Lux78ik_Lgik_LI.vtmx3fbkx78youtx3dk1g2h7j17k9304l6ih562054i0j1k1j4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f3gx2fUjot_Vuzktz_Lux78ik_Lgik_LI.vtmx3fbkx78youtx3dk1g2h7j17k9304l6ih562054i0j1k1j4x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f3gx2fUjot_Vuzktz_Lux78ik_Lgik_LI.vtmx2f35vd-Ujot_Vuzktz_Lux78ik_Lgik_LI.vtmx3fbkx78youtx3dk1g2h7j17k9304l6ih562054i0j1k1j4x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7314,7 +7316,7 @@ export class Odin
 
 @Component({
   selector: 'Niles',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Niles:_Cruel_to_Be_Kind" title="Niles: Cruel to Be Kind"><img alt="Niles Cruel to Be Kind Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fTorky_Ix78akr_zu_Hk_Qotj_Lgik_LI.vtmx2f775vd-Torky_Ix78akr_zu_Hk_Qotj_Lgik_LI.vtmx3fbkx78youtx3d945538ji2585394gh39hl99573266llkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f4ix2fTorky_Ix78akr_zu_Hk_Qotj_Lgik_LI.vtmx3fbkx78youtx3d945538ji2585394gh39hl99573266llkx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f4ix2fTorky_Ix78akr_zu_Hk_Qotj_Lgik_LI.vtmx2f35vd-Torky_Ix78akr_zu_Hk_Qotj_Lgik_LI.vtmx3fbkx78youtx3d945538ji2585394gh39hl99573266llkx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7336,7 +7338,7 @@ export class Niles
 
 @Component({
   selector: 'NilesHalloween',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Niles:_Forbidden_Tease" title="Niles: Forbidden Tease"><img alt="Niles Forbidden Tease Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkhx2fTorky_Lux78hojjkt_Zkgyk_Lgik_LI.vtmx2f775vd-Torky_Lux78hojjkt_Zkgyk_Lgik_LI.vtmx3fbkx78youtx3d0hkk6i107274h3069h9h88j48jl410j5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fkhx2fTorky_Lux78hojjkt_Zkgyk_Lgik_LI.vtmx3fbkx78youtx3d0hkk6i107274h3069h9h88j48jl410j5x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkhx2fTorky_Lux78hojjkt_Zkgyk_Lgik_LI.vtmx2f35vd-Torky_Lux78hojjkt_Zkgyk_Lgik_LI.vtmx3fbkx78youtx3d0hkk6i107274h3069h9h88j48jl410j5x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7358,7 +7360,7 @@ export class NilesHalloween
 
 @Component({
   selector: 'Elise',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Elise:_Budding_Flower" title="Elise: Budding Flower"><img alt="Elise Budding Flower Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9ix2fKroyk_Hajjotm_Lruckx78_Lgik_LI.vtmx2f775vd-Kroyk_Hajjotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d9ghlh4hkj466g22g3818k71ll77ill97x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f9x2f9ix2fKroyk_Hajjotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d9ghlh4hkj466g22g3818k71ll77ill97x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f9x2f9ix2fKroyk_Hajjotm_Lruckx78_Lgik_LI.vtmx2f35vd-Kroyk_Hajjotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3d9ghlh4hkj466g22g3818k71ll77ill97x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7380,7 +7382,7 @@ export class Elise
 
 @Component({
   selector: 'EliseSummer',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Elise:_Tropical_Flower" title="Elise: Tropical Flower"><img alt="Elise Tropical Flower Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fKroyk_Zx78uvoigr_Lruckx78_Lgik_LI.vtmx2f775vd-Kroyk_Zx78uvoigr_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dlj488g0kg0kij5ll1h9hj40595i6hg4jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f09x2fKroyk_Zx78uvoigr_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dlj488g0kg0kij5ll1h9hj40595i6hg4jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f09x2fKroyk_Zx78uvoigr_Lruckx78_Lgik_LI.vtmx2f35vd-Kroyk_Zx78uvoigr_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dlj488g0kg0kij5ll1h9hj40595i6hg4jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7402,7 +7404,7 @@ export class EliseSummer
 
 @Component({
   selector: 'EliseHotSprings',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Elise:_Bubbling_Flower" title="Elise: Bubbling Flower"><img alt="Elise Bubbling Flower Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk1x2fKroyk_Hahhrotm_Lruckx78_Lgik_LI.vtmx2f775vd-Kroyk_Hahhrotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dkh35471j13014g40lk9l2h561jl7560ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk1x2fKroyk_Hahhrotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dkh35471j13014g40lk9l2h561jl7560ix26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk1x2fKroyk_Hahhrotm_Lruckx78_Lgik_LI.vtmx2f35vd-Kroyk_Hahhrotm_Lruckx78_Lgik_LI.vtmx3fbkx78youtx3dkh35471j13014g40lk9l2h561jl7560ix26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7424,7 +7426,7 @@ export class EliseHotSprings
 
 @Component({
   selector: 'Arthur',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Arthur:_Hapless_Hero" title="Arthur: Hapless Hero"><img alt="Arthur Hapless Hero Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fGx78znax78_Ngvrkyy_Nkx78u_Lgik_LI.vtmx2f775vd-Gx78znax78_Ngvrkyy_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3d24l540jji7gilj106j4568kl9l243hglx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f38x2fGx78znax78_Ngvrkyy_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3d24l540jji7gilj106j4568kl9l243hglx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f38x2fGx78znax78_Ngvrkyy_Nkx78u_Lgik_LI.vtmx2f35vd-Gx78znax78_Ngvrkyy_Nkx78u_Lgik_LI.vtmx3fbkx78youtx3d24l540jji7gilj106j4568kl9l243hglx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7446,7 +7448,7 @@ export class Arthur
 
 @Component({
   selector: 'Effie',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="bronze" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Effie:_Army_of_One" title="Effie: Army of One"><img alt="Effie Army of One Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhlx2fKllok_Gx78se_ul_Utk_Lgik_LI.vtmx2f775vd-Kllok_Gx78se_ul_Utk_Lgik_LI.vtmx3fbkx78youtx3dh63hi8l3459ljj8j0114h0j1lj3l0541x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fhx2fhlx2fKllok_Gx78se_ul_Utk_Lgik_LI.vtmx3fbkx78youtx3dh63hi8l3459ljj8j0114h0j1lj3l0541x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fhx2fhlx2fKllok_Gx78se_ul_Utk_Lgik_LI.vtmx2f35vd-Kllok_Gx78se_ul_Utk_Lgik_LI.vtmx3fbkx78youtx3dh63hi8l3459ljj8j0114h0j1lj3l0541x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7468,7 +7470,7 @@ export class Effie
 
 @Component({
   selector: 'Silas',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Silas:_Loyal_Knight" title="Silas: Loyal Knight"><img alt="Silas Loyal Knight Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fYorgy_Ruegr_Qtomnz_Lgik_LI.vtmx2f775vd-Yorgy_Ruegr_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dlj9j50i8507k3g9l776kgg4g1k1k105jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f2x2f29x2fYorgy_Ruegr_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dlj9j50i8507k3g9l776kgg4g1k1k105jx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f2x2f29x2fYorgy_Ruegr_Qtomnz_Lgik_LI.vtmx2f35vd-Yorgy_Ruegr_Qtomnz_Lgik_LI.vtmx3fbkx78youtx3dlj9j50i8507k3g9l776kgg4g1k1k105jx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7490,7 +7492,7 @@ export class Silas
 
 @Component({
   selector: 'CharlotteBridal',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Charlotte:_Money_Maiden" title="Charlotte: Money Maiden"><img alt="Charlotte Money Maiden Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f39x2fIngx78ruzzk_Sutke_Sgojkt_Lgik_LI.vtmx2f775vd-Ingx78ruzzk_Sutke_Sgojkt_Lgik_LI.vtmx3fbkx78youtx3dl1j40l94j16ik61842850h2j5lg2lh35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f3x2f39x2fIngx78ruzzk_Sutke_Sgojkt_Lgik_LI.vtmx3fbkx78youtx3dl1j40l94j16ik61842850h2j5lg2lh35x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f3x2f39x2fIngx78ruzzk_Sutke_Sgojkt_Lgik_LI.vtmx2f35vd-Ingx78ruzzk_Sutke_Sgojkt_Lgik_LI.vtmx3fbkx78youtx3dl1j40l94j16ik61842850h2j5lg2lh35x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7512,7 +7514,7 @@ export class CharlotteBridal
 
 @Component({
   selector: 'Flora',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Flora:_Cold_as_Ice" title="Flora: Cold as Ice"><img alt="Flora Cold as Ice Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f67x2fLrux78g_Iurj_gy_Oik_Lgik_LI.vtmx2f775vd-Lrux78g_Iurj_gy_Oik_Lgik_LI.vtmx3fbkx78youtx3d27004gjjl9i919kh0916jh6k71ljh77kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f67x2fLrux78g_Iurj_gy_Oik_Lgik_LI.vtmx3fbkx78youtx3d27004gjjl9i919kh0916jh6k71ljh77kx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f67x2fLrux78g_Iurj_gy_Oik_Lgik_LI.vtmx2f35vd-Lrux78g_Iurj_gy_Oik_Lgik_LI.vtmx3fbkx78youtx3d27004gjjl9i919kh0916jh6k71ljh77kx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7534,7 +7536,7 @@ export class Flora
 
 @Component({
   selector: 'Keaton',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Keaton:_Lupine_Collector" title="Keaton: Lupine Collector"><img alt="Keaton Lupine Collector Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f55x2fQkgzut_Ravotk_Iurrkizux78_Lgik_LI.vtmx2f775vd-Qkgzut_Ravotk_Iurrkizux78_Lgik_LI.vtmx3fbkx78youtx3d66gk940527254i8i5jg98439k4j719jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f55x2fQkgzut_Ravotk_Iurrkizux78_Lgik_LI.vtmx3fbkx78youtx3d66gk940527254i8i5jg98439k4j719jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f55x2fQkgzut_Ravotk_Iurrkizux78_Lgik_LI.vtmx2f35vd-Qkgzut_Ravotk_Iurrkizux78_Lgik_LI.vtmx3fbkx78youtx3d66gk940527254i8i5jg98439k4j719jhx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7556,7 +7558,7 @@ export class Keaton
 
 @Component({
   selector: 'KanaM',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="grail" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kana:_Dragon_Spawn" title="Kana: Dragon Spawn"><img alt="Kana Dragon Spawn Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fQgtg_Jx78gmut_Yvgct_Lgik_LI.vtmx2f775vd-Qgtg_Jx78gmut_Yvgct_Lgik_LI.vtmx3fbkx78youtx3dgl95237k10h031g1hl8hgl352k085l65x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f1gx2fQgtg_Jx78gmut_Yvgct_Lgik_LI.vtmx3fbkx78youtx3dgl95237k10h031g1hl8hgl352k085l65x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f1gx2fQgtg_Jx78gmut_Yvgct_Lgik_LI.vtmx2f35vd-Qgtg_Jx78gmut_Yvgct_Lgik_LI.vtmx3fbkx78youtx3dgl95237k10h031g1hl8hgl352k085l65x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7578,7 +7580,7 @@ export class KanaM
 
 @Component({
   selector: 'KanaF',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Kana:_Dragon_Princess" title="Kana: Dragon Princess"><img alt="Kana Dragon Princess Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi9x2fQgtg_Jx78gmut_Vx78otikyy_Lgik_LI.vtmx2f775vd-Qgtg_Jx78gmut_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dggil199801j640h1l7g85l6i7h852804x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fix2fi9x2fQgtg_Jx78gmut_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dggil199801j640h1l7g85l6i7h852804x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fix2fi9x2fQgtg_Jx78gmut_Vx78otikyy_Lgik_LI.vtmx2f35vd-Qgtg_Jx78gmut_Vx78otikyy_Lgik_LI.vtmx3fbkx78youtx3dggil199801j640h1l7g85l6i7h852804x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7600,7 +7602,7 @@ export class KanaF
 
 @Component({
   selector: 'ShigurePerforming',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="seasonal" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Shigure:_Dark_Sky_Singer" title="Shigure: Dark Sky Singer"><img alt="Shigure Dark Sky Singer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgjx2fYnomax78k_Jgx78q_Yqe_Yotmkx78_Lgik_LI.vtmx2f775vd-Ynomax78k_Jgx78q_Yqe_Yotmkx78_Lgik_LI.vtmx3fbkx78youtx3d2797ik4k8gh218k1l2gj880l7l7h0kikx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fgjx2fYnomax78k_Jgx78q_Yqe_Yotmkx78_Lgik_LI.vtmx3fbkx78youtx3d2797ik4k8gh218k1l2gj880l7l7h0kikx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fgjx2fYnomax78k_Jgx78q_Yqe_Yotmkx78_Lgik_LI.vtmx2f35vd-Ynomax78k_Jgx78q_Yqe_Yotmkx78_Lgik_LI.vtmx3fbkx78youtx3d2797ik4k8gh218k1l2gj880l7l7h0kikx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7622,7 +7624,7 @@ export class ShigurePerforming
 
 @Component({
   selector: 'Shigure',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Shigure:_Uplifting_Artist" title="Shigure: Uplifting Artist"><img alt="Shigure Uplifting Artist Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f55x2fYnomax78k_Avrolzotm_Gx78zoyz_Lgik_LI.vtmx2f775vd-Ynomax78k_Avrolzotm_Gx78zoyz_Lgik_LI.vtmx3fbkx78youtx3d4l272k3h5l8j002j120i1l0604i1297lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f55x2fYnomax78k_Avrolzotm_Gx78zoyz_Lgik_LI.vtmx3fbkx78youtx3d4l272k3h5l8j002j120i1l0604i1297lx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f55x2fYnomax78k_Avrolzotm_Gx78zoyz_Lgik_LI.vtmx2f35vd-Ynomax78k_Avrolzotm_Gx78zoyz_Lgik_LI.vtmx3fbkx78youtx3d4l272k3h5l8j002j120i1l0604i1297lx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7644,7 +7646,7 @@ export class Shigure
 
 @Component({
   selector: 'Shiro',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Shiro:_Raw_Talent" title="Shiro: Raw Talent"><img alt="Shiro Raw Talent Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f69x2fYnox78u_Xgc_Zgrktz_Lgik_LI.vtmx2f775vd-Ynox78u_Xgc_Zgrktz_Lgik_LI.vtmx3fbkx78youtx3dg003ii1k8i91h7jl5ii736327j109072x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f6x2f69x2fYnox78u_Xgc_Zgrktz_Lgik_LI.vtmx3fbkx78youtx3dg003ii1k8i91h7jl5ii736327j109072x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f6x2f69x2fYnox78u_Xgc_Zgrktz_Lgik_LI.vtmx2f35vd-Ynox78u_Xgc_Zgrktz_Lgik_LI.vtmx3fbkx78youtx3dg003ii1k8i91h7jl5ii736327j109072x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7666,7 +7668,7 @@ export class Shiro
 
 @Component({
   selector: 'Selkie',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Selkie:_Free_Spirit" title="Selkie: Free Spirit"><img alt="Selkie Free Spirit Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fYkrqok_Lx78kk_Yvox78oz_Lgik_LI.vtmx2f775vd-Ykrqok_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d4ii86h6h21lg9kl589g3i45jh8884501x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fgx2fg6x2fYkrqok_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d4ii86h6h21lg9kl589g3i45jh8884501x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fgx2fg6x2fYkrqok_Lx78kk_Yvox78oz_Lgik_LI.vtmx2f35vd-Ykrqok_Lx78kk_Yvox78oz_Lgik_LI.vtmx3fbkx78youtx3d4ii86h6h21lg9kl589g3i45jh8884501x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7688,7 +7690,7 @@ export class Selkie
 
 @Component({
   selector: 'Rhajat',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Rhajat:_Black_Magician" title="Rhajat: Black Magician"><img alt="Rhajat Black Magician Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f01x2fXngpgz_Hrgiq_Sgmoiogt_Lgik_LI.vtmx2f775vd-Xngpgz_Hrgiq_Sgmoiogt_Lgik_LI.vtmx3fbkx78youtx3d4k55611139l00i7g734250h4i4h1443hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f0x2f01x2fXngpgz_Hrgiq_Sgmoiogt_Lgik_LI.vtmx3fbkx78youtx3d4k55611139l00i7g734250h4i4h1443hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f0x2f01x2fXngpgz_Hrgiq_Sgmoiogt_Lgik_LI.vtmx2f35vd-Xngpgz_Hrgiq_Sgmoiogt_Lgik_LI.vtmx3fbkx78youtx3d4k55611139l00i7g734250h4i4h1443hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7710,7 +7712,7 @@ export class Rhajat
 
 @Component({
   selector: 'Siegbert',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Siegbert:_Future_King" title="Siegbert: Future King"><img alt="Siegbert Future King Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5gx2fYokmhkx78z_Lazax78k_Qotm_Lgik_LI.vtmx2f775vd-Yokmhkx78z_Lazax78k_Qotm_Lgik_LI.vtmx3fbkx78youtx3d58hl2h7931g910hglh1g7l5i475g3ljlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f5x2f5gx2fYokmhkx78z_Lazax78k_Qotm_Lgik_LI.vtmx3fbkx78youtx3d58hl2h7931g910hglh1g7l5i475g3ljlx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f5x2f5gx2fYokmhkx78z_Lazax78k_Qotm_Lgik_LI.vtmx2f35vd-Yokmhkx78z_Lazax78k_Qotm_Lgik_LI.vtmx3fbkx78youtx3d58hl2h7931g910hglh1g7l5i475g3ljlx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7732,7 +7734,7 @@ export class Siegbert
 
 @Component({
   selector: 'Velouria',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Velouria:_Wolf_Cub" title="Velouria: Wolf Cub"><img alt="Velouria Wolf Cub Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f49x2fBkruax78og_Curl_Iah_Lgik_LI.vtmx2f775vd-Bkruax78og_Curl_Iah_Lgik_LI.vtmx3fbkx78youtx3d4765090g1h3k5039hji8ll264k1h2ij9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f4x2f49x2fBkruax78og_Curl_Iah_Lgik_LI.vtmx3fbkx78youtx3d4765090g1h3k5039hji8ll264k1h2ij9x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f4x2f49x2fBkruax78og_Curl_Iah_Lgik_LI.vtmx2f35vd-Bkruax78og_Curl_Iah_Lgik_LI.vtmx3fbkx78youtx3d4765090g1h3k5039hji8ll264k1h2ij9x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7754,7 +7756,7 @@ export class Velouria
 
 @Component({
   selector: 'Ophelia',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Ophelia:_Dramatic_Heroine" title="Ophelia: Dramatic Heroine"><img alt="Ophelia Dramatic Heroine Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkkx2fUvnkrog_Jx78gsgzoi_Nkx78uotk_Lgik_LI.vtmx2f775vd-Uvnkrog_Jx78gsgzoi_Nkx78uotk_Lgik_LI.vtmx3fbkx78youtx3d4k0k7k73465i30i6k4335ki158ilj815x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fkkx2fUvnkrog_Jx78gsgzoi_Nkx78uotk_Lgik_LI.vtmx3fbkx78youtx3d4k0k7k73465i30i6k4335ki158ilj815x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fkkx2fUvnkrog_Jx78gsgzoi_Nkx78uotk_Lgik_LI.vtmx2f35vd-Uvnkrog_Jx78gsgzoi_Nkx78uotk_Lgik_LI.vtmx3fbkx78youtx3d4k0k7k73465i30i6k4335ki158ilj815x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7776,7 +7778,7 @@ export class Ophelia
 
 @Component({
   selector: 'Soleil',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="silver" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Soleil:_Adorable_Adorer" title="Soleil: Adorable Adorer"><img alt="Soleil Adorable Adorer Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk5x2fYurkor_Gjux78ghrk_Gjux78kx78_Lgik_LI.vtmx2f775vd-Yurkor_Gjux78ghrk_Gjux78kx78_Lgik_LI.vtmx3fbkx78youtx3d67895g49765kk6011jh41l51j140h881x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fkx2fk5x2fYurkor_Gjux78ghrk_Gjux78kx78_Lgik_LI.vtmx3fbkx78youtx3d67895g49765kk6011jh41l51j140h881x26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2fkx2fk5x2fYurkor_Gjux78ghrk_Gjux78kx78_Lgik_LI.vtmx2f35vd-Yurkor_Gjux78ghrk_Gjux78kx78_Lgik_LI.vtmx3fbkx78youtx3d67895g49765kk6011jh41l51j140h881x26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
@@ -7798,7 +7800,7 @@ export class Soleil
 
 @Component({
   selector: 'Nina',
-  template: `<span style="display:inline-block;position:relative;">
+  template: `<span class="gold" style="display:inline-block;position:relative;">
 <span style="position:absolute;left:4px;top:4px;padding:0;">
 	<a href="https://feheroes.gamepedia.com/Nina:_Eye_Spy" title="Nina: Eye Spy"><img alt="Nina Eye Spy Face FC.png" width="79" height="79" srcset="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f13x2fTotg_Kek_Yve_Lgik_LI.vtmx2f775vd-Totg_Kek_Yve_Lgik_LI.vtmx3fbkx78youtx3dk294kghki12l5lh618h247086906386hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$ 1.5x, https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2f1x2f13x2fTotg_Kek_Yve_Lgik_LI.vtmx3fbkx78youtx3dk294kghki12l5lh618h247086906386hx26o76i.sgx78qx3dosgmk_$/$/$/$/$ 2x" x-enc="srcset src" src="https://c-3sux78kvnkay76x24mgskvkjogx2eiax78ykijtx2eius.g00.gamepedia.com/g00/3_c-3lknkx78uky.mgskvkjog.ius_/c-3SUXKVNKAY76x24nzzvyx3ax2fx2fmgskvkjog.iax78ykijt.iusx2flknkx78uky_mgskvkjog_ktx2fznashx2f1x2f13x2fTotg_Kek_Yve_Lgik_LI.vtmx2f35vd-Totg_Kek_Yve_Lgik_LI.vtmx3fbkx78youtx3dk294kghki12l5lh618h247086906386hx26o76i.sgx78qx3dosgmk_$/$/$/$/$/$/$">
 	</a>
