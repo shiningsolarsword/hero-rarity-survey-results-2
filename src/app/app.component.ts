@@ -8,17 +8,87 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
 
+  onAskrButtonClicked() {
+    let nodes = document.querySelectorAll(".askr");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
+    };
+  }
+
   onSeasonalButtonClicked() {
-    console.log('clicked');
     let nodes = document.querySelectorAll(".seasonal");
     for (let node of nodes) {
       let hero = (node as HTMLElement);
       if (hero.style.display != 'none') {
         hero.style.display = 'none';
       } else {
-        hero
+        hero.style.display = 'inline-block';
       }
-      
+    };
+  }
+
+  onGrailButtonClicked() {
+    let nodes = document.querySelectorAll(".grail");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
+    };
+  }
+
+  onLegendaryButtonClicked() {
+    let nodes = document.querySelectorAll(".legendary");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
+    };
+  }
+
+  onGoldButtonClicked() {
+    let nodes = document.querySelectorAll(".gold");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
+    };
+  }
+
+  onSilverButtonClicked() {
+    let nodes = document.querySelectorAll(".silver");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
+    };
+  }
+
+  onBronzeButtonClicked() {
+    let nodes = document.querySelectorAll(".bronze");
+    for (let node of nodes) {
+      let hero = (node as HTMLElement);
+      if (hero.style.display != 'none') {
+        hero.style.display = 'none';
+      } else {
+        hero.style.display = 'inline-block';
+      }
     };
   }
 }

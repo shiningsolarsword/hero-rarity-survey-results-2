@@ -17,5 +17,29 @@ p {
 }
 
 .dataRow {
-  padding-left: 40px;
+  padding-left: 75px;
+  width: 950px;
+}
+
+.buttonsRow {
+  margin-bottom: 20px;
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.visibilityToggles {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.toggleButton {
+  width: 130px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.thanks {
+  font-style: italic;
 }
